@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "_note": "SYNTHETIC development sample shaped like the GridNews /api/query/events response (types from github.com/gridnews/sdk). Outlets are fake (.example). Never used in production builds.",
+  "status": "success",
+  "data": {
+    "events": [
+      {
+        "id": "sample-ev-1",
+        "summary": "Alphabet shares rise after Google unveils new TPU chips",
+        "type": "article",
+        "firstSeenAt": "2026-11-09T23:30:00Z",
+        "independentVoices": 2,
+        "sectors": ["Communication Services", "Technology"],
+        "sources": [
+          { "title": "Alphabet gains as Google unveils TPU 8tx and 8i Max", "url": "https://sample-markets.example/alphabet-tpu", "sourceId": "sm", "sourceName": "Sample Markets", "publishedAt": "2026-11-09T23:30:00Z", "voiceKey": "sm" },
+          { "title": "Alphabet gains as Google unveils TPU 8tx and 8i Max", "url": "https://sample-syndicate.example/alphabet-tpu", "sourceId": "ss", "sourceName": "Sample Syndicate", "publishedAt": "2026-11-09T23:45:00Z", "voiceKey": "sm" },
+          { "title": "Google's TPU 8i Max chips lift Alphabet stock", "url": "https://sample-investor.example/googl-tpu", "sourceId": "si", "sourceName": "Sample Investor", "publishedAt": "2026-11-10T00:20:00Z", "voiceKey": "si" }
+        ]
+      },
+      {
+        "id": "sample-ev-2",
+        "summary": "Federal Reserve minutes show officials split on rate path",
+        "type": "article",
+        "firstSeenAt": "2026-11-09T19:00:00Z",
+        "independentVoices": 3,
+        "sectors": ["Financials"],
+        "sources": [
+          { "title": "Fed minutes show split on rates", "url": "https://sample-markets.example/fed-minutes", "sourceId": "sm", "sourceName": "Sample Markets", "publishedAt": "2026-11-09T19:00:00Z", "voiceKey": "sm" }
+        ]
+      }
+    ]
+  }
+}
