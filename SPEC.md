@@ -58,7 +58,7 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 
 ## Product
 
-- **Layout:** a desktop dashboard with top clusters in the centre and a column per source at the side ("Also trending"). Below tablet width it collapses to one column with tabs: Top stories, then one tab per source that returned data (HN · Tech & AI · Space · AI releases · Kiwi · (Markets)).
+- **Layout:** top stories in the main column, beside one "Also trending" panel with a tab per source that returned data (HN · Tech & AI · Space · AI releases · Kiwi · (Markets)), each showing its story count. Changed 2026-11-10 at the user's request, from one column per source. Below tablet width the panel sits under the top stories, with its tab bar scrolling sideways and staying pinned while you read. Without JavaScript the lists simply stack.
 - **Cluster card:**
   - headline, by article kind: press first, then markets, community posts, and vendor release notes last
   - outlet badges

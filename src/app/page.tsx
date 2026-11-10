@@ -2,7 +2,7 @@ import { buildBriefing, describeState } from "@/lib/briefing";
 import { SOURCES, type SourceDef } from "@/lib/sources/registry";
 import type { Cluster } from "@/lib/types";
 import { ClusterCard } from "@/components/ClusterCard";
-import { Dashboard, type Panel } from "@/components/Dashboard";
+import { AlsoTabs, type AlsoPanel } from "@/components/AlsoTabs";
 import { LocalTime } from "@/components/LocalTime";
 
 const SIDE_LIMIT = 15;
@@ -24,29 +24,13 @@ export default async function Page() {
     (n): n is { s: SourceDef; reason: string } => n.reason !== null,
   );
 
-  const panels: Panel[] = [
-    {
-      id: "top",
-      label: "Top stories",
-      tabLabel: "Top stories",
-      content:
-        b.top.length === 0 ? (
-          <p className="empty">No stories in the last {b.windowHours} hours.</p>
-        ) : (
-          <div className="stack">
-            {b.top.map((c, i) => (
-              <ClusterCard key={c.id} cluster={c} rank={i + 1} />
-            ))}
-          </div>
-        ),
-    },
-    ...SOURCES.filter((s) => b.sourceStates[s.id].status === "ok").map((s) => ({
-      id: s.id,
-      label: s.columnTitle,
-      tabLabel: s.tabLabel,
-      content: <TrendingList clusters={b.alsoTrending[s.id]} empty={`Nothing else from ${s.label}.`} />,
-    })),
-  ];
+  const also: AlsoPanel[] = SOURCES.filter((s) => b.sourceStates[s.id].status === "ok").map((s) => ({
+    id: s.id,
+    title: s.columnTitle,
+    tabLabel: s.tabLabel,
+    count: Math.min(b.alsoTrending[s.id].length, SIDE_LIMIT),
+    content: <TrendingList clusters={b.alsoTrending[s.id]} empty={`Nothing else from ${s.label}.`} />,
+  }));
 
   return (
     <main>
@@ -66,7 +50,23 @@ export default async function Page() {
           </p>
         ))}
       </div>
-      <Dashboard panels={panels} />
+      <div className="dashboard">
+        <section className="top-stories" aria-labelledby="top-heading">
+          <h2 id="top-heading" className="panel-title">
+            Top stories
+          </h2>
+          {b.top.length === 0 ? (
+            <p className="empty">No stories in the last {b.windowHours} hours.</p>
+          ) : (
+            <div className="stack">
+              {b.top.map((c, i) => (
+                <ClusterCard key={c.id} cluster={c} rank={i + 1} />
+              ))}
+            </div>
+          )}
+        </section>
+        <AlsoTabs panels={also} />
+      </div>
     </main>
   );
 }
