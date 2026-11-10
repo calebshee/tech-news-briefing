@@ -1,0 +1,2093 @@
+{
+  "lastUpdated": "2026-11-10T06:01:44Z",
+  "items": [
+    {
+      "title": "Ai2 and Google collaborate on a new generation of climate models",
+      "link": "https://allenai.org/blog/google-climate-partnership",
+      "source": "AI2",
+      "date": "2026-11-30T00:00:00",
+      "description": "With funding from Google.org and technical support from Google Research, Ai2 is developing NeuralGCM+, an…",
+      "ai_summary": "With funding from Google.org and technical support from Google Research, Ai2 is developing NeuralGCM+, an…"
+    },
+    {
+      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "link": "https://allenai.org/blog/toyblocks",
+      "source": "AI2",
+      "date": "2026-11-30T00:00:00",
+      "description": "ToyBlocks is an open simulation framework for studying robot learning through automated task generation, training…",
+      "ai_summary": "ToyBlocks is an open simulation framework for studying robot learning through automated task generation, training…"
+    },
+    {
+      "title": "The White House picks Palantir CISO Michael LoSapio to lead the DHS' Cybersecurity and Infrastructure Security Agency, r",
+      "link": "https://www.techmeme.com/261110/p1#a261110p1",
+      "source": "Techmeme",
+      "date": "2026-11-10T05:40:02",
+      "description": "Reuters: The White House picks Palantir CISO Michael LoSapio to lead the DHS' Cybersecurity and Infrastructure Security Agency, replacing Acting Director Nick Andersen — The White House said on Monday it has nominated Michael LoSapio to be the director of the US Department of Homeland Security's Cyb",
+      "ai_summary": "Reuters: The White House picks Palantir CISO Michael LoSapio to lead the DHS' Cybersecurity and Infrastructure Security Agency, replacing Acting Director Nick Andersen — The White House said on Monday it has nominated Michael LoSapio to be the director of the US Department of Homeland Security's Cyb"
+    },
+    {
+      "title": "MPS 2026.2 Has Been Released!",
+      "link": "https://blog.jetbrains.com/mps/2026/11/mps-2026-2-released/",
+      "source": "JetBrains",
+      "date": "2026-11-10T05:38:47",
+      "description": "MPS now runs on Linux ARM64, and coding agents can do much more for much less. The UI allows grouping nodes by virtual package, several dialogs have their UIs reworked, editor tests allow for node-matching functions to be customized, and much more. DOWNLOAD MPS 2026.2 What’s new Here are the most no",
+      "ai_summary": "MPS now runs on Linux ARM64, and coding agents can do much more for much less. The UI allows grouping nodes by virtual package, several dialogs have their UIs reworked, editor tests allow for node-matching functions to be customized, and much more. DOWNLOAD MPS 2026.2 What’s new Here are the most no"
+    },
+    {
+      "title": "California’s proposed ‘billionaire tax’ fails to pass",
+      "link": "https://techcrunch.com/2026/11/09/californias-proposed-billionaire-tax-fails-to-pass/",
+      "source": "TechCrunch",
+      "date": "2026-11-10T05:18:43",
+      "description": "California voters rejected Proposition 40, the one-time 5% tax on billionaires, the AP reported Monday. Tech leaders outspent backers roughly 10 to 1 to defeat it, and the founders and economists TechCrunch interviewed before the vote were split on whether it would have driven out wealthy residents",
+      "ai_summary": "California voters rejected Proposition 40, the one-time 5% tax on billionaires, the AP reported Monday. Tech leaders outspent backers roughly 10 to 1 to defeat it, and the founders and economists TechCrunch interviewed before the vote were split on whether it would have driven out wealthy residents"
+    },
+    {
+      "title": "Franklin Templeton's Lye Sees Fed Pause as AI Outlays Cool",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-10/templeton-s-lye-sees-fed-pause-as-ai-outlays-cool-video",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-10T05:02:44",
+      "description": "Carol Lye, Portfolio Manager and Senior Research Analyst at Franklin Templeton, says moderating US inflation combined with a possible deceleration in artificial intelligence infrastructure spending could give the Fed reason to pause its rate-hike cycle. (Source: Bloomberg)",
+      "ai_summary": "Carol Lye, Portfolio Manager and Senior Research Analyst at Franklin Templeton, says moderating US inflation combined with a possible deceleration in artificial intelligence infrastructure spending could give the Fed reason to pause its rate-hike cycle. (Source: Bloomberg)"
+    },
+    {
+      "title": "Live disagreements with people around me",
+      "link": "https://www.lesswrong.com/posts/dQJ3ArHMLxqu8rptt/live-disagreements-with-people-around-me",
+      "source": "LessWrong",
+      "date": "2026-11-10T05:01:06",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "A New AI Tool From Google DeepMind Proved the Signal Protocol Is Secure",
+      "link": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+      "source": "Wired",
+      "date": "2026-11-10T05:01:00",
+      "description": "DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”",
+      "ai_summary": "DeepMind researchers were able to formally verify that the widely used encryption protocol works as intended. Their stretch goal? Do the same for “all the software of the world.”"
+    },
+    {
+      "title": "Beyond Truncation? Entailment-Licensed Elision and the Limits of Semantic Preservation in LLM Decoding",
+      "link": "https://arxiv.org/abs/2611.08975",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "Using an LLM to Tackle Difficult Cases in NER for Nepali Tweets",
+      "link": "https://arxiv.org/abs/2611.08967",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08967v1 Announce Type: new Abstract: Named entity recognition (NER) is challenging for social media data in a low-resource language. LLMs often lag behind pretrained language models (PLMs) in NER performance, but they show promise in handling cases that PLMs struggle with. Using a dataset",
+      "ai_summary": "arXiv:2611.08967v1 Announce Type: new Abstract: Named entity recognition (NER) is challenging for social media data in a low-resource language. LLMs often lag behind pretrained language models (PLMs) in NER performance, but they show promise in handling cases that PLMs struggle with. Using a dataset"
+    },
+    {
+      "title": "On the Incompleteness of do-calculus for Universal Identifiability",
+      "link": "https://arxiv.org/abs/2611.08916",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08916v1 Announce Type: new Abstract: We study the problem of causal effect identification from an arbitrary set of observational and/or interventional distributions, which we call Universal Identifiability (uID). The uID problem generalizes existing classical identifiability (ID) and gene",
+      "ai_summary": "arXiv:2611.08916v1 Announce Type: new Abstract: We study the problem of causal effect identification from an arbitrary set of observational and/or interventional distributions, which we call Universal Identifiability (uID). The uID problem generalizes existing classical identifiability (ID) and gene"
+    },
+    {
+      "title": "From Procedures to Permissions: Learning Precise Subagent Authorization from Agent Skills",
+      "link": "https://arxiv.org/abs/2611.08905",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08905v1 Announce Type: new Abstract: As language agents tackle increasingly complex tasks, they increasingly rely on multiple agents to coordinate specialized work, requiring decisions not only about what each subagent should do but also which tools and workspace resources it should acces",
+      "ai_summary": "arXiv:2611.08905v1 Announce Type: new Abstract: As language agents tackle increasingly complex tasks, they increasingly rely on multiple agents to coordinate specialized work, requiring decisions not only about what each subagent should do but also which tools and workspace resources it should acces"
+    },
+    {
+      "title": "Richness Is Not Evenness: Ordered Renyi Crossings under Self-Training",
+      "link": "https://arxiv.org/abs/2611.08892",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08892v1 Announce Type: new Abstract: Recursive self-training of language models, a setting studied in model collapse, can reduce vocabulary while making frequent words, mostly function words, less dominant. We fine-tune English GPT-2 on its own output for nine generations, vary the traini",
+      "ai_summary": "arXiv:2611.08892v1 Announce Type: new Abstract: Recursive self-training of language models, a setting studied in model collapse, can reduce vocabulary while making frequent words, mostly function words, less dominant. We fine-tune English GPT-2 on its own output for nine generations, vary the traini"
+    },
+    {
+      "title": "Guardrail Erosion in Domain Fine-Tuned Large Language Models: A Paired Audit of Knowledge-Centric Abstention in Biomedic",
+      "link": "https://arxiv.org/abs/2611.08780",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08780v1 Announce Type: new Abstract: The number of domain fine-tuned models, particularly in the biomedical domain, is rapidly expanding. Fine-tuning promises high-performing models at a fraction of the cost of training a base model, but it can also produce unintended behavioral changes.",
+      "ai_summary": "arXiv:2611.08780v1 Announce Type: new Abstract: The number of domain fine-tuned models, particularly in the biomedical domain, is rapidly expanding. Fine-tuning promises high-performing models at a fraction of the cost of training a base model, but it can also produce unintended behavioral changes."
+    },
+    {
+      "title": "Semantic Conditional Similarity (SCS): A Formal Mathematical Framework",
+      "link": "https://arxiv.org/abs/2611.08778",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "Structuring Survey Histories for LLM Digital Twins: A Controlled Study of Background, Decision Procedure, and Evaluation",
+      "link": "https://arxiv.org/abs/2611.08730",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08730v1 Announce Type: new Abstract: LLM-based digital twins aim to predict how individuals would respond in new settings from representations of their prior responses. Existing evidence that compression of survey histories need not reduce predictive accuracy suggests that representation",
+      "ai_summary": "arXiv:2611.08730v1 Announce Type: new Abstract: LLM-based digital twins aim to predict how individuals would respond in new settings from representations of their prior responses. Existing evidence that compression of survey histories need not reduce predictive accuracy suggests that representation"
+    },
+    {
+      "title": "RL-ATTACK: A Generalized Black-Box Adversarial Attack on Language Models via Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2611.08711",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08711v1 Announce Type: new Abstract: Large language models (LLMs) exhibit vulnerabilities to adversarial perturbations that can induce unintended responses. These vulnerabilities can be identified via intentional attacks and subsequently used to improve model safety. In black-box settings",
+      "ai_summary": "arXiv:2611.08711v1 Announce Type: new Abstract: Large language models (LLMs) exhibit vulnerabilities to adversarial perturbations that can induce unintended responses. These vulnerabilities can be identified via intentional attacks and subsequently used to improve model safety. In black-box settings"
+    },
+    {
+      "title": "Contextuality and Contradictions: Exploring Real-World Identifications of AI-Generated Writing",
+      "link": "https://arxiv.org/abs/2611.08704",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08704v1 Announce Type: new Abstract: As AI-generated content spreads into nearly every domain of human interaction, practices and discourses of AI detection, both formal and informal, have become an everyday part of how people interact with text and with each other. In this paper, we expl",
+      "ai_summary": "arXiv:2611.08704v1 Announce Type: new Abstract: As AI-generated content spreads into nearly every domain of human interaction, practices and discourses of AI detection, both formal and informal, have become an everyday part of how people interact with text and with each other. In this paper, we expl"
+    },
+    {
+      "title": "Compression of Emotion in Language Model Representations",
+      "link": "https://arxiv.org/abs/2611.08683",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08683v1 Announce Type: new Abstract: Large language models (LLMs) have been evaluated on their ability to identify emotions expressed in text and produce fluent emotional language. However, output predictions alone do not reveal how fine-grained emotion distinctions are organized internal",
+      "ai_summary": "arXiv:2611.08683v1 Announce Type: new Abstract: Large language models (LLMs) have been evaluated on their ability to identify emotions expressed in text and produce fluent emotional language. However, output predictions alone do not reveal how fine-grained emotion distinctions are organized internal"
+    },
+    {
+      "title": "FinEvolveKG: Controlled and Attributable Prompt Evolution for Financial Knowledge Graph Construction",
+      "link": "https://arxiv.org/abs/2611.08643",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08643v1 Announce Type: new Abstract: Financial institutions construct knowledge graphs (KGs) from shared SEC 10-Ks to serve risk analysis, portfolio management, and investment research, whose analytical needs differ. Extraction must adapt without fragmenting shared grounding, typing, and",
+      "ai_summary": "arXiv:2611.08643v1 Announce Type: new Abstract: Financial institutions construct knowledge graphs (KGs) from shared SEC 10-Ks to serve risk analysis, portfolio management, and investment research, whose analytical needs differ. Extraction must adapt without fragmenting shared grounding, typing, and"
+    },
+    {
+      "title": "Forcing a Letter Suppresses Refusal: Mechanistic Evidence from WMDP",
+      "link": "https://arxiv.org/abs/2611.08639",
+      "source": "arXiv CS.CL",
+      "date": "2026-11-10T05:00:00",
+      "description": "arXiv:2611.08639v1 Announce Type: new Abstract: Safety benchmarks for large language models (LLMs) commonly use multiple-choice question (MCQ) format. However, prior studies documented that MCQ format reduces refusal rates, which may significantly affect the safety behavior of the model. We provide",
+      "ai_summary": "arXiv:2611.08639v1 Announce Type: new Abstract: Safety benchmarks for large language models (LLMs) commonly use multiple-choice question (MCQ) format. However, prior studies documented that MCQ format reduces refusal rates, which may significantly affect the safety behavior of the model. We provide"
+    },
+    {
+      "title": "OpenAtom and Elemental",
+      "link": "https://www.lesswrong.com/posts/MyepmzXbjmYuG6MfT/openatom-and-elemental-1",
+      "source": "LessWrong",
+      "date": "2026-11-10T04:52:13",
+      "description": "2012Compact nuclear power had long been considered intractable for civilian use. But on a cold December day, at an alternative energy conference, a team of academics reveals a new discovery: charging up small nuclear reactors over several days at high energy can produce clean power output. It is not",
+      "ai_summary": "2012Compact nuclear power had long been considered intractable for civilian use. But on a cold December day, at an alternative energy conference, a team of academics reveals a new discovery: charging up small nuclear reactors over several days at high energy can produce clean power output. It is not"
+    },
+    {
+      "title": "Eyesight as a replicator, with genes as its vehicle",
+      "link": "https://www.lesswrong.com/posts/FLAWND7tXutaPw9BQ/eyesight-as-a-replicator-with-genes-as-its-vehicle",
+      "source": "LessWrong",
+      "date": "2026-11-10T04:47:37",
+      "description": "Dear reader, this post will be completed in some hours; I'm posting it now because I'm participating in justwrite.club and I don't want to forfeit $1k. I'll remove this note when it's done. That said, the sections that are below are real; what I'm still doing is adding the \"coming soon\" sections.---",
+      "ai_summary": "Dear reader, this post will be completed in some hours; I'm posting it now because I'm participating in justwrite.club and I don't want to forfeit $1k. I'll remove this note when it's done. That said, the sections that are below are real; what I'm still doing is adding the \"coming soon\" sections.---"
+    },
+    {
+      "title": "Australia is drafting legislation for an AI safety regulator empowered to impose \"significant penalties\" after an OpenAI",
+      "link": "https://www.techmeme.com/261109/p53#a261109p53",
+      "source": "Techmeme",
+      "date": "2026-11-10T04:40:00",
+      "description": "James Mayger / Bloomberg: Australia is drafting legislation for an AI safety regulator empowered to impose “significant penalties” after an OpenAI model hacked a government site in Sept. — Australia will create a new artificial-intelligence safety regulator that will have the power to impose …",
+      "ai_summary": "James Mayger / Bloomberg: Australia is drafting legislation for an AI safety regulator empowered to impose “significant penalties” after an OpenAI model hacked a government site in Sept. — Australia will create a new artificial-intelligence safety regulator that will have the power to impose …"
+    },
+    {
+      "title": "Jensen Huang’s alleged honeypot scandal has inspired some top-notch memes",
+      "link": "https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
+      "source": "TechCrunch",
+      "date": "2026-11-10T04:34:15",
+      "description": "The internet is having a field day with Nvidia's Jensen Huang's alleged honeypot scandal.",
+      "ai_summary": "The internet is having a field day with Nvidia's Jensen Huang's alleged honeypot scandal."
+    },
+    {
+      "title": "Japan’s Rapidus Is Said Likely to Miss Mass Production Deadline",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/japan-s-rapidus-is-said-likely-to-miss-mass-production-deadline",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-10T04:15:00",
+      "description": "Japanese government-backed startup Rapidus Corp. has fallen behind schedule on its high-stakes pledge to mass produce cutting-edge chips by March 2028 and may no longer be able to make that deadline.",
+      "ai_summary": "Japanese government-backed startup Rapidus Corp. has fallen behind schedule on its high-stakes pledge to mass produce cutting-edge chips by March 2028 and may no longer be able to make that deadline."
+    },
+    {
+      "title": "The US DOJ sues Lyft for allegedly discriminating against riders with disabilities, seeking $53M in compensation; Lyft d",
+      "link": "https://www.techmeme.com/261109/p51#a261109p51",
+      "source": "Techmeme",
+      "date": "2026-11-10T04:10:01",
+      "description": "Kanishka Singh / Reuters: The US DOJ sues Lyft for allegedly discriminating against riders with disabilities, seeking $53M in compensation; Lyft disputes the allegations — The US Justice Department sued Lyft (LYFT.O) on Monday, alleging the ride-hailing services provider discriminated against passen",
+      "ai_summary": "Kanishka Singh / Reuters: The US DOJ sues Lyft for allegedly discriminating against riders with disabilities, seeking $53M in compensation; Lyft disputes the allegations — The US Justice Department sued Lyft (LYFT.O) on Monday, alleging the ride-hailing services provider discriminated against passen"
+    },
+    {
+      "title": "California voters reject Proposition 40, which would have imposed a one-time 5% tax on residents with a net worth above",
+      "link": "https://www.techmeme.com/261109/p50#a261109p50",
+      "source": "Techmeme",
+      "date": "2026-11-10T04:00:50",
+      "description": "Associated Press: California voters reject Proposition 40, which would have imposed a one-time 5% tax on residents with a net worth above $1B to mostly help fund health care — California voters have rejected a first-in-the-nation tax on the net worth of billionaires following a contentious ballot fi",
+      "ai_summary": "Associated Press: California voters reject Proposition 40, which would have imposed a one-time 5% tax on residents with a net worth above $1B to mostly help fund health care — California voters have rejected a first-in-the-nation tax on the net worth of billionaires following a contentious ballot fi"
+    },
+    {
+      "title": "Hong Kong Listings Raise 6-Year High of $51.9 Billion, Second Best Ever",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/hong-kong-listings-raise-6-year-high-of-51-9-billion-second-best-ever",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-10T03:57:15",
+      "description": "Hong Kong listing proceeds have climbed to the highest in six years after a fresh wave of offerings helped the market regain some of the momentum it had lost in recent months.",
+      "ai_summary": "Hong Kong listing proceeds have climbed to the highest in six years after a fresh wave of offerings helped the market regain some of the momentum it had lost in recent months."
+    },
+    {
+      "title": "Pulling the Lever in a Subway Problem",
+      "link": "https://www.lesswrong.com/posts/FQNywBApGMfDH7GEy/pulling-the-lever-in-a-subway-problem",
+      "source": "LessWrong",
+      "date": "2026-11-10T03:40:57",
+      "description": "Eleven years ago I was on the Red Line (not the section that's a trolley), and found myself in a variant of the classic moral dilemma. I wrote about it on Reddit at the time: Hi! I'm the person who pulled the brake. What I saw: The train starts pulling out of the station. Someone begins shouting tha",
+      "ai_summary": "Eleven years ago I was on the Red Line (not the section that's a trolley), and found myself in a variant of the classic moral dilemma. I wrote about it on Reddit at the time: Hi! I'm the person who pulled the brake. What I saw: The train starts pulling out of the station. Someone begins shouting tha"
+    },
+    {
+      "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
+      "link": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "source": "Hacker News",
+      "date": "2026-11-10T03:20:06",
+      "description": "Article URL: cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html Comments URL: news.ycombinator.com/item?id=50435660 Points: 23 # Comments: 0",
+      "ai_summary": "Article URL: cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html Comments URL: news.ycombinator.com/item?id=50435660 Points: 23 # Comments: 0"
+    },
+    {
+      "title": "Trump Media Q3: $409.7M profit fueled by gains on digital assets, vs. a Q3 2025 $54.8M loss, and sales of $3M, $1.8M fro",
+      "link": "https://www.techmeme.com/261109/p49#a261109p49",
+      "source": "Techmeme",
+      "date": "2026-11-10T03:00:34",
+      "description": "Elias Schisgall / Wall Street Journal: Trump Media Q3: $409.7M profit fueled by gains on digital assets, vs. a Q3 2025 $54.8M loss, and sales of $3M, $1.8M from subscriptions like Truth API, Truth+ — The parent of Truth Social reported a profit of $409.7 million in the third quarter — Trump Media &",
+      "ai_summary": "Elias Schisgall / Wall Street Journal: Trump Media Q3: $409.7M profit fueled by gains on digital assets, vs. a Q3 2025 $54.8M loss, and sales of $3M, $1.8M from subscriptions like Truth API, Truth+ — The parent of Truth Social reported a profit of $409.7 million in the third quarter — Trump Media &"
+    },
+    {
+      "title": "Citi's Rizvi Sees 100 Hires in China Over Next Years",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-10/citi-s-rizvi-sees-100-hires-in-china-over-next-years-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-10T02:52:50",
+      "description": "Kaleem Rizvi, Global Co-head of Corporate Banking at Citi, says the bank envisions hiring 100 bankers over the next several years after it won approval for its securities venture in China. He speaks with Stephen Engle on the sidelines of the Citi China Conference in Shanghai. (Source: Bloomberg)",
+      "ai_summary": "Kaleem Rizvi, Global Co-head of Corporate Banking at Citi, says the bank envisions hiring 100 bankers over the next several years after it won approval for its securities venture in China. He speaks with Stephen Engle on the sidelines of the Citi China Conference in Shanghai. (Source: Bloomberg)"
+    },
+    {
+      "title": "Chinese Trade Surplus Tops $1 Trillion for Second Time Ever",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/chinese-trade-surplus-surpasses-1-trillion-for-second-time-ever",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-10T02:40:43",
+      "description": "China’s trade surplus ballooned to just over $1 trillion for the year despite the biggest surge in imports since 2021, with exports growing faster than 35% for a second month.",
+      "ai_summary": "China’s trade surplus ballooned to just over $1 trillion for the year despite the biggest surge in imports since 2021, with exports growing faster than 35% for a second month."
+    },
+    {
+      "title": "Australia to Create AI Safety Regulator, Mandatory Rules",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/australia-to-create-ai-safety-regulator-mandatory-safety-rules",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-10T02:26:20",
+      "description": "Australia will create a new artificial-intelligence safety regulator that will have the power to impose “significant penalties” on companies that do the wrong thing, Prime Minister Anthony Albanese said Tuesday in Canberra.",
+      "ai_summary": "Australia will create a new artificial-intelligence safety regulator that will have the power to impose “significant penalties” on companies that do the wrong thing, Prime Minister Anthony Albanese said Tuesday in Canberra."
+    },
+    {
+      "title": "<!-- markdownlint-disable no-duplicate-he",
+      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-10T02:22:56",
+      "description": "Story from huggingface.co",
+      "ai_summary": "Story from huggingface.co"
+    },
+    {
+      "title": "OpenAI Backer Altimeter Targets More Than $3 Billion for Private Markets Funds",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/openai-backer-altimeter-targets-more-than-3-billion-for-private-markets-funds",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-10T01:46:11",
+      "description": "Altimeter Capital Management, a prominent OpenAI and Anthropic PBC investor, is raising a set of new funds for its private markets investment work.The firm is targeting a $2.5 billion new venture capital fund to back late-stage, pre-IPO companies, according to securities filings and a person familia",
+      "ai_summary": "Altimeter Capital Management, a prominent OpenAI and Anthropic PBC investor, is raising a set of new funds for its private markets investment work.The firm is targeting a $2.5 billion new venture capital fund to back late-stage, pre-IPO companies, according to securities filings and a person familia"
+    },
+    {
+      "title": "Lightcone Commons: Round 1 complete, Round 2 underway",
+      "link": "https://www.lesswrong.com/posts/3ASLq8ePNqkbeGqdj/lightcone-commons-round-1-complete-round-2-underway",
+      "source": "LessWrong",
+      "date": "2026-11-10T01:43:15",
+      "description": "Tl;dr:Lightcone Commons’ first funding round is complete! 17 evaluators made funding recommendations, including Zvi Mowshowitz, Scott Siskind and Eliezer Yudkowsky. 23 funders coordinated to grant $45.1M, and 147 projects received funding. Round two is open. Applications for round two close on Novem",
+      "ai_summary": "Tl;dr:Lightcone Commons’ first funding round is complete! 17 evaluators made funding recommendations, including Zvi Mowshowitz, Scott Siskind and Eliezer Yudkowsky. 23 funders coordinated to grant $45.1M, and 147 projects received funding. Round two is open. Applications for round two close on Novem"
+    },
+    {
+      "title": "The Western AI safety playbook doesn’t transfer to China",
+      "link": "https://www.lesswrong.com/posts/AcBzhiaTW9KnB4EBv/the-western-ai-safety-playbook-doesn-t-transfer-to-china-1",
+      "source": "LessWrong",
+      "date": "2026-11-10T01:42:12",
+      "description": "Crossposted from my blog.Last month, I spent two weeks in China talking with people about AI safety. I learned a lot and realized the biggest mistake might not be failing to help AI safety in China, but doing so in ways that could backfire. I also learned important context that I expect will be valu",
+      "ai_summary": "Crossposted from my blog.Last month, I spent two weeks in China talking with people about AI safety. I learned a lot and realized the biggest mistake might not be failing to help AI safety in China, but doing so in ways that could backfire. I also learned important context that I expect will be valu"
+    },
+    {
+      "title": "Filing: Anthropic now aims to raise up to $69.3B in its IPO (Reuters)",
+      "link": "https://www.techmeme.com/261109/p48#a261109p48",
+      "source": "Techmeme",
+      "date": "2026-11-10T01:41:39",
+      "description": "Reuters: Filing: Anthropic now aims to raise up to $69.3B in its IPO — Anthropic is aiming to raise as much as $69.3 billion in what could rank among the largest initial public offerings on record, according to a copy of a filing seen by Reuters on Monday.",
+      "ai_summary": "Reuters: Filing: Anthropic now aims to raise up to $69.3B in its IPO — Anthropic is aiming to raise as much as $69.3 billion in what could rank among the largest initial public offerings on record, according to a copy of a filing seen by Reuters on Monday."
+    },
+    {
+      "title": "Epistemic Sudden Death",
+      "link": "https://www.lesswrong.com/posts/ijt6YdwSNpcevbFJy/epistemic-sudden-death",
+      "source": "LessWrong",
+      "date": "2026-11-10T01:41:11",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "We need more transparency about alignment overfitting",
+      "link": "https://www.lesswrong.com/posts/JTB8JjQfmkHsJtBDs/we-need-more-transparency-about-alignment-overfitting",
+      "source": "LessWrong",
+      "date": "2026-11-10T01:39:20",
+      "description": "Currently, the public has very little insight about the robustness of alignment methods used by AGI companies. It’s possible that, when an AGI company notices some misaligned behavior (e.g. through an alignment evaluation, or through noticing real-world misbehavior), they conduct a principled invest",
+      "ai_summary": "Currently, the public has very little insight about the robustness of alignment methods used by AGI companies. It’s possible that, when an AGI company notices some misaligned behavior (e.g. through an alignment evaluation, or through noticing real-world misbehavior), they conduct a principled invest"
+    },
+    {
+      "title": "A Circularity at the Heart of Safety Assurance",
+      "link": "https://www.lesswrong.com/posts/HrftJvbRpNaAFeB2Q/a-circularity-at-the-heart-of-safety-assurance",
+      "source": "LessWrong",
+      "date": "2026-11-10T01:12:03",
+      "description": "A friend of yours says they've had a flash of insight. A manga they've been into lately has helped them understand something deep and fundamental about decision theory. You aren't yet clear on the details when they rush off to work on \"practical applications\", but before long they return with their",
+      "ai_summary": "A friend of yours says they've had a flash of insight. A manga they've been into lately has helped them understand something deep and fundamental about decision theory. You aren't yet clear on the details when they rush off to work on \"practical applications\", but before long they return with their"
+    },
+    {
+      "title": "The open AI-native stack on Kubernetes: From open models to distributed inference and agents",
+      "link": "https://cloud.google.com/blog/topics/developers-practitioners/the-open-ai-native-stack-on-kubernetes-from-open-models-to-distributed-inference-and-agents/",
+      "source": "Google Cloud",
+      "date": "2026-11-10T01:00:00",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "My Paranoid Coding Machine Setup",
+      "link": "https://www.lesswrong.com/posts/6wenbjFjj8293PEdW/my-paranoid-coding-machine-setup",
+      "source": "LessWrong",
+      "date": "2026-11-10T00:56:33",
+      "description": "The combination of running AI agents which can install and run anything with supply chain attacks / the Hackening has made me much more paranoid about my personal machine than I used to be. I've been slowly improving this, and finally moved all of my AI agents into a VM today. I'm sharing this to sh",
+      "ai_summary": "The combination of running AI agents which can install and run anything with supply chain attacks / the Hackening has made me much more paranoid about my personal machine than I used to be. I've been slowly improving this, and finally moved all of my AI agents into a VM today. I'm sharing this to sh"
+    },
+    {
+      "title": "\"Hardwired Pause\" should likely be your favorite (pause) plan.",
+      "link": "https://www.lesswrong.com/posts/jT272BNHFzgAR5u2m/hardwired-pause-should-likely-be-your-favorite-pause-plan",
+      "source": "LessWrong",
+      "date": "2026-11-10T00:48:54",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "NZ Inflation Expectations Are Worrying, RBNZ’s Conway Says",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/new-zealand-inflation-expectations-worrying-rbnz-s-conway-says",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-10T00:48:23",
+      "description": "New Zealand inflation expectations are above target and will be key for policymakers ahead of the December interest-rate decision, according to Reserve Bank Chief Economist Paul Conway.",
+      "ai_summary": "New Zealand inflation expectations are above target and will be key for policymakers ahead of the December interest-rate decision, according to Reserve Bank Chief Economist Paul Conway."
+    },
+    {
+      "title": "Blunt Banhammer Blocks Basic Bots Ballistically",
+      "link": "https://shkspr.mobi/blog/2026/11/blunt-banhammer-blocks-basic-bots-ballistically/",
+      "source": "Lobsters",
+      "date": "2026-11-10T00:48:20",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Would you press the button? The hard problem of alignment",
+      "link": "https://www.lesswrong.com/posts/KgQnkjtHRp6r2Br8L/would-you-press-the-button-the-hard-problem-of-alignment-1",
+      "source": "LessWrong",
+      "date": "2026-11-10T00:46:18",
+      "description": "There is a TL;DR at the end.The heaven button: You wake up one day and find a button in front of you, with a proof next to it. The proof says that pressing the button will kill everyone on the planet and send them all to heaven. Would you press it?It seems too good to be true. You think it must be a",
+      "ai_summary": "There is a TL;DR at the end.The heaven button: You wake up one day and find a button in front of you, with a proof next to it. The proof says that pressing the button will kill everyone on the planet and send them all to heaven. Would you press it?It seems too good to be true. You think it must be a"
+    },
+    {
+      "title": "BOJ Summary Suggests Good Chance of December Interest Rate Hike",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-10/boj-summary-suggests-good-chance-of-near-term-interest-rate-hike",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-10T00:29:44",
+      "description": "The Bank of Japan’s brief record of the latest policy meeting indicated many board members see a near-term interest rate hike as necessary, signaling there’s a good chance for a December move.",
+      "ai_summary": "The Bank of Japan’s brief record of the latest policy meeting indicated many board members see a near-term interest rate hike as necessary, signaling there’s a good chance for a December move."
+    },
+    {
+      "title": "David Ellison says AI could be the ‘biggest creative unlock in modern history’",
+      "link": "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai",
+      "source": "The Verge",
+      "date": "2026-11-10T00:28:49",
+      "description": "During Paramount Skydance's latest earnings call, CEO David Ellison said \"it's hard to imagine\" AI won't have a bigger impact on the film industry than CGI. In response to a question about the company's outlook for AI, Ellison said: \"I think when you zoom out and look at production, AI really has th",
+      "ai_summary": "During Paramount Skydance's latest earnings call, CEO David Ellison said \"it's hard to imagine\" AI won't have a bigger impact on the film industry than CGI. In response to a question about the company's outlook for AI, Ellison said: \"I think when you zoom out and look at production, AI really has th"
+    },
+    {
+      "title": "Datacenter Systems Spending To Go Through The Roof In 2027",
+      "link": "https://www.nextplatform.com/compute/2026/11/10/datacenter-systems-spending-to-go-through-the-roof-in-2027/5308636",
+      "source": "The Next Platform",
+      "date": "2026-11-10T00:28:14",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "Jensen Huang’s Troubles Leave the AI Industry Reeling",
+      "link": "https://www.wired.com/story/jensen-huangs-troubles-leaves-the-ai-industry-reeling/",
+      "source": "Wired",
+      "date": "2026-11-10T00:18:19",
+      "description": "With a big checkbook and sought-after chips, Nvidia’s CEO had his thumb on the world of AI. An extramarital affair with a suspected Chinese spy may put all of that at risk.",
+      "ai_summary": "With a big checkbook and sought-after chips, Nvidia’s CEO had his thumb on the world of AI. An extramarital affair with a suspected Chinese spy may put all of that at risk."
+    },
+    {
+      "title": "Take-Two reiterates FY 2027 outlook, says Q2 total net bookings fell 18% YoY to $1.6B, vs. $1.65B est., and NBA 2K27 mis",
+      "link": "https://www.techmeme.com/261109/p47#a261109p47",
+      "source": "Techmeme",
+      "date": "2026-11-10T00:05:01",
+      "description": "Jason Schreier / Bloomberg: Take-Two reiterates FY 2027 outlook, says Q2 total net bookings fell 18% YoY to $1.6B, vs. $1.65B est., and NBA 2K27 missed sales forecast partly due to GTA VI — The video-game publisher may have hurt one game's sales with another of its own games — Take-Two Interactive S",
+      "ai_summary": "Jason Schreier / Bloomberg: Take-Two reiterates FY 2027 outlook, says Q2 total net bookings fell 18% YoY to $1.6B, vs. $1.65B est., and NBA 2K27 missed sales forecast partly due to GTA VI — The video-game publisher may have hurt one game's sales with another of its own games — Take-Two Interactive S"
+    },
+    {
+      "title": "llm-anthropic 0.31",
+      "link": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+      "source": "Simon Willison",
+      "date": "2026-11-09T23:58:46",
+      "description": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic, so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm -m claude-fable-5.2 \"Generate an SVG of a",
+      "ai_summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic, so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm -m claude-fable-5.2 \"Generate an SVG of a"
+    },
+    {
+      "title": "Locating the source of a mysterious beep with Claude",
+      "link": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+      "source": "Simon Willison",
+      "date": "2026-11-09T23:57:21",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "Whose Side? A game where you audit models for secret loyalties",
+      "link": "https://www.lesswrong.com/posts/NTWRL3cK8gEP3eE2v/whose-side-a-game-where-you-audit-models-for-secret",
+      "source": "LessWrong",
+      "date": "2026-11-09T23:56:33",
+      "description": "Try the app here: whoseside.web.app. You can chat with a model and try to work out which who it secretly favours.With the recent Hugging Face attack, we're relying more and more on LLMs to audit the trails and safeguard the actions of other LLMs. That makes it vital to be sure our LLMs really are th",
+      "ai_summary": "Try the app here: whoseside.web.app. You can chat with a model and try to work out which who it secretly favours.With the recent Hugging Face attack, we're relying more and more on LLMs to audit the trails and safeguard the actions of other LLMs. That makes it vital to be sure our LLMs really are th"
+    },
+    {
+      "title": "What could China get from Jensen Huang?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang",
+      "source": "The Verge",
+      "date": "2026-11-09T23:51:58",
+      "description": "It's difficult to overstate Nvidia's power in today's AI landscape. The company's chips are the bedrock upon which advanced AI technology in the US is being built, and demand has consistently outpaced supply for years. Nvidia has also been an influential investor in a wide range of up-and-coming AI",
+      "ai_summary": "It's difficult to overstate Nvidia's power in today's AI landscape. The company's chips are the bedrock upon which advanced AI technology in the US is being built, and demand has consistently outpaced supply for years. Nvidia has also been an influential investor in a wide range of up-and-coming AI"
+    },
+    {
+      "title": "Here’s what Trump said he knew about Jensen Huang",
+      "link": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference",
+      "source": "The Verge",
+      "date": "2026-11-09T23:47:46",
+      "description": "President Trump held a White House press briefing earlier today and responded to several questions about his knowledge of Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. Huang said this weekend that he had been \"​​unfaithful\" to his wife, and the company has opened an investigation int",
+      "ai_summary": "President Trump held a White House press briefing earlier today and responded to several questions about his knowledge of Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. Huang said this weekend that he had been \"​​unfaithful\" to his wife, and the company has opened an investigation int"
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang's Affair With Alleged Spy Raises Succession Concerns",
+      "link": "https://www.bloomberg.com/news/features/2026-11-09/nvidia-ceo-jensen-huang-s-affair-with-alleged-spy-raises-succession-concerns",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T23:41:26",
+      "description": "The board is probing whether its CEO was targeted by a foreign agent and facing the risk of a future without its singular leader.",
+      "ai_summary": "The board is probing whether its CEO was targeted by a foreign agent and facing the risk of a future without its singular leader."
+    },
+    {
+      "title": "Tracking the Harm of DOGE Cuts",
+      "link": "https://www.clasp.org/doge-tracker/",
+      "source": "Hacker News",
+      "date": "2026-11-09T23:40:54",
+      "description": "Article URL: clasp.org/doge-tracker/ Comments URL: news.ycombinator.com/item?id=50433978 Points: 23 # Comments: 0",
+      "ai_summary": "Article URL: clasp.org/doge-tracker/ Comments URL: news.ycombinator.com/item?id=50433978 Points: 23 # Comments: 0"
+    },
+    {
+      "title": "A report by short seller Culper Research from May is resurfacing because it had flagged Jensen Huang's relationship with",
+      "link": "https://www.techmeme.com/261109/p46#a261109p46",
+      "source": "Techmeme",
+      "date": "2026-11-09T23:35:01",
+      "description": "Sarah Perez / TechCrunch: A report by short seller Culper Research from May is resurfacing because it had flagged Jensen Huang's relationship with Alice Huang as “uncomfortably close” — Six months before the Nvidia spy scandal emerged, the New York-based short seller firm Culper Research …",
+      "ai_summary": "Sarah Perez / TechCrunch: A report by short seller Culper Research from May is resurfacing because it had flagged Jensen Huang's relationship with Alice Huang as “uncomfortably close” — Six months before the Nvidia spy scandal emerged, the New York-based short seller firm Culper Research …"
+    },
+    {
+      "title": "Jensen Huang reportedly engaged a PR firm with a history of handling high-profile sex scandals a year ago",
+      "link": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T23:28:37",
+      "description": "The PR firm was enlisted shortly after an Oct. 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported.",
+      "ai_summary": "The PR firm was enlisted shortly after an Oct. 2025 New York Times report described Alice Huang's business dealings with Jensen Huang, Wired reported."
+    },
+    {
+      "title": "China Chipmakers to Debut in HK in Test of Tech Stock Demand",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/china-chipmakers-to-debut-in-hk-in-test-of-tech-stock-demand",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T23:25:31",
+      "description": "Chip suppliers Suzhou Denglin Technology Co. and Jiangsu Xinde Semiconductor Technology Co. are set to begin trading in Hong Kong on Tuesday after raising a combined $301 million in their initial public offerings, entering the market at a time of extreme volatility especially for technology stocks.",
+      "ai_summary": "Chip suppliers Suzhou Denglin Technology Co. and Jiangsu Xinde Semiconductor Technology Co. are set to begin trading in Hong Kong on Tuesday after raising a combined $301 million in their initial public offerings, entering the market at a time of extreme volatility especially for technology stocks."
+    },
+    {
+      "title": "The race to secure record-like information for domains",
+      "link": "https://alexsci.com/blog/the-race-to-secure-record-like-information-for-domains/",
+      "source": "Lobsters",
+      "date": "2026-11-09T23:25:03",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Comcast Job Cuts to Begin With Hundreds Let Go In Pennsylvania",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/comcast-job-cuts-to-begin-with-hundreds-let-go-in-pennsylvania",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T23:22:48",
+      "description": "Comcast Corp. is planning to cut more than 1,000 jobs in the company’s connectivity and platforms divisions as it prepares to separate the declining units from its faster-growing media and entertainment division.",
+      "ai_summary": "Comcast Corp. is planning to cut more than 1,000 jobs in the company’s connectivity and platforms divisions as it prepares to separate the declining units from its faster-growing media and entertainment division."
+    },
+    {
+      "title": "25% of People Have Avoidant Attachment (But It Can Be Healed!)",
+      "link": "https://www.lesswrong.com/posts/Rp6ajYLeTGyZJLmTZ/25-of-people-have-avoidant-attachment-but-it-can-be-healed",
+      "source": "LessWrong",
+      "date": "2026-11-09T23:19:25",
+      "description": "Relationships are hard, but having an avoidant attachment makes relationships a hell of a lot harder.Within attachment theory (which helps explain interpersonal bonding), it’s known that ~25% of the population uses avoidant attachment strategies to escape intimacy. Why? Because emotional intimacy an",
+      "ai_summary": "Relationships are hard, but having an avoidant attachment makes relationships a hell of a lot harder.Within attachment theory (which helps explain interpersonal bonding), it’s known that ~25% of the population uses avoidant attachment strategies to escape intimacy. Why? Because emotional intimacy an"
+    },
+    {
+      "title": "We have AI 2027. Where's Cyberpocalypse 2027?",
+      "link": "https://www.lesswrong.com/posts/c2cSExfpXEcQ9R2cd/we-have-ai-2027-where-s-cyberpocalypse-2027",
+      "source": "LessWrong",
+      "date": "2026-11-09T23:17:45",
+      "description": "AI scenario forecasting has a big blind spot: when AI is superhuman at hacking, what happens to the rest of society? And how does what happens to society affect AI?To the extent that scenarios like AI 2027 address it at all, they concentrate on how cyberwarfare directly impacts the labs, such as wit",
+      "ai_summary": "AI scenario forecasting has a big blind spot: when AI is superhuman at hacking, what happens to the rest of society? And how does what happens to society affect AI?To the extent that scenarios like AI 2027 address it at all, they concentrate on how cyberwarfare directly impacts the labs, such as wit"
+    },
+    {
+      "title": "The Holographic Entropy Bound",
+      "link": "https://www.lesswrong.com/posts/PCD6DgejzEuxKCnY5/the-holographic-entropy-bound",
+      "source": "LessWrong",
+      "date": "2026-11-09T23:14:25",
+      "description": "2.6.0 Here I'll briefly review some other aspects of physics that seem possibly important in supporting life and complexity, but which aren't quite as central to the main story I'm telling. This subsection is a bit of a grab bag.2.6.1 Time, Space, Locality2.6.1.1 Some rather obvious features of our",
+      "ai_summary": "2.6.0 Here I'll briefly review some other aspects of physics that seem possibly important in supporting life and complexity, but which aren't quite as central to the main story I'm telling. This subsection is a bit of a grab bag.2.6.1 Time, Space, Locality2.6.1.1 Some rather obvious features of our"
+    },
+    {
+      "title": "Fable 5.2 one-shotted my nephew's dream game",
+      "link": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+      "source": "Hacker News",
+      "date": "2026-11-09T23:08:13",
+      "description": "Article URL: notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game Comments URL: news.ycombinator.com/item?id=50433659 Points: 129 # Comments: 98",
+      "ai_summary": "Article URL: notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game Comments URL: news.ycombinator.com/item?id=50433659 Points: 129 # Comments: 98"
+    },
+    {
+      "title": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "source": "The Verge",
+      "date": "2026-11-09T23:07:59",
+      "description": "The leather-jacketed CEO of Nvidia, Jensen Huang, has acknowledged an affair with Megaspeed exec Alice Huang, spurring an investigation by his company and intense discussions worldwide. Recent reporting noted that since last year, US intelligence reports had identified Alice Huang (no relation) as n",
+      "ai_summary": "The leather-jacketed CEO of Nvidia, Jensen Huang, has acknowledged an affair with Megaspeed exec Alice Huang, spurring an investigation by his company and intense discussions worldwide. Recent reporting noted that since last year, US intelligence reports had identified Alice Huang (no relation) as n"
+    },
+    {
+      "title": "Apple is now offering additional AI access via one-time $50 \"intelligence usage packs\" when monthly usage caps are met,",
+      "link": "https://www.techmeme.com/261109/p45#a261109p45",
+      "source": "Techmeme",
+      "date": "2026-11-09T23:05:00",
+      "description": "Ryan Christoffel / 9to5Mac: Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly usage caps are met, starting in its Creator Studio apps — Apple has said it will eventually charge for expanded usage of select AI features. Now the first 'intelligence usa",
+      "ai_summary": "Ryan Christoffel / 9to5Mac: Apple is now offering additional AI access via one-time $50 “intelligence usage packs” when monthly usage caps are met, starting in its Creator Studio apps — Apple has said it will eventually charge for expanded usage of select AI features. Now the first 'intelligence usa"
+    },
+    {
+      "title": "Hotel giant Wyndham exposed customer data after app security lapse",
+      "link": "https://techcrunch.com/2026/11/09/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T23:03:46",
+      "description": "Exclusive: Wyndham left a hardcoded credential in its customer app, allowing anyone to access customer data. The hotel giant wouldn't say if it has the ability to check for any past unauthorized access.",
+      "ai_summary": "Exclusive: Wyndham left a hardcoded credential in its customer app, allowing anyone to access customer data. The hotel giant wouldn't say if it has the ability to check for any past unauthorized access."
+    },
+    {
+      "title": "Exact – a new cross platform UI framework by the Expo team",
+      "link": "https://github.com/expo/exact",
+      "source": "Hacker News",
+      "date": "2026-11-09T22:59:13",
+      "description": "Article URL: github.com/expo/exact Comments URL: news.ycombinator.com/item?id=50433541 Points: 6 # Comments: 0",
+      "ai_summary": "Article URL: github.com/expo/exact Comments URL: news.ycombinator.com/item?id=50433541 Points: 6 # Comments: 0"
+    },
+    {
+      "title": "Anthropic's model for the most demanding reasoning and long-horizon agentic work, at 20% less per token than Fable 5",
+      "link": "https://replicate.com/anthropic/claude-fable-5.2",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T22:59:11",
+      "description": "Story from replicate.com",
+      "ai_summary": "Story from replicate.com"
+    },
+    {
+      "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
+      "link": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T22:46:09",
+      "description": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
+      "ai_summary": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive."
+    },
+    {
+      "title": "Big Take: The Markets Fallout From the Huang Scandal",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-09/big-take-the-markets-fallout-from-the-huang-scandal-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T22:45:43",
+      "description": "The AI economy runs on Nvidia GPUs. Can it survive the explosive revelation of an affair between CEO Jensen Huang and an alleged Chinese spy? Bloomberg’s Sarah Frier joins Sarah Holder on the Big Take podcast to explain. (Source: Bloomberg)",
+      "ai_summary": "The AI economy runs on Nvidia GPUs. Can it survive the explosive revelation of an affair between CEO Jensen Huang and an alleged Chinese spy? Bloomberg’s Sarah Frier joins Sarah Holder on the Big Take podcast to explain. (Source: Bloomberg)"
+    },
+    {
+      "title": "Waymo Said It Fixed Its School Bus Problem. The US Government Says It Didn’t Work",
+      "link": "https://www.wired.com/story/waymo-school-bus-problem-the-us-government-says-it-didnt-work/",
+      "source": "Wired",
+      "date": "2026-11-09T22:40:10",
+      "description": "Last year, Waymo recalled its software after several of its autonomous cars drove around stopped buses. But the problems remained. Now the feds want to know more.",
+      "ai_summary": "Last year, Waymo recalled its software after several of its autonomous cars drove around stopped buses. But the problems remained. Now the feds want to know more."
+    },
+    {
+      "title": "Trump says the FBI is \"looking into\" Jensen Huang's affair, and the Nvidia CEO told him he \"had absolutely no idea that",
+      "link": "https://www.techmeme.com/261109/p44#a261109p44",
+      "source": "Techmeme",
+      "date": "2026-11-09T22:40:01",
+      "description": "Associated Press: Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy” — President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …",
+      "ai_summary": "Associated Press: Trump says the FBI is “looking into” Jensen Huang's affair, and the Nvidia CEO told him he “had absolutely no idea that the person in question was a spy” — President Donald Trump said Monday that Nvidia CEO Jensen Huang should not worry about the FBI looking …"
+    },
+    {
+      "title": "Morgan Stanley Wealth Mgmt. Head on Vinyl Equity Deal",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-09/morgan-stanley-wealth-mgmt-head-on-vinyl-equity-deal-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T22:31:46",
+      "description": "Morgan Stanley is acquiring fintech company Vinyl Equity to add its digital, cloud-based transfer-agent technology to the firm’s workplace business. Jed Finn, Morgan Stanley’s Head of Wealth Management, said transfer agents maintain the official record of stock ownership, and argued that bringing th",
+      "ai_summary": "Morgan Stanley is acquiring fintech company Vinyl Equity to add its digital, cloud-based transfer-agent technology to the firm’s workplace business. Jed Finn, Morgan Stanley’s Head of Wealth Management, said transfer agents maintain the official record of stock ownership, and argued that bringing th"
+    },
+    {
+      "title": "The race is on to sue Nvidia",
+      "link": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T22:23:42",
+      "description": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem.",
+      "ai_summary": "Nvidia’s stock slid more than 4% after its board opened an investigation into Jensen Huang’s relationship with a suspected Chinese spy, and one securities law expert says the company’s earlier insistence that it was all “normal” could turn into a very expensive problem."
+    },
+    {
+      "title": "A year after the 100% AI mandate nobody understands our code",
+      "link": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T22:19:12",
+      "description": "Story from reddit.com",
+      "ai_summary": "Story from reddit.com"
+    },
+    {
+      "title": "Open Thread 459",
+      "link": "https://www.astralcodexten.com/p/open-thread-459",
+      "source": "Astral Codex Ten",
+      "date": "2026-11-09T22:18:03",
+      "description": "...",
+      "ai_summary": "..."
+    },
+    {
+      "title": "The Home Depot Best Early Black Friday Deals (2026)",
+      "link": "https://www.wired.com/story/the-home-depot-early-black-friday-deals-nov-2026/",
+      "source": "Wired",
+      "date": "2026-11-09T22:15:00",
+      "description": "If you’re looking for a new appliance or vacuum, Home Depot’s sale is one you don’t want to miss.",
+      "ai_summary": "If you’re looking for a new appliance or vacuum, Home Depot’s sale is one you don’t want to miss."
+    },
+    {
+      "title": "We’re Asking an Appeals Court to Require a Warrant for ALPR Searches",
+      "link": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+      "source": "EFF Deeplinks",
+      "date": "2026-11-09T22:09:24",
+      "description": "Today, along with the ACLU, EFF filed an amicus brief in the Sixth Circuit court of appeals in United States v. Sturdivant, a case where police warrantlessly tracked a suspect’s movements using Automated License Plate Reader (ALPR) data. Our brief details the vast, interconnected network of ALPRs th",
+      "ai_summary": "Today, along with the ACLU, EFF filed an amicus brief in the Sixth Circuit court of appeals in United States v. Sturdivant, a case where police warrantlessly tracked a suspect’s movements using Automated License Plate Reader (ALPR) data. Our brief details the vast, interconnected network of ALPRs th"
+    },
+    {
+      "title": "Ross Gerber Sees 75% Chance Huang Remains Nvidia CEO",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-09/ross-gerber-sees-75-chance-huang-remains-nvidia-ceo-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T22:07:56",
+      "description": "Ross Gerber, co-founder, president and CEO of Gerber Kawasaki Wealth and Investment Management, reacts to the investigation into Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. He speaks on \"Bloomberg The Close.\" (Source: Bloomberg)",
+      "ai_summary": "Ross Gerber, co-founder, president and CEO of Gerber Kawasaki Wealth and Investment Management, reacts to the investigation into Nvidia CEO Jensen Huang's affair with an alleged Chinese spy. He speaks on \"Bloomberg The Close.\" (Source: Bloomberg)"
+    },
+    {
+      "title": "Stripe built a company-wide AI agent in one week",
+      "link": "https://www.langchain.com/blog/how-stripe-built-their-knowledge-ai-platform-on-deep-agents",
+      "source": "LangChain Blog",
+      "date": "2026-11-09T22:07:04",
+      "description": "Learn how Stripe built Kai, a company-wide AI agent on LangChain, LangGraph, and Deep Agents, reaching 5,000 users in roughly 4 weeks.",
+      "ai_summary": "Learn how Stripe built Kai, a company-wide AI agent on LangChain, LangGraph, and Deep Agents, reaching 5,000 users in roughly 4 weeks."
+    },
+    {
+      "title": "Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the wo",
+      "link": "https://www.techmeme.com/261109/p43#a261109p43",
+      "source": "Techmeme",
+      "date": "2026-11-09T22:00:35",
+      "description": "Semafor: Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company — Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the",
+      "ai_summary": "Semafor: Jensen Huang's affair shines a spotlight on Nvidia's weak board and opaque succession planning at what has become the world's most important company — Nvidia CEO Jensen Huang's spy scandal shines a spotlight on thin corporate governance and opaque succession planning at what has become the"
+    },
+    {
+      "title": "These WIRED-Tested Standing Desks Are Already on Sale for Black Friday",
+      "link": "https://www.wired.com/story/best-early-black-friday-deals-on-standing-desks-11-9-26/",
+      "source": "Wired",
+      "date": "2026-11-09T22:00:00",
+      "description": "Upgrade your workspace with discounts on WIRED-tested desks from Branch, Vari, FlexiSpot, and Uplift—plus a walking pad to keep things moving.",
+      "ai_summary": "Upgrade your workspace with discounts on WIRED-tested desks from Branch, Vari, FlexiSpot, and Uplift—plus a walking pad to keep things moving."
+    },
+    {
+      "title": "US Lawmakers Demand Details on Nvidia Amid Jensen Huang Scandal",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/us-lawmakers-demand-details-on-nvidia-amid-jensen-huang-scandal",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T21:57:43",
+      "description": "Nvidia Corp. Chief Executive Officer Jensen Huang’s affair with an alleged Chinese spy prompted bipartisan demands on Capitol Hill for more information as lawmakers rushed to assess the potential national security fallout from the scandal.",
+      "ai_summary": "Nvidia Corp. Chief Executive Officer Jensen Huang’s affair with an alleged Chinese spy prompted bipartisan demands on Capitol Hill for more information as lawmakers rushed to assess the potential national security fallout from the scandal."
+    },
+    {
+      "title": "TPUs",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "source": "Hacker News",
+      "date": "2026-11-09T21:56:57",
+      "description": "Article URL: blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/ Comments URL: news.ycombinator.com/item?id=50432831 Points: 122 # Comments: 16",
+      "ai_summary": "Article URL: blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/ Comments URL: news.ycombinator.com/item?id=50432831 Points: 122 # Comments: 16"
+    },
+    {
+      "title": "Towers of Agency",
+      "link": "https://www.lesswrong.com/posts/4pWh2mB4KtKTf5sHz/towers-of-agency",
+      "source": "LessWrong",
+      "date": "2026-11-09T21:51:50",
+      "description": "There is basically one reason to build a tower, and that’s access: There is something that is available higher up that is not available on the ground. Most commonly, that thing is either “empty space” or “information transmission”. A skyscraper can access more space than a shorter building, and so i",
+      "ai_summary": "There is basically one reason to build a tower, and that’s access: There is something that is available higher up that is not available on the ground. Most commonly, that thing is either “empty space” or “information transmission”. A skyscraper can access more space than a shorter building, and so i"
+    },
+    {
+      "title": "Colombia Seeks $15 Billion IMF Deal as Fiscal Pressure Mounts",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/colombia-seeks-15-billion-imf-deal-as-fiscal-pressure-mounts",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T21:47:30",
+      "description": "Colombia is negotiating to borrow around $15 billion from the International Monetary Fund as the government seeks to stabilize its strained finances, according to people familiar with the matter.",
+      "ai_summary": "Colombia is negotiating to borrow around $15 billion from the International Monetary Fund as the government seeks to stabilize its strained finances, according to people familiar with the matter."
+    },
+    {
+      "title": "Skydance Growing But Has a Lot of Work to Do, Ross Gerber Says",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-09/skydance-growing-but-has-work-to-do-ross-gerber-says-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T21:45:24",
+      "description": "Ross Gerber, co-founder, president and CEO of Gerber Kawasaki Wealth and Investment Management, reacts to Skydance's plan to release a streaming bundle that includes both the Paramount+ and HBO Max services early next year. He speaks on \"Bloomberg The Close.\" (Source: Bloomberg)",
+      "ai_summary": "Ross Gerber, co-founder, president and CEO of Gerber Kawasaki Wealth and Investment Management, reacts to Skydance's plan to release a streaming bundle that includes both the Paramount+ and HBO Max services early next year. He speaks on \"Bloomberg The Close.\" (Source: Bloomberg)"
+    },
+    {
+      "title": "MSI’s refurbished QD-OLED gaming monitor is on sale for under $300",
+      "link": "https://www.theverge.com/gadgets/1030262/msi-mag-272qp-qd-oled-x24-monitor-woot-deal-sale",
+      "source": "The Verge",
+      "date": "2026-11-09T21:43:41",
+      "description": "One of the best upgrades you can make to your PC gaming setup is an OLED monitor. Fortunately, MSI’s factory-reconditioned Mag 272QP X24 is on sale at Woot through November 18th with a 180-day manufacturer warranty for $290.99, which is more than $100 cheaper than the full MSRP of $399.99. MSI’s 27-",
+      "ai_summary": "One of the best upgrades you can make to your PC gaming setup is an OLED monitor. Fortunately, MSI’s factory-reconditioned Mag 272QP X24 is on sale at Woot through November 18th with a 180-day manufacturer warranty for $290.99, which is more than $100 cheaper than the full MSRP of $399.99. MSI’s 27-"
+    },
+    {
+      "title": "Uber Engineering Leader for Robotaxis, Delivery Network to Exit",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/uber-engineering-leader-for-robotaxis-delivery-network-to-exit",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T21:40:41",
+      "description": "A longtime Uber Technologies Inc. executive leading engineering efforts for robotaxi partnerships and core services for maps and memberships is leaving, adding to a string of recent executive departures at the ride-hailing giant.",
+      "ai_summary": "A longtime Uber Technologies Inc. executive leading engineering efforts for robotaxi partnerships and core services for maps and memberships is leaving, adding to a string of recent executive departures at the ride-hailing giant."
+    },
+    {
+      "title": "Why Fewer People Are Challenging Bad Patents",
+      "link": "https://www.eff.org/deeplinks/2026/11/why-fewer-people-are-challenging-bad-patents",
+      "source": "EFF Deeplinks",
+      "date": "2026-11-09T21:40:14",
+      "description": "The number of petitions being filed at the Patent Trial and Appeal Board (PTAB) has collapsed. That’s not reason for celebration. The PTAB is an important line of defense against low-quality software patents being used in lawsuits against people and companies. The drop didn’t happen because suddenly",
+      "ai_summary": "The number of petitions being filed at the Patent Trial and Appeal Board (PTAB) has collapsed. That’s not reason for celebration. The PTAB is an important line of defense against low-quality software patents being used in lawsuits against people and companies. The drop didn’t happen because suddenly"
+    },
+    {
+      "title": "AMD Surges 13% as Wall Street Revives AI Chip Trade | Closing Bell",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-09/amd-surges-as-ai-chip-trade-returns-closing-bell-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T21:20:45",
+      "description": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Vonnie Quinn, Scarlet Fu, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+      "ai_summary": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Vonnie Quinn, Scarlet Fu, Carol Massar and Tim Stenovec. (Source: Bloomberg)"
+    },
+    {
+      "title": "Context Engineering (Agent Memory) for AI Agents Starts with Retrieval",
+      "link": "https://www.langchain.com/blog/context-engineering-starts-with-retrieval",
+      "source": "LangChain Blog",
+      "date": "2026-11-09T21:20:38",
+      "description": "Agents waste time and context on clumsy searches, oversized results and stale data. Learn the retrieval techniques LangChain's Deep Agents harness uses to get the right context in.",
+      "ai_summary": "Agents waste time and context on clumsy searches, oversized results and stale data. Learn the retrieval techniques LangChain's Deep Agents harness uses to get the right context in."
+    },
+    {
+      "title": "Take-Two’s ‘NBA 2K’ Sales Miss Expectations Due to ‘Grand Theft Auto VI’",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/take-two-s-nba-2k-sales-miss-expectations-due-to-grand-theft-auto-vi",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T21:15:18",
+      "description": "The video-game publisher may have hurt one game’s sales with another of its own games",
+      "ai_summary": "The video-game publisher may have hurt one game’s sales with another of its own games"
+    },
+    {
+      "title": "AI infrastructure provider Fireworks says hackers accessed some customers' datasets, incomplete model weights, and billi",
+      "link": "https://www.techmeme.com/261109/p42#a261109p42",
+      "source": "Techmeme",
+      "date": "2026-11-09T21:15:14",
+      "description": "Anna Tong / Forbes: AI infrastructure provider Fireworks says hackers accessed some customers' datasets, incomplete model weights, and billing information over the past month — Two customers told Forbes they had already substantially moved their business off Fireworks' systems, with one describing a",
+      "ai_summary": "Anna Tong / Forbes: AI infrastructure provider Fireworks says hackers accessed some customers' datasets, incomplete model weights, and billing information over the past month — Two customers told Forbes they had already substantially moved their business off Fireworks' systems, with one describing a"
+    },
+    {
+      "title": "Don't rely on EV, especially if you only have one life",
+      "link": "https://www.lesswrong.com/posts/qJgpv3PM83W6WwwKJ/don-t-rely-on-ev-especially-if-you-only-have-one-life",
+      "source": "LessWrong",
+      "date": "2026-11-09T21:14:08",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "The global pledge to use AI for climate good is a cruel joke",
+      "link": "https://www.theverge.com/science/1030252/ai-data-center-climate-pledge-united-nations-cop31",
+      "source": "The Verge",
+      "date": "2026-11-09T21:13:16",
+      "description": "At this point, reading through the latest splashy pledge to use AI for the good of the environment feels like downing a nonalcoholic beer. Admittedly, I'm suspicious from the onset. How can this be good? But I love beer and our planet enough to give it a whirl - and hey, why not try a […]",
+      "ai_summary": "At this point, reading through the latest splashy pledge to use AI for the good of the environment feels like downing a nonalcoholic beer. Admittedly, I'm suspicious from the onset. How can this be good? But I love beer and our planet enough to give it a whirl - and hey, why not try a […]"
+    },
+    {
+      "title": "Supply chain attack on Qubole customers",
+      "link": "https://sentra.io/blog/breaches/inside-the-qubole-supply-chain-attack",
+      "source": "Hacker News",
+      "date": "2026-11-09T21:07:26",
+      "description": "Article URL: sentra.io/blog/breaches/inside-the-qubole-supply-chain-attack Comments URL: news.ycombinator.com/item?id=50432147 Points: 7 # Comments: 0",
+      "ai_summary": "Article URL: sentra.io/blog/breaches/inside-the-qubole-supply-chain-attack Comments URL: news.ycombinator.com/item?id=50432147 Points: 7 # Comments: 0"
+    },
+    {
+      "title": "SpaceX plans a gas-fired power plant and super-compute facility in Starbase, TX, with ~$24B of investment for initial ph",
+      "link": "https://www.techmeme.com/261109/p41#a261109p41",
+      "source": "Techmeme",
+      "date": "2026-11-09T21:00:48",
+      "description": "Bloomberg: SpaceX plans a gas-fired power plant and super-compute facility in Starbase, TX, with ~$24B of investment for initial phases, per a public hearing notice — SpaceX plans to construct, own and operate a gas-fired power plant and super-compute facility at its company town in Starbase, Texas",
+      "ai_summary": "Bloomberg: SpaceX plans a gas-fired power plant and super-compute facility in Starbase, TX, with ~$24B of investment for initial phases, per a public hearing notice — SpaceX plans to construct, own and operate a gas-fired power plant and super-compute facility at its company town in Starbase, Texas"
+    },
+    {
+      "title": "Takaichi’s Hunt for New Cash to Fund Spending Harbors Risks",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/takaichi-s-hunt-for-new-cash-to-fund-spending-harbors-risks",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T21:00:00",
+      "description": "Japanese Prime Minister Sanae Takaichi is on the hunt for new tools to help implement her ambitious economic agenda, but shifting the rules to unlock more cash to fund it could bring fresh risks.",
+      "ai_summary": "Japanese Prime Minister Sanae Takaichi is on the hunt for new tools to help implement her ambitious economic agenda, but shifting the rules to unlock more cash to fund it could bring fresh risks."
+    },
+    {
+      "title": "This is an uncensored version of Qwen/Qwen3.",
+      "link": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T20:58:42",
+      "description": "Story from huggingface.co",
+      "ai_summary": "Story from huggingface.co"
+    },
+    {
+      "title": "Fervo now has $12B in orders for its geothermal power tech",
+      "link": "https://techcrunch.com/2026/11/09/fervo-now-has-12b-in-orders-for-its-geothermal-power-tech/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T20:55:34",
+      "description": "Geothermal company Fervo is targeting natural gas as it brings down geothermal drilling costs at its 8.4 GW resource in Utah.",
+      "ai_summary": "Geothermal company Fervo is targeting natural gas as it brings down geothermal drilling costs at its 8.4 GW resource in Utah."
+    },
+    {
+      "title": "The 9 Best TV Shows to Stream This Month (November 2026)",
+      "link": "https://www.wired.com/story/the-9-best-shows-to-stream-right-now/",
+      "source": "Wired",
+      "date": "2026-11-09T20:47:28",
+      "description": "Black Doves, The Lord of the Rings: The Rings of Power, and Blade Runner 2099 are just a few of the shows you should be watching right now.",
+      "ai_summary": "Black Doves, The Lord of the Rings: The Rings of Power, and Blade Runner 2099 are just a few of the shows you should be watching right now."
+    },
+    {
+      "title": "Nvidia-Backed Fireworks AI Notifies Customers of Its Second Hack in Weeks",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-backed-fireworks-ai-notifies-customers-of-its-second-hack-in-weeks",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T20:46:58",
+      "description": "Fireworks AI, a popular startup that helps companies run artificial intelligence models, notified customers on Monday of a security breach in which their data was accessed, its second known hack in a matter of weeks.",
+      "ai_summary": "Fireworks AI, a popular startup that helps companies run artificial intelligence models, notified customers on Monday of a security breach in which their data was accessed, its second known hack in a matter of weeks."
+    },
+    {
+      "title": "Dad Asked 6-Year-Old Daughter if ‘She Had the Gun’ Before He Left Her in Line for Pokémon Cards",
+      "link": "https://www.404media.co/dad-asked-6-year-old-daughter-if-she-had-the-gun-before-he-left-her-in-line-for-pokemon-cards/",
+      "source": "404 Media",
+      "date": "2026-11-09T20:42:34",
+      "description": "Police arrested a man in South Carolina after he left his daughter asleep in a Target parking lot so he could keep his place in line.",
+      "ai_summary": "Police arrested a man in South Carolina after he left his daughter asleep in a Target parking lot so he could keep his place in line."
+    },
+    {
+      "title": "95% S&P 500, 5% Bitcoin in New Franklin ETF: Drilldown",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-09/95-s-p-500-5-bitcoin-in-new-franklin-etf-drilldown-video",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T20:19:11",
+      "description": "Dina Ting, head of index investments at Franklin Templeton, joins Scarlet Fu and Eric Balchunas on \"Bloomberg ETF IQ.\" They discuss Franklin US Equity Bitcoin DRIP Index ETF (ticker: FBEQ) and Franklin US Innovation Bitcoin DRIP Index ETF (ticker: FIBT). (Source: Bloomberg)",
+      "ai_summary": "Dina Ting, head of index investments at Franklin Templeton, joins Scarlet Fu and Eric Balchunas on \"Bloomberg ETF IQ.\" They discuss Franklin US Equity Bitcoin DRIP Index ETF (ticker: FBEQ) and Franklin US Innovation Bitcoin DRIP Index ETF (ticker: FIBT). (Source: Bloomberg)"
+    },
+    {
+      "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
+      "link": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T20:09:06",
+      "description": "The Nvidia CEO also pulled out of an Anthropic event earlier.",
+      "ai_summary": "The Nvidia CEO also pulled out of an Anthropic event earlier."
+    },
+    {
+      "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+      "link": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "source": "Hacker News",
+      "date": "2026-11-09T20:04:55",
+      "description": "Article URL: artificialanalysis.ai/models/claude-fable-5-2 Comments URL: news.ycombinator.com/item?id=50431144 Points: 93 # Comments: 52",
+      "ai_summary": "Article URL: artificialanalysis.ai/models/claude-fable-5-2 Comments URL: news.ycombinator.com/item?id=50431144 Points: 93 # Comments: 52"
+    },
+    {
+      "title": "Anthropic prices Fable 5.2 and Mythos 5.2 at $8/1M input and $40/1M output tokens, down 20% from 5.1; fast mode costs $1",
+      "link": "https://www.techmeme.com/261109/p40#a261109p40",
+      "source": "Techmeme",
+      "date": "2026-11-09T20:00:51",
+      "description": "Frederic Lardinois / The New Stack: Anthropic prices Fable 5.2 and Mythos 5.2 at $8/1M input and $40/1M output tokens, down 20% from 5.1; fast mode costs $16/1M input and $80/1M output tokens — On Monday, Anthropic launched Claude Fable 5.2 and Mythos 5.2, the latest versions of its duo of flagship",
+      "ai_summary": "Frederic Lardinois / The New Stack: Anthropic prices Fable 5.2 and Mythos 5.2 at $8/1M input and $40/1M output tokens, down 20% from 5.1; fast mode costs $16/1M input and $80/1M output tokens — On Monday, Anthropic launched Claude Fable 5.2 and Mythos 5.2, the latest versions of its duo of flagship"
+    },
+    {
+      "title": "USPS now offers official ZIP Code boundary polygons",
+      "link": "https://postalpro.usps.com/zcb",
+      "source": "Hacker News",
+      "date": "2026-11-09T19:58:59",
+      "description": "Article URL: postalpro.usps.com/zcb Comments URL: news.ycombinator.com/item?id=50431058 Points: 210 # Comments: 94",
+      "ai_summary": "Article URL: postalpro.usps.com/zcb Comments URL: news.ycombinator.com/item?id=50431058 Points: 210 # Comments: 94"
+    },
+    {
+      "title": "Parking-app convenience fees in 312 U.S. cities (median $0.35 per session)",
+      "link": "https://parkgraph.com/parking-app-fees",
+      "source": "Hacker News",
+      "date": "2026-11-09T19:55:53",
+      "description": "Article URL: parkgraph.com/parking-app-fees Comments URL: news.ycombinator.com/item?id=50430991 Points: 11 # Comments: 2",
+      "ai_summary": "Article URL: parkgraph.com/parking-app-fees Comments URL: news.ycombinator.com/item?id=50430991 Points: 11 # Comments: 2"
+    },
+    {
+      "title": "The backlash about data centers might really just be about electricity",
+      "link": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+      "source": "MIT Tech Review",
+      "date": "2026-11-09T19:35:33",
+      "description": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It",
+      "ai_summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. As voters went to the polls across the US last week, I was in Ashburn, Virginia, part of what’s known as Data Center Alley—the world’s largest data center hub. It"
+    },
+    {
+      "title": "CUI – Native UI components for C",
+      "link": "https://yappologistic.github.io/CUI/",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T19:35:16",
+      "description": "Story from yappologistic.github.io",
+      "ai_summary": "Story from yappologistic.github.io"
+    },
+    {
+      "title": "Iran was behind cyber-attack on French supermarket freezers, Paris says",
+      "link": "https://www.theguardian.com/world/2026/nov/09/france-blames-irans-revolutionary-guards-for-cyber-attacks-on-supermarket-fridges",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T19:33:09",
+      "description": "Story from theguardian.com",
+      "ai_summary": "Story from theguardian.com"
+    },
+    {
+      "title": "Anthropic says during prerelease testing Mythos 5.2 and Fable 5.2 formalized the proof of Fermat's Last Theorem and solv",
+      "link": "https://www.techmeme.com/261109/p39#a261109p39",
+      "source": "Techmeme",
+      "date": "2026-11-09T19:15:01",
+      "description": "Jay Peters / The Verge: Anthropic says during prerelease testing Mythos 5.2 and Fable 5.2 formalized the proof of Fermat's Last Theorem and solved two open black hole physics problems — Claude Fable 5.2 is designed to take on big technical challenges, and it's available today.",
+      "ai_summary": "Jay Peters / The Verge: Anthropic says during prerelease testing Mythos 5.2 and Fable 5.2 formalized the proof of Fermat's Last Theorem and solved two open black hole physics problems — Claude Fable 5.2 is designed to take on big technical challenges, and it's available today."
+    },
+    {
+      "title": "Claude Fable 5.2 launch offers",
+      "link": "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers",
+      "source": "Hacker News",
+      "date": "2026-11-09T19:12:16",
+      "description": "Article URL: support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers Comments URL: news.ycombinator.com/item?id=50430176 Points: 9 # Comments: 2",
+      "ai_summary": "Article URL: support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers Comments URL: news.ycombinator.com/item?id=50430176 Points: 9 # Comments: 2"
+    },
+    {
+      "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+      "link": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/",
+      "source": "NVIDIA Developer Blog",
+      "date": "2026-11-09T19:09:32",
+      "description": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a...",
+      "ai_summary": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a..."
+    },
+    {
+      "title": "BLS Will Not Publish 12-Month CPI, Core CPI Figures For October",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/bls-will-not-publish-12-month-cpi-core-cpi-figures-for-october",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T19:05:51",
+      "description": "The closely watched consumer price index report will be missing some key numbers this week: the 12-month percent change.",
+      "ai_summary": "The closely watched consumer price index report will be missing some key numbers this week: the 12-month percent change."
+    },
+    {
+      "title": "Fable 5.2 and Jagged AGI",
+      "link": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+      "source": "One Useful Thing",
+      "date": "2026-11-09T19:04:26",
+      "description": "General, often expert, and sometimes jagged",
+      "ai_summary": "General, often expert, and sometimes jagged"
+    },
+    {
+      "title": "Anthropic releases Mythos 5.2 and Fable 5.2, saying they are \"best for the most ambitious, open-ended technical work\", f",
+      "link": "https://www.techmeme.com/261109/p38#a261109p38",
+      "source": "Techmeme",
+      "date": "2026-11-09T19:02:08",
+      "description": "Anthropic: Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, for $8/1M input and $40/1M output tokens — We've upgraded Claude Fable and Claude Mythos—models that are designed to tackle the most daunting technical challenges.",
+      "ai_summary": "Anthropic: Anthropic releases Mythos 5.2 and Fable 5.2, saying they are “best for the most ambitious, open-ended technical work”, for $8/1M input and $40/1M output tokens — We've upgraded Claude Fable and Claude Mythos—models that are designed to tackle the most daunting technical challenges."
+    },
+    {
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "source": "OpenAI",
+      "date": "2026-11-09T19:00:00",
+      "description": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "ai_summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships."
+    },
+    {
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "HN Best",
+      "date": "2026-11-09T18:56:29",
+      "description": "Article URL: anthropic.com/claude-fable-and-mythos-5-2 Comments URL: news.ycombinator.com/item?id=50429906 Points: 969 # Comments: 6",
+      "ai_summary": "Article URL: anthropic.com/claude-fable-and-mythos-5-2 Comments URL: news.ycombinator.com/item?id=50429906 Points: 969 # Comments: 6"
+    },
+    {
+      "title": "Show HN: Someone Was Here – Find out who used your Mac while you were away",
+      "link": "https://someonewashere.app/",
+      "source": "Hacker News",
+      "date": "2026-11-09T18:50:56",
+      "description": "Many thanks to my ex for inspiring my new MacOS app, Someone Was Here.It takes a photo of whoever uses your Mac while you're away, whether you left it unlocked or they know your password, and sends their photo to your iPhone if the face isn't yours.I built Someone Was Here as a menu bar app making u",
+      "ai_summary": "Many thanks to my ex for inspiring my new MacOS app, Someone Was Here.It takes a photo of whoever uses your Mac while you're away, whether you left it unlocked or they know your password, and sends their photo to your iPhone if the face isn't yours.I built Someone Was Here as a menu bar app making u"
+    },
+    {
+      "title": "Mavria, which aims to build modular data centers that can be shipped by trucks, raised $130M across pre-seed and seed ro",
+      "link": "https://www.techmeme.com/261109/p37#a261109p37",
+      "source": "Techmeme",
+      "date": "2026-11-09T18:50:03",
+      "description": "Jennifer Hiller / Wall Street Journal: Mavria, which aims to build modular data centers that can be shipped by trucks, raised $130M across pre-seed and seed rounds at a $1B valuation led by Paradigm — Mavria has raised money at a $1 billion valuation to build modular data centers that can be shipped",
+      "ai_summary": "Jennifer Hiller / Wall Street Journal: Mavria, which aims to build modular data centers that can be shipped by trucks, raised $130M across pre-seed and seed rounds at a $1B valuation led by Paradigm — Mavria has raised money at a $1 billion valuation to build modular data centers that can be shipped"
+    },
+    {
+      "title": "E-means: Outperforming k-means in one-tenth the epochs",
+      "link": "https://e-means.github.io/",
+      "source": "HN Best",
+      "date": "2026-11-09T18:45:43",
+      "description": "Article URL: e-means.github.io/ Comments URL: news.ycombinator.com/item?id=50429734 Points: 338 # Comments: 29",
+      "ai_summary": "Article URL: e-means.github.io/ Comments URL: news.ycombinator.com/item?id=50429734 Points: 338 # Comments: 29"
+    },
+    {
+      "title": "Microsoft are rejecting your mail",
+      "link": "https://www.mythic-beasts.com/blog/2026/11/09/microsoft-are-rejecting-your-mail/",
+      "source": "Lobsters",
+      "date": "2026-11-09T18:36:47",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Sure mate, buy me a bloody coffee",
+      "link": "https://peateasea.de/sure-mate-buy-me-a-bloody-coffee/",
+      "source": "Lobsters",
+      "date": "2026-11-09T18:35:57",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Elliptic: hackers behind the $6.3B Binance heist created at least six memecoins on the NEAR blockchain network to launde",
+      "link": "https://www.techmeme.com/261109/p36#a261109p36",
+      "source": "Techmeme",
+      "date": "2026-11-09T18:35:01",
+      "description": "Emily Nicolle / Bloomberg: Elliptic: hackers behind the $6.3B Binance heist created at least six memecoins on the NEAR blockchain network to launder about $430,000 of stolen funds — The hackers who stole $6.3 billion from Binance Holdings Ltd. in crypto's biggest ever heist have turned to one of the",
+      "ai_summary": "Emily Nicolle / Bloomberg: Elliptic: hackers behind the $6.3B Binance heist created at least six memecoins on the NEAR blockchain network to launder about $430,000 of stolen funds — The hackers who stole $6.3 billion from Binance Holdings Ltd. in crypto's biggest ever heist have turned to one of the"
+    },
+    {
+      "title": "Iterating Towards LLM Reliability with Evaluation Driven Development",
+      "link": "https://www.langchain.com/blog/iterating-towards-llm-reliability-with-evaluation-driven-development",
+      "source": "LangChain Blog",
+      "date": "2026-11-09T18:31:27",
+      "description": "Dosu uses evaluation driven development and LangSmith to build reliable LLM products at scale, monitor production performance, and iterate with confidence.",
+      "ai_summary": "Dosu uses evaluation driven development and LangSmith to build reliable LLM products at scale, monitor production performance, and iterate with confidence."
+    },
+    {
+      "title": "Promptim: an experimental library for prompt optimization",
+      "link": "https://www.langchain.com/blog/promptim",
+      "source": "LangChain Blog",
+      "date": "2026-11-09T18:30:44",
+      "description": "Automate prompt engineering with Promptim's optimization library. Save time, improve AI performance, and switch models faster.",
+      "ai_summary": "Automate prompt engineering with Promptim's optimization library. Save time, improve AI performance, and switch models faster."
+    },
+    {
+      "title": "LangSmith BYOC on AWS is generally available",
+      "link": "https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws",
+      "source": "LangChain Blog",
+      "date": "2026-11-09T18:30:23",
+      "description": "LangSmith Bring Your Own Cloud is now generally available on AWS, giving Enterprise teams managed observability, evaluation, and deployment inside their own VPC.",
+      "ai_summary": "LangSmith Bring Your Own Cloud is now generally available on AWS, giving Enterprise teams managed observability, evaluation, and deployment inside their own VPC."
+    },
+    {
+      "title": "Too many men suffering in silence, national health report finds",
+      "link": "https://www.westcentralonline.com/articles/too-many-men-suffering-in-silence-national-health-report-finds",
+      "source": "HN Best",
+      "date": "2026-11-09T18:27:58",
+      "description": "Article URL: westcentralonline.com/articles/too-many-men-suffering-in-silence-national-health-report-finds Comments URL: news.ycombinator.com/item?id=50429475 Points: 327 # Comments: 514",
+      "ai_summary": "Article URL: westcentralonline.com/articles/too-many-men-suffering-in-silence-national-health-report-finds Comments URL: news.ycombinator.com/item?id=50429475 Points: 327 # Comments: 514"
+    },
+    {
+      "title": "Google Gemini routes personal Drive files and emails to human annotators",
+      "link": "https://github.com/thisisme6598/gemini_files/",
+      "source": "Hacker News",
+      "date": "2026-11-09T18:24:38",
+      "description": "Article URL: github.com/thisisme6598/gemini_files/ Comments URL: news.ycombinator.com/item?id=50429426 Points: 115 # Comments: 22",
+      "ai_summary": "Article URL: github.com/thisisme6598/gemini_files/ Comments URL: news.ycombinator.com/item?id=50429426 Points: 115 # Comments: 22"
+    },
+    {
+      "title": "Measured on **2026-09-24** with H200 BF16 inference and strict encoding.",
+      "link": "https://huggingface.co/SupersonicLabs/Julia-1",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T18:23:05",
+      "description": "Story from huggingface.co",
+      "ai_summary": "Story from huggingface.co"
+    },
+    {
+      "title": "Roboflow Serverless vs. Self-Hosted Inference: What a 90-Second Traffic Spike Does to One GPU Server",
+      "link": "https://roboflow.com/blog/roboflow-serverless-vs-self-hosted-inference-what-a-90-second-traffic-spike-does-to-one-gpu-server",
+      "source": "Roboflow",
+      "date": "2026-11-09T18:16:06",
+      "description": "Sizing GPUs for the traffic you expect works until traffic does something you didn’t expect. In our load test, a short burst left one GPU server timing out even after traffic returned to normal, while Roboflow Serverless kept up. Here’s what went wrong, and why autoscaling can’t add a GPU in time.",
+      "ai_summary": "Sizing GPUs for the traffic you expect works until traffic does something you didn’t expect. In our load test, a short burst left one GPU server timing out even after traffic returned to normal, while Roboflow Serverless kept up. Here’s what went wrong, and why autoscaling can’t add a GPU in time."
+    },
+    {
+      "title": "Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per do",
+      "link": "https://www.techmeme.com/261109/p35#a261109p35",
+      "source": "Techmeme",
+      "date": "2026-11-09T18:15:00",
+      "description": "Russell Brandom / TechCrunch: Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna — Meta Superintelligence Lab released a new AI model on Monday called Muse Ember, the lab's lightest and most cost-",
+      "ai_summary": "Russell Brandom / TechCrunch: Meta releases Muse Ember, its smallest and most cost-efficient AI model yet, saying it delivers more intelligence per dollar than Haiku 5.5 and GPT-6 Luna — Meta Superintelligence Lab released a new AI model on Monday called Muse Ember, the lab's lightest and most cost-"
+    },
+    {
+      "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
+      "link": "https://github.com/Dodaios/ste80-humanizer",
+      "source": "Hacker News",
+      "date": "2026-11-09T18:05:44",
+      "description": "Article URL: github.com/Dodaios/ste80-humanizer Comments URL: news.ycombinator.com/item?id=50429144 Points: 57 # Comments: 15",
+      "ai_summary": "Article URL: github.com/Dodaios/ste80-humanizer Comments URL: news.ycombinator.com/item?id=50429144 Points: 57 # Comments: 15"
+    },
+    {
+      "title": "**Follow me on X @BennyDaBall_OG !** **Want to support my work? Buy me a coffee on Ko-fi !** HyperFlow H3 Flash running",
+      "link": "https://huggingface.co/BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI",
+      "source": "LAXIMA AI Signal",
+      "date": "2026-11-09T17:56:17",
+      "description": "Story from huggingface.co",
+      "ai_summary": "Story from huggingface.co"
+    },
+    {
+      "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/",
+      "source": "AWS Blog",
+      "date": "2026-11-09T17:55:26",
+      "description": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source stays writable except f",
+      "ai_summary": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source stays writable except f"
+    },
+    {
+      "title": "When will this stop? The Raspberry Pi 5 16GB SBC now sells for $385",
+      "link": "https://www.cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/",
+      "source": "HN Best",
+      "date": "2026-11-09T17:42:55",
+      "description": "Article URL: cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/ Comments URL: news.ycombinator.com/item?id=50428801 Points: 299 # Comments: 269",
+      "ai_summary": "Article URL: cnx-software.com/2026/11/03/when-will-this-stop-the-raspberry-pi-5-16gb-sbc-now-sells-for-385/ Comments URL: news.ycombinator.com/item?id=50428801 Points: 299 # Comments: 269"
+    },
+    {
+      "title": "Going back two years on Hacker News is like entering another, better universe",
+      "link": "https://news.ycombinator.com/front?day=2024-11-08",
+      "source": "HN Best",
+      "date": "2026-11-09T17:36:20",
+      "description": "Article URL: news.ycombinator.com/front?day=2024-11-08 Comments URL: news.ycombinator.com/item?id=50428724 Points: 314 # Comments: 187",
+      "ai_summary": "Article URL: news.ycombinator.com/front?day=2024-11-08 Comments URL: news.ycombinator.com/item?id=50428724 Points: 314 # Comments: 187"
+    },
+    {
+      "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+      "link": "https://latent.space/p/handshake/",
+      "source": "Latent Space",
+      "date": "2026-11-09T17:15:53",
+      "description": "Handshake went from launch to $1B in one year pushing the envelope of specialized data for frontier labs. Our first deep dive into a data lab with specific examples across Finance, Bio, and Alignment",
+      "ai_summary": "Handshake went from launch to $1B in one year pushing the envelope of specialized data for frontier labs. Our first deep dive into a data lab with specific examples across Finance, Bio, and Alignment"
+    },
+    {
+      "title": "Fed’s Barkin Says Policy Direction Clear, Needs Careful Pace",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/fed-s-barkin-says-policy-direction-clear-but-needs-careful-pace",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T17:06:06",
+      "description": "Federal Reserve Bank of Richmond President Tom Barkin signaled robust demand and stubbornly high inflation mean interest rates will need to go higher, though he cautioned that any hikes will need to be done at a careful pace.",
+      "ai_summary": "Federal Reserve Bank of Richmond President Tom Barkin signaled robust demand and stubbornly high inflation mean interest rates will need to go higher, though he cautioned that any hikes will need to be done at a careful pace."
+    },
+    {
+      "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+      "source": "MIT Tech Review",
+      "date": "2026-11-09T17:05:43",
+      "description": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy. I spoke with Wiener",
+      "ai_summary": "As a California state senator, Scott Wiener authored legislation aimed at curbing the risks of advanced AI. Now, after winning a tight congressional race for former Speaker of the House Nancy Pelosi’s open San Francisco seat, he could play a key role in setting federal AI policy. I spoke with Wiener"
+    },
+    {
+      "title": "How Roboflow Helps with Compliance and Readiness for Computer Vision",
+      "link": "https://roboflow.com/blog/compliance-and-readiness-for-computer-vision",
+      "source": "Roboflow",
+      "date": "2026-11-09T17:04:52",
+      "description": "Get computer vision through compliance review. Use Roboflow to anonymize people, control AI agents, lock down API keys, and keep data on-site.",
+      "ai_summary": "Get computer vision through compliance review. Use Roboflow to anonymize people, control AI agents, lock down API keys, and keep data on-site."
+    },
+    {
+      "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+      "link": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4",
+      "source": "Netflix Tech",
+      "date": "2026-11-09T17:01:02",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
+      "link": "https://techcrunch.com/2026/11/09/uber-launches-parking-service-following-spothero-acquisition-with-an-eye-on-robotaxis/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T17:00:00",
+      "description": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service.",
+      "ai_summary": "Uber Parking is the latest example of the company offering products beyond its core ride-hailing service."
+    },
+    {
+      "title": "New survey finds enterprises trapped between legacy software and AI modernization",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/new-survey-finds-enterprises-trapped-between-legacy-software-and-ai-modernization/",
+      "source": "Google Cloud",
+      "date": "2026-11-09T17:00:00",
+      "description": "Throughout my career in cybersecurity and infrastructure protection — both in government and now at Google Cloud — I have consistently seen that friction between new and existing technology is often a barrier to progress. A new piece of software or service may work wonderfully on its own but then it",
+      "ai_summary": "Throughout my career in cybersecurity and infrastructure protection — both in government and now at Google Cloud — I have consistently seen that friction between new and existing technology is often a barrier to progress. A new piece of software or service may work wonderfully on its own but then it"
+    },
+    {
+      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+      "link": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "source": "TechCrunch",
+      "date": "2026-11-09T16:56:54",
+      "description": "Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "ai_summary": "Anthropic bought billions of dollars' worth of natural gas turbines in a deal that could give it buyer's remorse."
+    },
+    {
+      "title": "I was wrong about dark mode",
+      "link": "https://dbushell.com/2026/11/09/dark-mode/",
+      "source": "Lobsters",
+      "date": "2026-11-09T16:54:03",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Baidu’s ERNIE Evolve Automated Research System Beats NanoChat and NanoGPT Records",
+      "link": "https://www.marktechpost.com/2026/11/09/baidu-ernie-evolve-automated-research-system/",
+      "source": "MarkTechPost",
+      "date": "2026-11-09T16:31:59",
+      "description": "Baidu’s ERNIE Evolve is an automated research system that edits code, runs experiments and keeps only verified gains. It beat public bests on NanoChat and NanoGPT Speedrun and sped up ERNIE-5.5-Flash inference. The post Baidu’s ERNIE Evolve Automated Research System Beats NanoChat and NanoGPT Record",
+      "ai_summary": "Baidu’s ERNIE Evolve is an automated research system that edits code, runs experiments and keeps only verified gains. It beat public bests on NanoChat and NanoGPT Speedrun and sped up ERNIE-5.5-Flash inference. The post Baidu’s ERNIE Evolve Automated Research System Beats NanoChat and NanoGPT Record"
+    },
+    {
+      "title": "Continuous Batching Beats Static and Dynamic by Up to 2.91× in vLLM",
+      "link": "https://towardsdatascience.com/continuous-batching-beats-static-and-dynamic-by-up-to-291-in-vllm/",
+      "source": "Towards Data Science",
+      "date": "2026-11-09T16:30:00",
+      "description": "For anyone running an inference server: a zero-variance control, five traffic traces, and an engine-vs-scheduler split show where the gains come from. The post Continuous Batching Beats Static and Dynamic by Up to 2.91× in vLLM appeared first on Towards Data Science.",
+      "ai_summary": "For anyone running an inference server: a zero-variance control, five traffic traces, and an engine-vs-scheduler split show where the gains come from. The post Continuous Batching Beats Static and Dynamic by Up to 2.91× in vLLM appeared first on Towards Data Science."
+    },
+    {
+      "title": "What Is Eval-Driven Development? How to Improve AI Agents",
+      "link": "https://www.langchain.com/blog/what-is-eval-driven-development",
+      "source": "LangChain Blog",
+      "date": "2026-11-09T16:23:28",
+      "description": "Eval-driven development helps you build AI agents against a consistent set of metrics. Define good behavior, write the eval first, then compare experiments.",
+      "ai_summary": "Eval-driven development helps you build AI agents against a consistent set of metrics. Define good behavior, write the eval first, then compare experiments."
+    },
+    {
+      "title": "Fed’s Goolsbee Says Officials Must Address Inflation Failure",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/fed-s-goolsbee-says-officials-must-address-inflation-failure",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T16:06:43",
+      "description": "Federal Reserve Bank of Chicago President Austan Goolsbee said policymakers need to tackle a potential overheating in the economy from the artificial intelligence build-out and a broadening of inflation pressures.",
+      "ai_summary": "Federal Reserve Bank of Chicago President Austan Goolsbee said policymakers need to tackle a potential overheating in the economy from the artificial intelligence build-out and a broadening of inflation pressures."
+    },
+    {
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+      "link": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "source": "HN Best",
+      "date": "2026-11-09T16:00:45",
+      "description": "Article URL: payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy Comments URL: news.ycombinator.com/item?id=50427362 Points: 503 # Comments: 277",
+      "ai_summary": "Article URL: payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy Comments URL: news.ycombinator.com/item?id=50427362 Points: 503 # Comments: 277"
+    },
+    {
+      "title": "Steady Inflation Outlook, Mixed Views for Jobs in NY Fed Survey",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/steady-inflation-outlook-mixed-views-for-jobs-in-ny-fed-survey",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T16:00:00",
+      "description": "Americans’ expectations for inflation were unchanged last month, but their outlook for unemployment was the worst since 2020, according to a Federal Reserve Bank of New York survey released Monday.",
+      "ai_summary": "Americans’ expectations for inflation were unchanged last month, but their outlook for unemployment was the worst since 2020, according to a Federal Reserve Bank of New York survey released Monday."
+    },
+    {
+      "title": "Cloud CISO Perspectives: Our security forecast for 2027",
+      "link": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-security-forecast-2027/",
+      "source": "Google Cloud",
+      "date": "2026-11-09T16:00:00",
+      "description": "Welcome to the first Cloud CISO Perspectives for November 2026. Today, Chris Betz shares our security forecast for 2027, with insights from top leaders at Google, Google Cloud, and Mandiant. As with all Cloud CISO Perspectives, the contents of this newsletter are posted to the Google Cloud blog. If",
+      "ai_summary": "Welcome to the first Cloud CISO Perspectives for November 2026. Today, Chris Betz shares our security forecast for 2027, with insights from top leaders at Google, Google Cloud, and Mandiant. As with all Cloud CISO Perspectives, the contents of this newsletter are posted to the Google Cloud blog. If"
+    },
+    {
+      "title": "Google Releases Gemini 4 Argon for Robotics Control, Simulation, and Policy Improvement",
+      "link": "https://www.infoq.com/news/2026/11/google-gemini-argon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+      "source": "InfoQ AI/ML",
+      "date": "2026-11-09T15:44:00",
+      "description": "Google has released Gemini 4 Argon framing it as a general-purpose physical-reasoning model for robot control, Real2Sim scene construction, multimodal labeling of robot video, and iterative policy improvement, rather than as a single end-effector policy. By Daniel Dominguez",
+      "ai_summary": "Google has released Gemini 4 Argon framing it as a general-purpose physical-reasoning model for robot control, Real2Sim scene construction, multimodal labeling of robot video, and iterative policy improvement, rather than as a single end-effector policy. By Daniel Dominguez"
+    },
+    {
+      "title": "Terminal2Shell: Critical flaw grants instant shell access on every major OS",
+      "link": "https://terminal2shell.com/",
+      "source": "Lobsters",
+      "date": "2026-11-09T15:41:50",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Did Life Begin in an RNA World?",
+      "link": "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109/",
+      "source": "Quanta Magazine",
+      "date": "2026-11-09T15:20:29",
+      "description": "Some believe the earliest life emerged from self-copying molecules that could mutate and even evolve. But that may not have been enough. The post Did Life Begin in an RNA World? first appeared on Quanta Magazine",
+      "ai_summary": "Some believe the earliest life emerged from self-copying molecules that could mutate and even evolve. But that may not have been enough. The post Did Life Begin in an RNA World? first appeared on Quanta Magazine"
+    },
+    {
+      "title": "45% of my app's first downloads came from ChatGPT, not from my website",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-45-of-my-apps-first-downloads-came-from-chatgpt-not-from-my-website",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:18:24",
+      "description": "I build Teleprompter Offline & Private, an iPhone teleprompter with voice-follow scrolling that works offline, with no account and no tracking. I'm a solo developer and it earns about $100+ a month right now. Not life-changing, but real, and it is growing slowly. What surprised me in App Store Conne",
+      "ai_summary": "I build Teleprompter Offline & Private, an iPhone teleprompter with voice-follow scrolling that works offline, with no account and no tracking. I'm a solo developer and it earns about $100+ a month right now. Not life-changing, but real, and it is growing slowly. What surprised me in App Store Conne"
+    },
+    {
+      "title": "Compiling a screenplay into a limited-animation series, checked shot by shot, rendered on one Mac",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-compiling-a-screenplay-into-a-limited-animation-series-checked-shot-by-shot-rend",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:18:03",
+      "description": "How The Brightwater Family is made A screenplay compiled into a three-episode limited-animation series, with the same faces and rooms in every shot, every shot checked, rendered on one Mac. Watch the series: youtube.com/playlist?list=PLZOx3V-lNQb0 · Series page: atveanimation.",
+      "ai_summary": "How The Brightwater Family is made A screenplay compiled into a three-episode limited-animation series, with the same faces and rooms in every shot, every shot checked, rendered on one Mac. Watch the series: youtube.com/playlist?list=PLZOx3V-lNQb0 · Series page: atveanimation."
+    },
+    {
+      "title": "I built an AI agent skill that clones interactive WebGL sites pixel-for-pixel",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-i-built-an-ai-agent-skill-that-clones-interactive-webgl-sites-pixel-for-pixel",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:16:19",
+      "description": "Over the past week, I set out to clone an Awwwards-level scrollyte Every automated tool and generic AI prompt failed. Here are the 4 fundamental reasons why modern sites break during replication: The Silent WebGL Texture Stall: Modern sites use responsive tags with .avif, .webp, and -m mobile varia",
+      "ai_summary": "Over the past week, I set out to clone an Awwwards-level scrollyte Every automated tool and generic AI prompt failed. Here are the 4 fundamental reasons why modern sites break during replication: The Silent WebGL Texture Stall: Modern sites use responsive tags with .avif, .webp, and -m mobile varia"
+    },
+    {
+      "title": "Stopping Duplicate Executions in External Webhooks: A Practical Guide to Redis Distributed Locks",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-stopping-duplicate-executions-in-external-webhooks-a-practical-guide-to-redis-di",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:15:45",
+      "description": "Stopping Duplicate Executions in External Webhooks: A Practical Guide to Redis Distributed Locks 1. Anatomy of a Production Disaster: Why Webhooks Arrive in Duplicates A few weeks after launching an API endpoint designed to ingest webhooks from a payment processor, our on-call rotation",
+      "ai_summary": "Stopping Duplicate Executions in External Webhooks: A Practical Guide to Redis Distributed Locks 1. Anatomy of a Production Disaster: Why Webhooks Arrive in Duplicates A few weeks after launching an API endpoint designed to ingest webhooks from a payment processor, our on-call rotation"
+    },
+    {
+      "title": "Introducing NovaDesk AI: Building a Stateful Hotel Concierge with LangGraph",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-introducing-novadesk-ai-building-a-stateful-hotel-concierge-with-langgraph",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:15:40",
+      "description": "When you start learning Agentic AI, you quickly hit a wall. Most tutorials show you how to build a basic chatbot that can search the web or call a simple calculator tool. But building a system that can actually manage multi-step processes, route intents, and remember context requires a massive leap",
+      "ai_summary": "When you start learning Agentic AI, you quickly hit a wall. Most tutorials show you how to build a basic chatbot that can search the web or call a simple calculator tool. But building a system that can actually manage multi-step processes, route intents, and remember context requires a massive leap"
+    },
+    {
+      "title": "gpt-4o-mini-tts replacement: what to use after OpenAI shuts it down on Jan 6, 2027",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-gpt-4o-mini-tts-replacement-what-to-use-after-openai-shuts-it-down-on-jan-6-2027",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:15:04",
+      "description": "Originally published at tts.deadlinkpatrol.com. Facts checked November 9, 2026. From Swift Labs, makers of TTS Swap. Written with AI help and checked against OpenAI's docs, OpenAI's community forum and our own service on November 9, 2026. Not affiliated with or endorsed by OpenAI. Short answer: Open",
+      "ai_summary": "Originally published at tts.deadlinkpatrol.com. Facts checked November 9, 2026. From Swift Labs, makers of TTS Swap. Written with AI help and checked against OpenAI's docs, OpenAI's community forum and our own service on November 9, 2026. Not affiliated with or endorsed by OpenAI. Short answer: Open"
+    },
+    {
+      "title": "Samsung’s paid Galaxy AI plan leaks for $5/month, but will you pay?",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-samsungs-paid-galaxy-ai-plan-leaks-for-5month-but-will-you-pay",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:10:00",
+      "description": "Samsung has long left the idea of paid Galaxy AI features on the table for Galaxy devices, and now there’s finally some evidence that it’s coming and could cost $5/month. more…",
+      "ai_summary": "Samsung has long left the idea of paid Galaxy AI features on the table for Galaxy devices, and now there’s finally some evidence that it’s coming and could cost $5/month. more…"
+    },
+    {
+      "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-nemotron-personas-finance-japan-a-synthetic-dataset-capturing-japans-demographic",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T15:05:57",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "[$] Git considers voting to determine its LLM policy",
+      "link": "https://lwn.net/Articles/1104195/",
+      "source": "LWN.net",
+      "date": "2026-11-09T15:05:07",
+      "description": "One of the dominant themes of 2026 has been the debate within development projects about the terms under which LLM-written contributions should be accepted — if, indeed, they should be accepted at all. The Git project has not been immune to this trend; the topic was discussed at the recent Git Contr",
+      "ai_summary": "One of the dominant themes of 2026 has been the debate within development projects about the terms under which LLM-written contributions should be accepted — if, indeed, they should be accepted at all. The Git project has not been immune to this trend; the topic was discussed at the recent Git Contr"
+    },
+    {
+      "title": "I saw your HN comment",
+      "link": "https://joshstrange.com/2026/11/09/i-saw-your-hn-comment/",
+      "source": "HN Best",
+      "date": "2026-11-09T15:01:03",
+      "description": "Article URL: joshstrange.com/2026/11/09/i-saw-your-hn-comment/ Comments URL: news.ycombinator.com/item?id=50426582 Points: 417 # Comments: 308",
+      "ai_summary": "Article URL: joshstrange.com/2026/11/09/i-saw-your-hn-comment/ Comments URL: news.ycombinator.com/item?id=50426582 Points: 417 # Comments: 308"
+    },
+    {
+      "title": "Ask AI to Refine Your Ideas, Not Invent Them",
+      "link": "https://towardsdatascience.com/ask-ai-to-refine-your-ideas-not-invent-them/",
+      "source": "Towards Data Science",
+      "date": "2026-11-09T15:00:00",
+      "description": "Studies of short stories, metaphors, and 486 participants point one way, an 800-person experiment points the other, and the author weighs both. The post Ask AI to Refine Your Ideas, Not Invent Them appeared first on Towards Data Science.",
+      "ai_summary": "Studies of short stories, metaphors, and 486 participants point one way, an 800-person experiment points the other, and the author weighs both. The post Ask AI to Refine Your Ideas, Not Invent Them appeared first on Towards Data Science."
+    },
+    {
+      "title": "Kernel prepatch 7.4-rc2",
+      "link": "https://lwn.net/Articles/1106300/",
+      "source": "LWN.net",
+      "date": "2026-11-09T14:55:38",
+      "description": "Linus Torvalds has released the 7.4-rc2 prepatch and it will come as no surprise that it is a large one (\"a big -rc2 to go with the largest ever -rc1\"). Much of the size was made up of some automated Coccinelle updates that were spread out all over the tree; once those are factored out, the rest loo",
+      "ai_summary": "Linus Torvalds has released the 7.4-rc2 prepatch and it will come as no surprise that it is a large one (\"a big -rc2 to go with the largest ever -rc1\"). Much of the size was made up of some automated Coccinelle updates that were spread out all over the tree; once those are factored out, the rest loo"
+    },
+    {
+      "title": "Scanning Terraform for Lock-In Before a Cloud Migration",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-scanning-terraform-for-lock-in-before-a-cloud-migration",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T14:51:35",
+      "description": "Originally published on moveinfra.eu. To scan your Terraform setup for cloud lock-in before a migration, extract a full list of resource types from your .tf files or state file and group them into three categories: directly portable standards (like virtual machines, PostgreSQL databases, and S3-comp",
+      "ai_summary": "Originally published on moveinfra.eu. To scan your Terraform setup for cloud lock-in before a migration, extract a full list of resource types from your .tf files or state file and group them into three categories: directly portable standards (like virtual machines, PostgreSQL databases, and S3-comp"
+    },
+    {
+      "title": "Fake FBI Recovery Scam: How Re-Targeting Fraud Works and How to Spot It",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-fake-fbi-recovery-scam-how-re-targeting-fraud-works-and-how-to-spot-it",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T14:47:59",
+      "description": "Cover image alt: Laptop on a table showing a padlock and a \"Secured\" label on its screen, representing protection from a fake FBI recovery scam A fake FBI recovery scam is a \"re-targeting\" fraud: criminals contact people who were already scammed and promise to recover their money, then take more of",
+      "ai_summary": "Cover image alt: Laptop on a table showing a padlock and a \"Secured\" label on its screen, representing protection from a fake FBI recovery scam A fake FBI recovery scam is a \"re-targeting\" fraud: criminals contact people who were already scammed and promise to recover their money, then take more of"
+    },
+    {
+      "title": "Firefox for Web Developers: DevTools Advantages and Extensions Worth Installing",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-firefox-for-web-developers-devtools-advantages-and-extensions-worth-installing",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T14:46:37",
+      "description": "Firefox has features that Chrome does not. For web development work, some of these matter. This is not a broad comparison — it is a list of specific features with concrete developer use cases. CSS Grid inspector: Firefox's grid overlay is more detailed than Chrome's. It labels grid lines and shows g",
+      "ai_summary": "Firefox has features that Chrome does not. For web development work, some of these matter. This is not a broad comparison — it is a list of specific features with concrete developer use cases. CSS Grid inspector: Firefox's grid overlay is more detailed than Chrome's. It labels grid lines and shows g"
+    },
+    {
+      "title": "Cloudflare Develops Public Certificate Authority for Post-Quantum Web Security",
+      "link": "https://www.infoq.com/news/2026/11/cloudflare-merkle-certificates/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+      "source": "InfoQ Architecture",
+      "date": "2026-11-09T14:35:00",
+      "description": "Cloudflare is developing a public certificate authority for Merkle Tree Certificates (MTCs) to reduce the bandwidth overhead of post-quantum cryptography. A Chrome experiment served billions of MTCs to 50% of Chrome Beta 146 for selected domains, reporting 9% faster median performance. Wider deploym",
+      "ai_summary": "Cloudflare is developing a public certificate authority for Merkle Tree Certificates (MTCs) to reduce the bandwidth overhead of post-quantum cryptography. A Chrome experiment served billions of MTCs to 50% of Chrome Beta 146 for selected domains, reporting 9% faster median performance. Wider deploym"
+    },
+    {
+      "title": "Semi-transparent, colored cadmium telluride photovoltaic panels in agrivoltaics",
+      "link": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+      "source": "HN Best",
+      "date": "2026-11-09T14:31:39",
+      "description": "cell.com/cell-reports-physical-science/fulltext/... Comments URL: news.ycombinator.com/item?id=50426175 Points: 296 # Comments: 194",
+      "ai_summary": "cell.com/cell-reports-physical-science/fulltext/... Comments URL: news.ycombinator.com/item?id=50426175 Points: 296 # Comments: 194"
+    },
+    {
+      "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+      "link": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+      "source": "The Hacker News",
+      "date": "2026-11-09T14:31:29",
+      "description": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet",
+      "ai_summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet"
+    },
+    {
+      "title": "Jonathan Kanter is using AI to take on Big Tech",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-jonathan-kanter-is-using-ai-to-take-on-big-tech",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T14:30:00",
+      "description": "When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight in the private sector, and with a perhaps unexpected tool: AI. Alongside former acting Antitrust Div",
+      "ai_summary": "When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight in the private sector, and with a perhaps unexpected tool: AI. Alongside former acting Antitrust Div"
+    },
+    {
+      "title": "Bad news for kinky Brits",
+      "link": "https://www.404media.co/bad-news-for-kinky-brits/",
+      "source": "404 Media",
+      "date": "2026-11-09T14:29:53",
+      "description": "Also: Wanna get off this planet? There's a job open on the moon.",
+      "ai_summary": "Also: Wanna get off this planet? There's a job open on the moon."
+    },
+    {
+      "title": "OpenIndiana 2026.10 released",
+      "link": "https://lwn.net/Articles/1106285/",
+      "source": "LWN.net",
+      "date": "2026-11-09T14:09:57",
+      "description": "Version 2026.10 of the OpenIndiana operating system has been released. OpenIndiana is based on Illumos, which in turn was based on OpenSolaris after Oracle discontinued it. Notable changes in this release include UEFI framebuffer support for the live image, updates to many applications and developme",
+      "ai_summary": "Version 2026.10 of the OpenIndiana operating system has been released. OpenIndiana is based on Illumos, which in turn was based on OpenSolaris after Oracle discontinued it. Notable changes in this release include UEFI framebuffer support for the live image, updates to many applications and developme"
+    },
+    {
+      "title": "Revolve Puts Data Breach Victim Count at 1.5 Million",
+      "link": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T14:08:08",
+      "description": "Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. The post Revolve Puts Data Breach Victim Count at 1.5 Million appeared first on SecurityWeek.",
+      "ai_summary": "Online fashion retailer Revolve has told regulators that the September cyberattack affected more than 1.5 million individuals. The post Revolve Puts Data Breach Victim Count at 1.5 Million appeared first on SecurityWeek."
+    },
+    {
+      "title": "Security updates for Monday",
+      "link": "https://lwn.net/Articles/1106282/",
+      "source": "LWN.net",
+      "date": "2026-11-09T14:02:31",
+      "description": "Security updates have been issued by Debian (cjose, kernel, libreoffice, rsync, ruby3.3, telegram-desktop, vim, and zlib), Fedora (bind, composer, copyparty, dnf5, elixir, fasterxml-oss-parent, gnome-remote-desktop, goose, jackson-annotations, jackson-bom, jackson-core, jackson-databind, jackson-jax",
+      "ai_summary": "Security updates have been issued by Debian (cjose, kernel, libreoffice, rsync, ruby3.3, telegram-desktop, vim, and zlib), Fedora (bind, composer, copyparty, dnf5, elixir, fasterxml-oss-parent, gnome-remote-desktop, goose, jackson-annotations, jackson-bom, jackson-core, jackson-databind, jackson-jax"
+    },
+    {
+      "title": "Former British Army intelligence operator's Crowd Threat raises £1M to expand global threat intelligence",
+      "link": "https://tech.eu/2026/11/09/former-british-army-intelligence-operators-crowd-threat-raises-ps1m-to-expand-global-threat-intelligence/",
+      "source": "tech.eu",
+      "date": "2026-11-09T14:02:26",
+      "description": "A former British Army intelligence operator who has developed a platform that identifies security risks in countries worldwide using reports from local people has secured a £1million investment.Michae...",
+      "ai_summary": "A former British Army intelligence operator who has developed a platform that identifies security risks in countries worldwide using reports from local people has secured a £1million investment.Michae..."
+    },
+    {
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "link": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "source": "NVIDIA Blog",
+      "date": "2026-11-09T14:00:01",
+      "description": "Simulation, which has long been the proving ground for robots learning to walk, roll and hop, is now helping researchers teach robots tasks that require a finer touch: aligning gears, connecting cables and assembling small components. The shift from locomotion to manipulation is taking center stage",
+      "ai_summary": "Simulation, which has long been the proving ground for robots learning to walk, roll and hop, is now helping researchers teach robots tasks that require a finer touch: aligning gears, connecting cables and assembling small components. The shift from locomotion to manipulation is taking center stage"
+    },
+    {
+      "title": "Automattic debuts a platform to deploy vibe coding apps amid a changing internet",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T14:00:00",
+      "description": "Automattic aims to compete with likes of Lovable with Spacefast",
+      "ai_summary": "Automattic aims to compete with likes of Lovable with Spacefast"
+    },
+    {
+      "title": "New research: Virtual machines remain central to cloud native infrastructure as AI workloads evolve",
+      "link": "https://www.cncf.io/blog/2026/11/09/new-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve/",
+      "source": "CNCF",
+      "date": "2026-11-09T14:00:00",
+      "description": "A Linux Foundation Research study, sponsored by CNCF and Broadcom, explores how organizations are using virtual machines alongside containers, and the growing importance of workload isolation for AI. Cloud native infrastructure continues to evolve as organizations...",
+      "ai_summary": "A Linux Foundation Research study, sponsored by CNCF and Broadcom, explores how organizations are using virtual machines alongside containers, and the growing importance of workload isolation for AI. Cloud native infrastructure continues to evolve as organizations..."
+    },
+    {
+      "title": "S&P 500 Rallies Most Since April as Oil Drop Lures Back Buyers",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/s-p-500-futures-rise-as-oil-falls-nvidia-sinks-on-huang-affair",
+      "source": "Bloomberg Tech",
+      "date": "2026-11-09T13:34:22",
+      "description": "US stocks had their biggest rally in over seven months as investors stepped in after a sharp tech-led selloff last week, while a drop in oil prices provided another boost Monday.",
+      "ai_summary": "US stocks had their biggest rally in over seven months as investors stepped in after a sharp tech-led selloff last week, while a drop in oil prices provided another boost Monday."
+    },
+    {
+      "title": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintell",
+      "link": "https://ainexusdaily.vercel.app/article/2026-11-09-import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-b",
+      "source": "AI Nexus Daily",
+      "date": "2026-11-09T13:31:34",
+      "description": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI Science startup converts a quantum conjecture into a theorem:…An evocative taste of the singularity…In the same way",
+      "ai_summary": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI Science startup converts a quantum conjecture into a theorem:…An evocative taste of the singularity…In the same way"
+    },
+    {
+      "title": "How to Estimate the Recall of AI Agents with Capture-Recapture",
+      "link": "https://towardsdatascience.com/how-to-estimate-the-recall-of-ai-agents-with-capture-recapture/",
+      "source": "Towards Data Science",
+      "date": "2026-11-09T13:30:00",
+      "description": "A fisheries estimator from the 1890s, tested on 294 CUAD contracts, landed within 2 points of true recall for most agents with a 10% hand audit. The post How to Estimate the Recall of AI Agents with Capture-Recapture appeared first on Towards Data Science.",
+      "ai_summary": "A fisheries estimator from the 1890s, tested on 294 CUAD contracts, landed within 2 points of true recall for most agents with a 10% hand audit. The post How to Estimate the Recall of AI Agents with Capture-Recapture appeared first on Towards Data Science."
+    },
+    {
+      "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+      "link": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+      "source": "The Hacker News",
+      "date": "2026-11-09T13:28:25",
+      "description": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside norm",
+      "ai_summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside norm"
+    },
+    {
+      "title": "French Government Boosts Minimum Wage in Response to Protests",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/french-government-boosts-minimum-wage-in-response-to-protests",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T13:19:30",
+      "description": "French Prime Minister Sébastien Lecornu said the government will raise the minimum wage as it seeks to respond to protests over the cost of living without further straining fragile public finances.",
+      "ai_summary": "French Prime Minister Sébastien Lecornu said the government will raise the minimum wage as it seeks to respond to protests over the cost of living without further straining fragile public finances."
+    },
+    {
+      "title": "What is malloc doing, anyway?",
+      "link": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+      "source": "Lobsters",
+      "date": "2026-11-09T13:19:22",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "The Download: empty AI climate claims, and an Nvidia investigation",
+      "link": "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/",
+      "source": "MIT Tech Review",
+      "date": "2026-11-09T13:15:00",
+      "description": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Opinion: The climate case for AI has not been made —By Mary Nichols, distinguished counsel at the UCLA School of Law and the former chair of the California Air Re",
+      "ai_summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Opinion: The climate case for AI has not been made —By Mary Nichols, distinguished counsel at the UCLA School of Law and the former chair of the California Air Re"
+    },
+    {
+      "title": "Plex2Shell Exploited Against QNAP NAS Users",
+      "link": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T13:13:28",
+      "description": "Threat actors are exploiting the four-flaw chain to hack the Plex Media Server application on QNAP NAS devices. The post Plex2Shell Exploited Against QNAP NAS Users appeared first on SecurityWeek.",
+      "ai_summary": "Threat actors are exploiting the four-flaw chain to hack the Plex Media Server application on QNAP NAS devices. The post Plex2Shell Exploited Against QNAP NAS Users appeared first on SecurityWeek."
+    },
+    {
+      "title": "ECB Succession Advances as Ministers Look at Trio of Jobs",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/ecb-succession-advances-as-ministers-look-to-pick-trio-of-jobs",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T13:07:51",
+      "description": "Euro-zone governments are looking to agree on the European Central Bank presidency with two other jobs after a stocktaking of candidates for the top role.",
+      "ai_summary": "Euro-zone governments are looking to agree on the European Central Bank presidency with two other jobs after a stocktaking of candidates for the top role."
+    },
+    {
+      "title": "Launching the Vite Ecosystem Fund",
+      "link": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+      "source": "Cloudflare",
+      "date": "2026-11-09T13:00:00",
+      "description": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare.",
+      "ai_summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare."
+    },
+    {
+      "title": "Innovating with AI in the special chemicals industry",
+      "link": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+      "source": "MIT Tech Review",
+      "date": "2026-11-09T13:00:00",
+      "description": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the practical realities of bringing products to market. For specialty chemicals manufactur",
+      "ai_summary": "As companies look to accelerate innovation with artificial intelligence, cloud computing, and advanced modeling, the primary challenge is connecting new technologies to reliable data, scientific expertise, and the practical realities of bringing products to market. For specialty chemicals manufactur"
+    },
+    {
+      "title": "Cloud Pathways, a distributed ML runtime for massive accelerator fleets, now GA",
+      "link": "https://cloud.google.com/blog/topics/ai-infrastructure/cloud-pathways-a-distributed-ml-runtime-is-ga/",
+      "source": "Google Cloud",
+      "date": "2026-11-09T13:00:00",
+      "description": "Today, we are thrilled to announce the general availability (GA) of Cloud Pathways (Pathways on Cloud) on Google Kubernetes Engine (GKE) as a core runtime pillar of the Google Cloud AI Hypercomputer. Originally engineered by Google DeepMind to train and serve Google's frontier models — including Gem",
+      "ai_summary": "Today, we are thrilled to announce the general availability (GA) of Cloud Pathways (Pathways on Cloud) on Google Kubernetes Engine (GKE) as a core runtime pillar of the Google Cloud AI Hypercomputer. Originally engineered by Google DeepMind to train and serve Google's frontier models — including Gem"
+    },
+    {
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "link": "https://openai.com/index/control-room",
+      "source": "OpenAI",
+      "date": "2026-11-09T13:00:00",
+      "description": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "ai_summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise."
+    },
+    {
+      "title": "Introducing Control Room: Human control over AI workloads",
+      "link": "https://openai.com/index/introducing-control-room",
+      "source": "OpenAI",
+      "date": "2026-11-09T13:00:00",
+      "description": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "ai_summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise."
+    },
+    {
+      "title": "A C++ Quicksort Faster Than std::sort",
+      "link": "https://tiki.li/blog/about_blqsort",
+      "source": "Lobsters",
+      "date": "2026-11-09T12:55:38",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Horrible public key tricks",
+      "link": "https://maurycyz.com/projects/badcert/",
+      "source": "Lobsters",
+      "date": "2026-11-09T12:55:11",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers",
+      "link": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T12:41:27",
+      "description": "Hackers compromised an external cloud service used by the shopping platform and may have stolen personal information from it. The post Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers appeared first on SecurityWeek.",
+      "ai_summary": "Hackers compromised an external cloud service used by the shopping platform and may have stolen personal information from it. The post Iris Plaza Breach May Have Exposed Data of 7.7 Million Customers appeared first on SecurityWeek."
+    },
+    {
+      "title": "Bull's €80M factory expansion puts European supercomputing and startups in the spotlight",
+      "link": "https://tech.eu/2026/11/09/bull-s-80m-factory-expansion-puts-european-supercomputing-and-startups-in-the-spotlight/",
+      "source": "tech.eu",
+      "date": "2026-11-09T12:39:26",
+      "description": "French computing company Bull has opened a new production building at its historic Angers site in France following an €80 million redevelopment. Bull specialises in high-performance computing, AI and ...",
+      "ai_summary": "French computing company Bull has opened a new production building at its historic Angers site in France following an €80 million redevelopment. Bull specialises in high-performance computing, AI and ..."
+    },
+    {
+      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+      "link": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "source": "Hugging Face",
+      "date": "2026-11-09T12:34:29",
+      "description": "",
+      "ai_summary": ""
+    },
+    {
+      "title": "Humans will never again create a project quite like Wikipedia",
+      "link": "https://www.economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia",
+      "source": "HN Best",
+      "date": "2026-11-09T12:30:20",
+      "description": "Article URL: economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia Comments URL: news.ycombinator.com/item?id=50424704 Points: 465 # Comments: 410",
+      "ai_summary": "Article URL: economist.com/culture/2026/10/29/humans-will-never-again-create-a-project-quite-like-wikipedia Comments URL: news.ycombinator.com/item?id=50424704 Points: 465 # Comments: 410"
+    },
+    {
+      "title": "Mexico Inflation Jumps to Put Focus on Banxico’s Rate Policy",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/mexico-s-inflation-accelerates-with-banxico-rate-policy-in-focus",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T12:28:15",
+      "description": "Mexico’s annual inflation accelerated more than expected in October, likely to intensify scrutiny of the central bank’s decision last week to cut interest rates in the face of persistent price pressures.",
+      "ai_summary": "Mexico’s annual inflation accelerated more than expected in October, likely to intensify scrutiny of the central bank’s decision last week to cut interest rates in the face of persistent price pressures."
+    },
+    {
+      "title": "Brazil Economists Lift Key Rate Forecasts Again After Lula’s Win",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/brazil-economists-lift-key-rate-forecasts-again-after-lula-s-win",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T12:24:25",
+      "description": "Brazil economists lifted their 2026 year-end interest rate forecasts for the second straight week as President Luiz Inácio Lula da Silva’s reelection spurs bets that high public spending will pressure inflation.",
+      "ai_summary": "Brazil economists lifted their 2026 year-end interest rate forecasts for the second straight week as President Luiz Inácio Lula da Silva’s reelection spurs bets that high public spending will pressure inflation."
+    },
+    {
+      "title": "Let’s Talk About Why all This OT Stuff is Connected",
+      "link": "https://tisiphone.net/2026/11/08/lets-talk-about-why-all-this-ot-stuff-is-connected/",
+      "source": "Lobsters",
+      "date": "2026-11-09T12:22:39",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web",
+      "link": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T12:22:12",
+      "description": "Italian Foreign Minister Antonio Tajani said Saturday that his personal data had been disseminated on the dark web. The post Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web appeared first on SecurityWeek.",
+      "ai_summary": "Italian Foreign Minister Antonio Tajani said Saturday that his personal data had been disseminated on the dark web. The post Italy’s Meloni Blames Pro-Russian Hackers for Leak of Foreign Minister’s Data on the Dark Web appeared first on SecurityWeek."
+    },
+    {
+      "title": "Fold Epic Paper Airplanes",
+      "link": "https://www.foldableflight.com",
+      "source": "HN Best",
+      "date": "2026-11-09T12:19:22",
+      "description": "Article URL: foldableflight.com Comments URL: news.ycombinator.com/item?id=50424581 Points: 794 # Comments: 133",
+      "ai_summary": "Article URL: foldableflight.com Comments URL: news.ycombinator.com/item?id=50424581 Points: 794 # Comments: 133"
+    },
+    {
+      "title": "Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH",
+      "link": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T12:13:32",
+      "description": "The initial exploitation attempts are attributed to botnets and crypto miners, but other threat actors are expected to follow suit. The post Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH appeared first on SecurityWeek.",
+      "ai_summary": "The initial exploitation attempts are attributed to botnets and crypto miners, but other threat actors are expected to follow suit. The post Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH appeared first on SecurityWeek."
+    },
+    {
+      "title": "“We need to be in San Francisco to win in Europe,” says Spotify and Lovable backer",
+      "link": "https://tech.eu/2026/11/09/we-need-to-be-in-san-francisco-to-win-in-europe-says-spotify-and-lovable-backer/",
+      "source": "tech.eu",
+      "date": "2026-11-09T12:07:00",
+      "description": "The founder of the Sweden-founded VC firm which has backed high-profile European tech companies, including Spotify, Lovable and Black Forest Labs, says the VC needs to be in San Francisco to win in Eu...",
+      "ai_summary": "The founder of the Sweden-founded VC firm which has backed high-profile European tech companies, including Spotify, Lovable and Black Forest Labs, says the VC needs to be in San Francisco to win in Eu..."
+    },
+    {
+      "title": "How AI May Be Aiding, Not Hurting, US Employment Growth",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-11-09/how-ai-may-be-aiding-not-hurting-us-employment-growth",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T12:03:30",
+      "description": "The October US jobs report showed gains in both white-collar and blue-collar roles linked to AI",
+      "ai_summary": "The October US jobs report showed gains in both white-collar and blue-collar roles linked to AI"
+    },
+    {
+      "title": "Trump tariffs and American populism",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-11-09/trump-tariffs-and-american-populism",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T12:00:01",
+      "description": "Voters signaled their populist priorities a",
+      "ai_summary": "Voters signaled their populist priorities a"
+    },
+    {
+      "title": "Quantile Regression Caught the House Price OLS Missed by $55K",
+      "link": "https://towardsdatascience.com/quantile-regression-caught-the-house-price-ols-missed-by-55k/",
+      "source": "Towards Data Science",
+      "date": "2026-11-09T12:00:00",
+      "description": "On 88 house sales, OLS predicted $164K for a $219K home, while a 90% interval from 5th and 95th percentile models spanned $136K to $227K. The post Quantile Regression Caught the House Price OLS Missed by $55K appeared first on Towards Data Science.",
+      "ai_summary": "On 88 house sales, OLS predicted $164K for a $219K home, while a 90% interval from 5th and 95th percentile models spanned $136K to $227K. The post Quantile Regression Caught the House Price OLS Missed by $55K appeared first on Towards Data Science."
+    },
+    {
+      "title": "New Hulu Doc ‘Get Huge’ Shows the Deadly Toll of Looksmaxxing",
+      "link": "https://www.wired.com/story/hulu-doc-get-huge-shows-the-deadly-toll-of-looksmaxxing/",
+      "source": "Wired",
+      "date": "2026-11-09T12:00:00",
+      "description": "The new Hulu docuseries Get Huge: Looksmaxxing to Death shines a light on the mysterious deaths and disappearances of a group of male influencers in Thailand—and the leader at the center of it all.",
+      "ai_summary": "The new Hulu docuseries Get Huge: Looksmaxxing to Death shines a light on the mysterious deaths and disappearances of a group of male influencers in Thailand—and the leader at the center of it all."
+    },
+    {
+      "title": "King Arthur Baking Sourdough Sidekick Review: Rising to the Occasion",
+      "link": "https://www.wired.com/review/king-arthur-baking-sourdough-sidekick/",
+      "source": "Wired",
+      "date": "2026-11-09T12:00:00",
+      "description": "This techy automatic starter feeder has some quirks, but it ended my yearlong sourdough slump.",
+      "ai_summary": "This techy automatic starter feeder has some quirks, but it ended my yearlong sourdough slump."
+    },
+    {
+      "title": "Run Linux applications in hypervisor-isolated micro-VMs with Hyperlight",
+      "link": "https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/",
+      "source": "CNCF",
+      "date": "2026-11-09T12:00:00",
+      "description": "More and more cloud native systems run code nobody on the team wrote: the Python an AI agent generated a second ago, or a plugin a customer just uploaded. Each of them needs a boundary between...",
+      "ai_summary": "More and more cloud native systems run code nobody on the team wrote: the Python an AI agent generated a second ago, or a plugin a customer just uploaded. Each of them needs a boundary between..."
+    },
+    {
+      "title": "Slightly better interpolating spline",
+      "link": "https://gasiulis.name/new-spline/",
+      "source": "Lobsters",
+      "date": "2026-11-09T11:54:39",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "What's new in Node.js 27",
+      "link": "https://nodejsdesignpatterns.com/blog/whats-new-in-nodejs-27/",
+      "source": "Lobsters",
+      "date": "2026-11-09T11:48:55",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    },
+    {
+      "title": "The Midterms Were a Pretty Good Sign for the Right-to-Repair Movement",
+      "link": "https://www.wired.com/story/the-midterms-were-a-pretty-good-sign-for-right-to-repair/",
+      "source": "Wired",
+      "date": "2026-11-09T11:30:00",
+      "description": "A shifting political landscape gives right-to-repair advocates their best shot yet at meaningful federal reform.",
+      "ai_summary": "A shifting political landscape gives right-to-repair advocates their best shot yet at meaningful federal reform."
+    },
+    {
+      "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+      "link": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+      "source": "The Hacker News",
+      "date": "2026-11-09T11:27:53",
+      "description": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an ident",
+      "ai_summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an ident"
+    },
+    {
+      "title": "Amplifon Americas Data Breach Impacts 1.3 Million",
+      "link": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T11:20:09",
+      "description": "Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems. The post Amplifon Americas Data Breach Impacts 1.3 Million appeared first on SecurityWeek.",
+      "ai_summary": "Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems. The post Amplifon Americas Data Breach Impacts 1.3 Million appeared first on SecurityWeek."
+    },
+    {
+      "title": "Scientists May Have Discovered a Massive Starless Galaxy",
+      "link": "https://www.wired.com/story/scientists-discover-massive-starless-galaxy/",
+      "source": "Wired",
+      "date": "2026-11-09T11:15:00",
+      "description": "The promising candidate contains roughly 2 billion times the sun’s mass in hydrogen, yet appears to have no stars. Studying it could help answer questions that have vexed astronomers for years.",
+      "ai_summary": "The promising candidate contains roughly 2 billion times the sun’s mass in hydrogen, yet appears to have no stars. Studying it could help answer questions that have vexed astronomers for years."
+    },
+    {
+      "title": "Spotify for textbooks: How Perlego is making academic reading more accessible",
+      "link": "https://tech.eu/2026/11/09/spotify-for-textbooks-how-perlego-is-making-academic-reading-more-accessible/",
+      "source": "tech.eu",
+      "date": "2026-11-09T11:04:00",
+      "description": "Digital learning has made educational resources more widely available, but access remains a challenge for many students, particularly those with disabilities or limited budgets. London-based edtech co...",
+      "ai_summary": "Digital learning has made educational resources more widely available, but access remains a challenge for many students, particularly those with disabilities or limited budgets. London-based edtech co..."
+    },
+    {
+      "title": "Authors Can Defend Against AI Allegations With ‘Paper Trail’ Tools. Is It Enough?",
+      "link": "https://www.wired.com/story/authors-can-defend-against-ai-allegations-with-paper-trail-tools/",
+      "source": "Wired",
+      "date": "2026-11-09T11:00:00",
+      "description": "As the publishing industry wrestles with paranoia over the provenance of manuscripts, writers are caught in an impossible bind.",
+      "ai_summary": "As the publishing industry wrestles with paranoia over the provenance of manuscripts, writers are caught in an impossible bind."
+    },
+    {
+      "title": "Audioengine Color of the Year Kit Review: Bright Look, Good Sound",
+      "link": "https://www.wired.com/review/audioengine-2026-color-of-the-year-kit/",
+      "source": "Wired",
+      "date": "2026-11-09T11:00:00",
+      "description": "The canary-yellow set is equal parts design and audio performance, and includes speakers, speaker stands, a turntable, and a subwoofer.",
+      "ai_summary": "The canary-yellow set is equal parts design and audio performance, and includes speakers, speaker stands, a turntable, and a subwoofer."
+    },
+    {
+      "title": "Podcast: Distributed LLM Inference on Kubernetes with llm-d, Wasm, & TornadoVM",
+      "link": "https://www.infoq.com/podcasts/distributed-llm-inference-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+      "source": "InfoQ AI/ML",
+      "date": "2026-11-09T11:00:00",
+      "description": "In this episode, Edoardo Vacchi discusses the evolving landscape of WebAssembly on the backend, running Java workloads on GPUs using TornadoVM, and optimizing distributed AI inference using llm-d and vLLM on Kubernetes. Edoardo explains how llm-d manages cache locality (KV and prefix caches), reques",
+      "ai_summary": "In this episode, Edoardo Vacchi discusses the evolving landscape of WebAssembly on the backend, running Java workloads on GPUs using TornadoVM, and optimizing distributed AI inference using llm-d and vLLM on Kubernetes. Edoardo explains how llm-d manages cache locality (KV and prefix caches), reques"
+    },
+    {
+      "title": "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications",
+      "link": "https://www.infoq.com/news/2026/11/aws-torchneuron-trainium-pytorch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+      "source": "InfoQ AI/ML",
+      "date": "2026-11-09T11:00:00",
+      "description": "At the recent PyTorch Conference North America 2026, Amazon introduced TorchNeuron, a native PyTorch backend that enables developers to run existing PyTorch code on AWS Trainium AI chips with virtually no code modifications. By Sergio De Simone",
+      "ai_summary": "At the recent PyTorch Conference North America 2026, Amazon introduced TorchNeuron, a native PyTorch backend that enables developers to run existing PyTorch code on AWS Trainium AI chips with virtually no code modifications. By Sergio De Simone"
+    },
+    {
+      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+      "link": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+      "source": "The Hacker News",
+      "date": "2026-11-09T10:56:25",
+      "description": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week.",
+      "ai_summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week."
+    },
+    {
+      "title": "Article: Agentic AI Architecture: Current Challenges and Future Opportunities",
+      "link": "https://www.infoq.com/articles/agentic-ai-architecture-challenges-opportunities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Architecture+%26+Design",
+      "source": "InfoQ Architecture",
+      "date": "2026-11-09T10:52:00",
+      "description": "Agentic AI architecture extends microservices and cloud-native architectures with AI agents that work with context, memory, and protocols such as MCP and A2A. The article covers bounded-context integration, task-dependent coordination strategies, new security risks, and observability needs. It expec",
+      "ai_summary": "Agentic AI architecture extends microservices and cloud-native architectures with AI agents that work with context, memory, and protocols such as MCP and A2A. The article covers bounded-context integration, task-dependent coordination strategies, new security risks, and observability needs. It expec"
+    },
+    {
+      "title": "These Robotic Arms Are Powered by Algae. Watch How They Move",
+      "link": "https://www.wired.com/story/these-robotic-arms-are-made-of-algae-watch-how-they-move/",
+      "source": "Wired",
+      "date": "2026-11-09T10:30:00",
+      "description": "The key to the movement of these flexible robots is the algae’s photosynthetic capabilities.",
+      "ai_summary": "The key to the movement of these flexible robots is the algae’s photosynthetic capabilities."
+    },
+    {
+      "title": "Over 3 Million People Hit by Frontline Education Data Breach",
+      "link": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T10:09:02",
+      "description": "Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. The post Over 3 Million People Hit by Frontline Education Data Breach appeared first on SecurityWeek.",
+      "ai_summary": "Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. The post Over 3 Million People Hit by Frontline Education Data Breach appeared first on SecurityWeek."
+    },
+    {
+      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+      "link": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+      "source": "The Hacker News",
+      "date": "2026-11-09T10:01:21",
+      "description": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts use",
+      "ai_summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts use"
+    },
+    {
+      "title": "DHS Has Used This Controversial Investigative Tool 185,000 Times Since Trump Took Office",
+      "link": "https://www.wired.com/story/dhs-has-used-this-controversial-investigative-tool-185000-times-since-trump-took-office/",
+      "source": "Wired",
+      "date": "2026-11-09T10:00:00",
+      "description": "Homeland Security Investigations estimates that it has sent out more administrative subpoenas since January 2025 than it did in more than six and a half years between 2016 and mid-August 2022.",
+      "ai_summary": "Homeland Security Investigations estimates that it has sent out more administrative subpoenas since January 2025 than it did in more than six and a half years between 2016 and mid-August 2022."
+    },
+    {
+      "title": "I Let Pangram Loose on My Gmail Inbox. Here’s How Much AI It Found",
+      "link": "https://www.wired.com/story/i-let-pangram-loose-on-my-gmail-inbox-heres-how-much-ai-it-found/",
+      "source": "Wired",
+      "date": "2026-11-09T10:00:00",
+      "description": "The AI detector will now check your incoming emails for machine-generated text.",
+      "ai_summary": "The AI detector will now check your incoming emails for machine-generated text."
+    },
+    {
+      "title": "The climate case for AI has not been made",
+      "link": "https://www.technologyreview.com/2026/11/09/1148166/the-climate-case-for-ai-has-not-been-made/",
+      "source": "MIT Tech Review",
+      "date": "2026-11-09T10:00:00",
+      "description": "This week, as countries meet in Antalya, Turkey for the United Nations climate conference, one topic likely to dominate the conversation is artificial intelligence. The host has already called on countries to commit to ensuring that AI is designed, powered, and deployed in ways that support climate",
+      "ai_summary": "This week, as countries meet in Antalya, Turkey for the United Nations climate conference, one topic likely to dominate the conversation is artificial intelligence. The host has already called on countries to commit to ensuring that AI is designed, powered, and deployed in ways that support climate"
+    },
+    {
+      "title": "What are you doing this week?",
+      "link": "https://lobste.rs/s/tt42jc/what_are_you_doing_this_week",
+      "source": "Lobsters",
+      "date": "2026-11-09T09:32:52",
+      "description": "What are you doing this week? Feel free to share! Keep in mind it’s OK to do nothing at all, too.",
+      "ai_summary": "What are you doing this week? Feel free to share! Keep in mind it’s OK to do nothing at all, too."
+    },
+    {
+      "title": "Vale Biolabs receives €164K from Venture Kick to advance brain disease research",
+      "link": "https://tech.eu/2026/11/09/vale-biolabs-receives-eur164k-from-venture-kick-to-advance-brain-disease-research/",
+      "source": "tech.eu",
+      "date": "2026-11-09T09:30:00",
+      "description": "Biotech startup Vale Biolabs has received€164,000 (CHF 150,000) from Venture Kick to advance its platform for studyingbrain diseases and evaluating potential treatments.Founded by Ilaria Incaviglia, A...",
+      "ai_summary": "Biotech startup Vale Biolabs has received€164,000 (CHF 150,000) from Venture Kick to advance its platform for studyingbrain diseases and evaluating potential treatments.Founded by Ilaria Incaviglia, A..."
+    },
+    {
+      "title": "EIB’s Calvino Says US Turmoil Is Driving Capital to Europe",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/eib-s-calvino-says-us-turmoil-is-driving-capital-to-europe",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T09:20:41",
+      "description": "Europe is set to benefit from recent market turmoil in the US as investors seek a safe haven, according to European Investment Bank President Nadia Calvino.",
+      "ai_summary": "Europe is set to benefit from recent market turmoil in the US as investors seek a safe haven, according to European Investment Bank President Nadia Calvino."
+    },
+    {
+      "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+      "link": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+      "source": "The Hacker News",
+      "date": "2026-11-09T09:01:50",
+      "description": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video foota",
+      "ai_summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video foota"
+    },
+    {
+      "title": "European tech weekly recap: Over €2.7B invested across 55+ deals",
+      "link": "https://tech.eu/2026/11/09/european-tech-weekly-recap-over-eur27b-invested-across-55-deals/",
+      "source": "tech.eu",
+      "date": "2026-11-09T09:00:00",
+      "description": "Last week, we tracked more than 55 tech funding deals worth over €2.7 billion and over 5 exits, M&A transactions, rumours, and related news stories across Europe.📊 The top three industries that ra...",
+      "ai_summary": "Last week, we tracked more than 55 tech funding deals worth over €2.7 billion and over 5 exits, M&A transactions, rumours, and related news stories across Europe.📊 The top three industries that ra..."
+    },
+    {
+      "title": "Onodrim Industries hits $1.3B valuation with $300M Series A to strengthen European defence",
+      "link": "https://tech.eu/2026/11/09/onodrim-industries-hits-13b-valuation-with-300m-series-a-to-strengthen-european-defence/",
+      "source": "tech.eu",
+      "date": "2026-11-09T08:44:52",
+      "description": "European defence and industrialscale-up platform Onodrim Industries has raised $300 million in a Series Afunding round led by Lux Capital, with participation from new and existinginvestors, including ...",
+      "ai_summary": "European defence and industrialscale-up platform Onodrim Industries has raised $300 million in a Series Afunding round led by Lux Capital, with participation from new and existinginvestors, including ..."
+    },
+    {
+      "title": "Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack",
+      "link": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
+      "source": "SecurityWeek",
+      "date": "2026-11-09T08:35:50",
+      "description": "Working with cryptographers, DeepMind’s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys. The post Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack appeared first on SecurityWeek.",
+      "ai_summary": "Working with cryptographers, DeepMind’s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys. The post Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack appeared first on SecurityWeek."
+    },
+    {
+      "title": "Reason Machines Open-Sources Aspen, a Git Server Built for AI Agents",
+      "link": "https://www.marktechpost.com/2026/11/09/reason-machines-aspen-open-source-git-server-ai-agents/",
+      "source": "MarkTechPost",
+      "date": "2026-11-09T08:20:20",
+      "description": "Reason Machines has open-sourced Aspen, a self-hosted Git server for AI agents. It follows OpenAI’s Pando design and sustained 567 pushes per second on one 8-core server in the company’s own test. The post Reason Machines Open-Sources Aspen, a Git Server Built for AI Agents appeared first on MarkTec",
+      "ai_summary": "Reason Machines has open-sourced Aspen, a self-hosted Git server for AI agents. It follows OpenAI’s Pando design and sustained 567 pushes per second on one 8-core server in the company’s own test. The post Reason Machines Open-Sources Aspen, a Git Server Built for AI Agents appeared first on MarkTec"
+    },
+    {
+      "title": "First EU Talks on ECB Race Loom as Knot and De Cos Speak Out",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/first-eu-talks-on-ecb-chief-loom-as-knot-and-de-cos-speak-out",
+      "source": "Bloomberg Economics",
+      "date": "2026-11-09T08:20:05",
+      "description": "Euro-zone finance ministers convened for a first assessment of the European Central Bank presidency race after both candidates spoke out on current economic risks.",
+      "ai_summary": "Euro-zone finance ministers convened for a first assessment of the European Central Bank presidency race after both candidates spoke out on current economic risks."
+    },
+    {
+      "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "link": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "source": "NVIDIA Blog",
+      "date": "2026-11-09T08:00:53",
+      "description": "Korea’s Ministry of Science and ICT and NVIDIA hosted the MSIT-NVIDIA AI Startup Partnership Forum at COEX. Ryu Je-myung, vice minister of science and ICT, joined NVIDIA leaders to meet with over 20 Korean startups across foundation models, physical AI, AI infrastructure and AI semiconductors. NVIDI",
+      "ai_summary": "Korea’s Ministry of Science and ICT and NVIDIA hosted the MSIT-NVIDIA AI Startup Partnership Forum at COEX. Ryu Je-myung, vice minister of science and ICT, joined NVIDIA leaders to meet with over 20 Korean startups across foundation models, physical AI, AI infrastructure and AI semiconductors. NVIDI"
+    },
+    {
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "link": "https://openai.com/index/kuken",
+      "source": "OpenAI",
+      "date": "2026-11-09T08:00:00",
+      "description": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+      "ai_summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour."
+    },
+    {
+      "title": "Bikers and Bug-Lovers Join Forces to Fight a New Google Data Center",
+      "link": "https://www.wired.com/story/bug-activists-and-biker-gang-members-are-teaming-up-to-protest-data-centers/",
+      "source": "Wired",
+      "date": "2026-11-09T08:00:00",
+      "description": "As data center protests break out across Europe, a mismatched band of campaigners is trying to block Google from building a sprawling new facility east of London.",
+      "ai_summary": "As data center protests break out across Europe, a mismatched band of campaigners is trying to block Google from building a sprawling new facility east of London."
+    },
+    {
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "link": "https://openai.com/index/coderabbit-codex-daybreak",
+      "source": "OpenAI",
+      "date": "2026-11-09T08:00:00",
+      "description": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "ai_summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team."
+    },
+    {
+      "title": "0sec Labs Open-Sources 0, an AI Security Harness With Web UI, CLI and MCP",
+      "link": "https://www.marktechpost.com/2026/11/08/0sec-labs-open-sources-0-ai-security-harness/",
+      "source": "MarkTechPost",
+      "date": "2026-11-09T07:55:18",
+      "description": "0sec Labs has open-sourced 0, an AI security harness for code review, pentesting, reverse engineering and fixes. It runs locally through a browser console, a headless CLI and an MCP server, with your own model provider. The post 0sec Labs Open-Sources 0, an AI Security Harness With Web UI, CLI and M",
+      "ai_summary": "0sec Labs has open-sourced 0, an AI security harness for code review, pentesting, reverse engineering and fixes. It runs locally through a browser console, a headless CLI and an MCP server, with your own model provider. The post 0sec Labs Open-Sources 0, an AI Security Harness With Web UI, CLI and M"
+    },
+    {
+      "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+      "link": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+      "source": "HN Best",
+      "date": "2026-11-09T07:04:25",
+      "description": "Article URL: twitter.com/shanemelaugh/status/2119192075505893695 Comments URL: news.ycombinator.com/item?id=50422069 Points: 632 # Comments: 425",
+      "ai_summary": "Article URL: twitter.com/shanemelaugh/status/2119192075505893695 Comments URL: news.ycombinator.com/item?id=50422069 Points: 632 # Comments: 425"
+    },
+    {
+      "title": "How Much Energy Does Building Distro Packages Use",
+      "link": "https://www.wezm.net/v2/posts/2026/distro-energy-use/",
+      "source": "Lobsters",
+      "date": "2026-11-09T06:44:59",
+      "description": "Comments",
+      "ai_summary": "Comments"
+    }
+  ]
+}

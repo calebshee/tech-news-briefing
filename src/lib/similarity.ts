@@ -10,7 +10,9 @@ const STOPWORDS = new Set(
   it its this that these those there their they them he she his her we our you your i me my not no nor so than then too
   very can could will would should may might must do does did done has have had having just also more most less least
   up down out off via vs per after before amid among new now how why what when where who which while says said say
-  get gets got make makes made one two three first last year years day days week today yesterday report reports`
+  get gets got make makes made one two three first last year years day days week today yesterday report reports
+  available availability generally launches launched launching introduces introducing announces announced
+  releases released update updates support supports preview beta using use based anyway really doing`
     .split(/\s+/)
     .filter(Boolean),
 );

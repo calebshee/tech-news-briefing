@@ -1,10 +1,5 @@
-export type SourceId = "hn" | "currents" | "gridnews";
-
-export const SOURCE_LABEL: Record<SourceId, string> = {
-  hn: "Hacker News",
-  currents: "Currents",
-  gridnews: "GridNews",
-};
+/** Every source the app knows; each has one entry in sources/registry.ts. */
+export type SourceId = "hn" | "sonto" | "spaceflight" | "deploylog" | "kiwi" | "gridnews";
 
 /** One article from any source, normalised to a common shape. */
 export interface Article {

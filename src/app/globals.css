@@ -8,8 +8,14 @@
   --accent-soft: #e6edfc;
   --hn: #c2410c;
   --hn-soft: #fdeee4;
-  --currents: #0f766e;
-  --currents-soft: #e1f3f1;
+  --sonto: #0f766e;
+  --space: #1d4ed8;
+  --space-soft: #e3ebfd;
+  --releases: #a16207;
+  --releases-soft: #fbf1d9;
+  --kiwi: #4d7c0f;
+  --kiwi-soft: #ecf5dc;
+  --sonto-soft: #e1f3f1;
   --grid: #6d28d9;
   --grid-soft: #efe8fc;
   --warn-soft: #fff5d6;
@@ -28,8 +34,14 @@
     --accent-soft: #1d2a4a;
     --hn: #fb923c;
     --hn-soft: #3a2316;
-    --currents: #5eead4;
-    --currents-soft: #133331;
+    --sonto: #5eead4;
+    --space: #93b4fd;
+    --space-soft: #1b2747;
+    --releases: #fcd34d;
+    --releases-soft: #3a2e10;
+    --kiwi: #bef264;
+    --kiwi-soft: #26330f;
+    --sonto-soft: #133331;
     --grid: #c4b5fd;
     --grid-soft: #2a2145;
     --warn-soft: #3a3214;
@@ -172,7 +184,10 @@ main,
 .badge.strong { background: var(--accent); color: var(--surface); }
 .badge.muted { background: var(--border); color: var(--muted); }
 .badge.src-hn { background: var(--hn-soft); color: var(--hn); }
-.badge.src-currents { background: var(--currents-soft); color: var(--currents); }
+.badge.src-sonto { background: var(--sonto-soft); color: var(--sonto); }
+.badge.src-spaceflight { background: var(--space-soft); color: var(--space); }
+.badge.src-deploylog { background: var(--releases-soft); color: var(--releases); }
+.badge.src-kiwi { background: var(--kiwi-soft); color: var(--kiwi); }
 .badge.src-gridnews { background: var(--grid-soft); color: var(--grid); }
 .card.compact .badge.strong { display: none; }
 

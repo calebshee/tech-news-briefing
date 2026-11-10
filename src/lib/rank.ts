@@ -1,8 +1,10 @@
 import { HOUR_MS, type Article, type Cluster, type SourceId } from "./types";
 import { groupByKeys } from "./groupByKeys";
+import { SOURCE_BY_ID, SOURCES, type SourceDef } from "./sources/registry";
 
-/** Headline preference: mainstream outlets first, HN last. */
-const HEADLINE_PRIORITY: Record<SourceId, number> = { currents: 0, gridnews: 1, hn: 2 };
+/** Headline preference: news outlets, then markets, community sites, and vendor release notes last. */
+const ROLE_PRIORITY: Record<SourceDef["role"], number> = { news: 0, markets: 1, community: 2, releases: 3 };
+const headlinePriority = (s: SourceId) => ROLE_PRIORITY[SOURCE_BY_ID[s].role];
 
 function normalisedTitle(t: string): string {
   return t.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -12,8 +14,9 @@ function normalisedTitle(t: string): string {
  * Distinct independent outlets ("voices").
  * - Outlets that ran the same headline are wire reprints: one voice.
  * - Outlets GridNews gives the same voiceKey: one voice.
- * - Hacker News is always its own voice, even when a post reuses the
- *   publisher's headline (it is the developer signal, not a reprint).
+ * - Community sites (Hacker News, Kiwi News) are always their own voice,
+ *   even when a post reuses the publisher's headline: sharing a link is
+ *   a signal, not a reprint.
  * - GridNews list responses only preview an event's outlets, so voices it
  *   counted but didn't list are added from its `independentVoices`.
  */
@@ -23,7 +26,7 @@ export function coverageOf(articles: Article[]): number {
 
   const voices = groupByKeys([...byOutlet.values()], (outletArticles) =>
     outletArticles.flatMap((a) => {
-      if (a.source === "hn") return [];
+      if (SOURCE_BY_ID[a.source].role === "community") return [];
       const keys = [`t:${normalisedTitle(a.title)}`];
       if (a.gridnews) keys.push(`v:${a.gridnews.voiceKey}`);
       return keys;
@@ -46,7 +49,7 @@ export function coverageOf(articles: Article[]): number {
 export function toCluster(articles: Article[]): Cluster {
   const sorted = [...articles].sort((a, b) => a.publishedAt - b.publishedAt);
   const headlineArticle = [...sorted].sort(
-    (a, b) => HEADLINE_PRIORITY[a.source] - HEADLINE_PRIORITY[b.source] || a.publishedAt - b.publishedAt,
+    (a, b) => headlinePriority(a.source) - headlinePriority(b.source) || a.publishedAt - b.publishedAt,
   )[0];
 
   const hnPosts = sorted.filter((a) => a.hn);
@@ -89,6 +92,12 @@ function byRank(a: Cluster, b: Cluster): number {
   );
 }
 
+const COLUMN_ORDER: Record<SourceDef["columnOrder"], (a: Cluster, b: Cluster) => number> = {
+  points: (a, b) => (b.hn?.points ?? 0) - (a.hn?.points ?? 0),
+  recent: (a, b) => b.firstSeen.at - a.firstSeen.at,
+  coverage: byRank,
+};
+
 /**
  * Top list: multi-outlet clusters by coverage then engagement. If there are
  * fewer than `size`, top up with the highest-point HN-only stories (marked
@@ -108,15 +117,13 @@ export function rankClusters(
   const fillers = hnSingles.slice(0, Math.max(0, size - top.length)).map((c) => ({ ...c, fill: true }));
   const used = new Set([...top, ...fillers].map((c) => c.id));
 
-  const alsoTrending: Record<SourceId, Cluster[]> = { hn: [], currents: [], gridnews: [] };
+  const alsoTrending = Object.fromEntries(SOURCES.map((s) => [s.id, [] as Cluster[]])) as Record<SourceId, Cluster[]>;
   const leftover = [...multi.slice(size), ...single].filter((c) => !used.has(c.id));
   for (const c of leftover) {
     const primary = c.sources.includes("hn") ? "hn" : c.sources[0];
     alsoTrending[primary].push(c);
   }
-  alsoTrending.hn.sort((a, b) => (b.hn?.points ?? 0) - (a.hn?.points ?? 0));
-  alsoTrending.currents.sort((a, b) => b.firstSeen.at - a.firstSeen.at);
-  alsoTrending.gridnews.sort(byRank);
+  for (const s of SOURCES) alsoTrending[s.id].sort(COLUMN_ORDER[s.columnOrder]);
 
   return { top: [...top, ...fillers], alsoTrending };
 }

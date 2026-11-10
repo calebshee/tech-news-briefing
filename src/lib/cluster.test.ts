@@ -7,7 +7,7 @@ const H = 3600_000;
 let n = 0;
 function art(p: Partial<Article> & { title: string; source?: SourceId }): Article {
   n++;
-  const source = p.source ?? "currents";
+  const source = p.source ?? "sonto";
   return {
     id: `${source}:${n}`,
     source,
@@ -83,6 +83,49 @@ describe("clusterArticles", () => {
     // The middle headline may join one side, but the two ends must not merge.
     const withEnds = groups.find((g) => g.some((a) => a.title.startsWith("OpenAI launches")))!;
     expect(withEnds.some((a) => a.title.startsWith("Microsoft Edge adds"))).toBe(false);
+  });
+
+  // Regressions from the 2026-11-10 keyless-source snapshot.
+  it("does not merge launches that share only a platform name", () => {
+    const groups = clusterArticles([
+      art({ title: "AWS Launches TorchNeuron to Run PyTorch Models on AWS Trainium Without Modifications" }),
+      art({ title: "LangSmith BYOC on AWS is generally available" }),
+      art({ title: "ChatGPT Enterprise now available in AWS Marketplace" }),
+    ]);
+    expect(groups).toHaveLength(3);
+  });
+
+  it("does not merge headlines that share one ordinary word", () => {
+    const groups = clusterArticles([
+      art({ title: "What are you doing this week?" }),
+      art({ title: "What is malloc doing, anyway?", source: "hn" }),
+    ]);
+    expect(groups).toHaveLength(2);
+  });
+
+  it("keeps a different product from the same vendor apart", () => {
+    const groups = clusterArticles([
+      art({ title: "TPU 8tx and TPU 8i Max", source: "hn" }),
+      art({ title: "Our newest TPUs: 8tx and 8i Max, built for the agentic era", source: "hn" }),
+      art({ source: "deploylog", outlet: "Google Cloud", title: "TPU Sync", description: "open-source C++ library for KV cache transfer on TPU" }),
+    ]);
+    const sync = groups.find((g) => g.some((a) => a.title === "TPU Sync"))!;
+    expect(sync).toHaveLength(1);
+  });
+
+  it("still groups a dominant story whose names appear in many headlines", () => {
+    const filler = Array.from({ length: 30 }, (_, i) => art({ title: `Unrelated story number ${i} about topic ${i}` }));
+    // News articles carry a summary, as Sonto's do.
+    const summary = "Nvidia CEO Jensen Huang faces questions over an affair with an alleged spy.";
+    const huang = [
+      "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
+      "US Lawmakers Demand Details on Nvidia Amid Jensen Huang Scandal",
+      "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
+      "Nvidia CEO Jensen Huang's Affair With Alleged Spy Raises Succession Concerns",
+    ].map((title) => art({ title, description: summary }));
+    const groups = clusterArticles([...filler, ...huang]);
+    const g = groups.find((x) => x.some((a) => a.title.startsWith("Jensen Huang pulls")))!;
+    expect(g.length).toBeGreaterThanOrEqual(3);
   });
 });
 

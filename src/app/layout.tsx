@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { gridnewsShown } from "@/lib/briefing";
+import { activeSources } from "@/lib/briefing";
 import "./globals.css";
 
 // Trailing slash so relative URLs like "og.png" resolve inside the repo path.
@@ -36,22 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <footer className="site-footer">
           <p>
-            Hacker News data via the{" "}
-            <a href="https://hn.algolia.com/api" rel="noopener">
-              Algolia HN Search API
-            </a>
-            . News data from{" "}
-            <a href="https://currentsapi.services" rel="noopener">
-              Currents API
-            </a>
-            {gridnewsShown() && (
-              <>
-                . Data from{" "}
-                <a href="https://www.gridnews.io" rel="noopener">
-                  GridNews
+            Data from{" "}
+            {activeSources().map((s, i, all) => (
+              <span key={s.id}>
+                {i > 0 && (i === all.length - 1 ? " and " : ", ")}
+                <a href={s.attribution.url} rel="noopener">
+                  {s.attribution.name}
                 </a>
-              </>
-            )}
+                {s.attribution.license && ` (${s.attribution.license})`}
+              </span>
+            ))}
             . Every headline links to its original publisher.
           </p>
         </footer>

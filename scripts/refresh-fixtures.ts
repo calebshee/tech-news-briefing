@@ -1,17 +1,15 @@
 /**
- * Captures a real 24h snapshot from each API into ./fixtures so development
- * and threshold tuning never spend live quota.
+ * Captures a real 24h snapshot from every source into ./fixtures so
+ * development and threshold tuning never spend live quota.
  *
  *   npm run fixtures:refresh
  *
- * Reads keys from .env.local. Sources without a key are skipped and keep
- * using their synthetic *.sample.json file.
+ * Reads keys from .env.local. A source that needs a key it doesn't have is
+ * skipped and keeps using its synthetic *.sample.json file.
  */
 import { writeFileSync } from "node:fs";
 import { WINDOW_HOURS } from "../src/lib/briefing";
-import { fetchHn } from "../src/lib/sources/hn";
-import { fetchCurrents } from "../src/lib/sources/currents";
-import { fetchGridnews } from "../src/lib/sources/gridnews";
+import { SOURCES } from "../src/lib/sources/registry";
 
 try {
   process.loadEnvFile(".env.local");
@@ -19,25 +17,26 @@ try {
   // No .env.local: only keyless sources are refreshed.
 }
 
-const now = Date.now();
-const save = (name: string, data: unknown) => {
-  writeFileSync(`fixtures/${name}.json`, JSON.stringify(data, null, 2) + "\n");
-  console.log(`saved fixtures/${name}.json`);
-};
-
 async function main() {
-  save("hn", await fetchHn(now, WINDOW_HOURS));
-
-  const currentsKey = process.env.CURRENTS_API_KEY;
-  if (currentsKey) save("currents", await fetchCurrents(currentsKey, now, WINDOW_HOURS));
-  else console.log("skipped Currents: no CURRENTS_API_KEY");
-
-  const gridKey = process.env.GRIDNEWS_API_KEY;
-  if (gridKey) save("gridnews", await fetchGridnews(gridKey, WINDOW_HOURS));
-  else console.log("skipped GridNews: no GRIDNEWS_API_KEY");
+  const now = Date.now();
+  let failed = false;
+  for (const s of SOURCES) {
+    // Fixtures are for development, so feature flags don't apply; keys do.
+    const skip = s.skipLive?.({ ...process.env, GRIDNEWS_ENABLED: "true" });
+    if (skip) {
+      console.log(`skipped ${s.label}: ${skip.status === "disabled" ? skip.reason : skip.status}`);
+      continue;
+    }
+    try {
+      const raw = await s.fetch(now, WINDOW_HOURS, process.env);
+      writeFileSync(`fixtures/${s.fixture}.json`, JSON.stringify(raw, null, 2) + "\n");
+      console.log(`saved fixtures/${s.fixture}.json (${s.parse(raw).length} articles)`);
+    } catch (e) {
+      failed = true;
+      console.error(`failed ${s.label}: ${(e as Error).message}`);
+    }
+  }
+  if (failed) process.exit(1);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+main();

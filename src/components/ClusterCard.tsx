@@ -1,11 +1,11 @@
 import type { Cluster } from "@/lib/types";
-import { SOURCE_LABEL } from "@/lib/types";
+import { SOURCE_BY_ID } from "@/lib/sources/registry";
 import { LocalTime } from "./LocalTime";
 
 function leadText(c: Cluster): string | null {
   if (!c.lead) return null;
-  const first = SOURCE_LABEL[c.firstSeen.source];
-  const next = SOURCE_LABEL[c.lead.nextSource];
+  const first = SOURCE_BY_ID[c.firstSeen.source].label;
+  const next = SOURCE_BY_ID[c.lead.nextSource].label;
   if (c.lead.hours < 1) return `${first} and ${next} within the hour`;
   return `${first} ${c.lead.hours}h before ${next}`;
 }
@@ -34,7 +34,7 @@ export function ClusterCard({ cluster: c, rank, compact = false }: { cluster: Cl
         )}
         {c.sources.map((s) => (
           <span key={s} className={`badge src-${s}`}>
-            {SOURCE_LABEL[s]}
+            {SOURCE_BY_ID[s].label}
           </span>
         ))}
         <span className="first-seen">
