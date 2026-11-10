@@ -1,10 +1,13 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 export interface Panel {
   id: string;
+  /** Column heading on desktop. */
   label: string;
+  /** Short name on the mobile tab. */
+  tabLabel: string;
   content: ReactNode;
 }
 
@@ -15,8 +18,11 @@ export interface Panel {
  */
 export function Dashboard({ panels }: { panels: Panel[] }) {
   const [active, setActive] = useState(panels[0]?.id);
+  // Only switch to tabs once JavaScript runs; the static HTML stacks panels.
+  const [ready, setReady] = useState(false);
+  useEffect(() => setReady(true), []);
   return (
-    <div className="dashboard" data-tabs-ready={active ? "true" : undefined}>
+    <div className="dashboard" data-tabs-ready={ready ? "true" : undefined}>
       <div className="tabs" role="tablist" aria-label="Sections">
         {panels.map((p) => (
           <button
@@ -27,7 +33,7 @@ export function Dashboard({ panels }: { panels: Panel[] }) {
             aria-controls={`panel-${p.id}`}
             onClick={() => setActive(p.id)}
           >
-            {p.label}
+            {p.tabLabel}
           </button>
         ))}
       </div>

@@ -37,6 +37,16 @@ describe("coverageOf", () => {
   it("counts Hacker News as one outlet however many HN posts", () => {
     expect(coverageOf([hn(10), hn(20)])).toBe(1);
   });
+  it("never merges Hacker News into the outlet whose headline it reuses", () => {
+    const t = "Claude Fable 5.2 and Mythos 5.2";
+    expect(coverageOf([hn(900, { title: t }), art({ outlet: "anthropic.com", title: t })])).toBe(2);
+  });
+  it("adds GridNews independent voices missing from the outlet preview", () => {
+    const g = (outlet: string, voiceKey: string) =>
+      art({ source: "gridnews", outlet, gridnews: { eventId: "e", voiceKey, independentVoices: 5 } });
+    // Preview lists 2 voices of 5; plus one Currents outlet not in the event.
+    expect(coverageOf([g("a.com", "a"), g("b.com", "b"), art({ outlet: "c.com" })])).toBe(6);
+  });
 });
 
 describe("toCluster", () => {
@@ -67,6 +77,13 @@ describe("rankClusters", () => {
     expect(top[0].fill).toBe(false);
     expect(alsoTrending.hn.map((c) => c.id)).toEqual([hnOnlyCold.id]);
     expect(alsoTrending.currents.map((c) => c.id)).toEqual([currentsOnly.id]);
+  });
+
+  it("tops up with the highest-point HN stories, not the most-commented", () => {
+    const pointy = toCluster([art({ source: "hn", hn: { points: 500, comments: 0, discussionUrl: "x" } })]);
+    const chatty = toCluster([art({ source: "hn", hn: { points: 100, comments: 900, discussionUrl: "y" } })]);
+    const { top } = rankClusters([chatty, pointy], 1);
+    expect(top.map((c) => c.id)).toEqual([pointy.id]);
   });
 
   it("shows only real clusters when there are enough", () => {

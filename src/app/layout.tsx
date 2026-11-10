@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { gridnewsShown } from "@/lib/briefing";
 import "./globals.css";
 
 // Trailing slash so relative URLs like "og.png" resolve inside the repo path.
@@ -43,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <a href="https://currentsapi.services" rel="noopener">
               Currents API
             </a>
-            {process.env.GRIDNEWS_ENABLED === "true" && (
+            {gridnewsShown() && (
               <>
                 . Data from{" "}
                 <a href="https://www.gridnews.io" rel="noopener">

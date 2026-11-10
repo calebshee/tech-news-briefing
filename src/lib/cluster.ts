@@ -1,5 +1,6 @@
 import type { Article } from "./types";
 import { canonicalUrl } from "./url";
+import { groupByKeys } from "./groupByKeys";
 import { addInto, cosine, entities, normalise, tfidfVectors, type Vector } from "./similarity";
 
 export interface ClusterOptions {
@@ -110,27 +111,9 @@ function weight(members: Article[]): number {
   return members.reduce((s, a) => s + (a.hn?.points ?? 0), 0);
 }
 
-/** Union-find over hard links: identical canonical URL or GridNews event id. */
+/** Hard links: identical canonical URL or the same GridNews event. */
 function hardLinkGroups(articles: Article[]): Article[][] {
-  const parent = articles.map((_, i) => i);
-  const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])));
-  const union = (i: number, j: number) => {
-    parent[find(i)] = find(j);
-  };
-  const byKey = new Map<string, number>();
-  articles.forEach((a, i) => {
-    const keys = [`url:${canonicalUrl(a.url)}`];
-    if (a.gridnews) keys.push(`grid:${a.gridnews.eventId}`);
-    for (const k of keys) {
-      const j = byKey.get(k);
-      if (j === undefined) byKey.set(k, i);
-      else union(i, j);
-    }
-  });
-  const groups = new Map<number, Article[]>();
-  articles.forEach((a, i) => {
-    const r = find(i);
-    groups.set(r, [...(groups.get(r) ?? []), a]);
-  });
-  return [...groups.values()];
+  return groupByKeys(articles, (a) =>
+    a.gridnews ? [`url:${canonicalUrl(a.url)}`, `grid:${a.gridnews.eventId}`] : [`url:${canonicalUrl(a.url)}`],
+  );
 }

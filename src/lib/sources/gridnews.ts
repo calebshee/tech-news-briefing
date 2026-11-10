@@ -34,7 +34,7 @@ const BASE = "https://api.gridnews.io";
 
 /** Keep only events about technology companies (spec: tech-company finance only). */
 export function isTechEvent(e: GridEvent): boolean {
-  return e.sectors.some((s) => /tech|software|semiconductor|internet|communication/i.test(s));
+  return e.sectors.some((s) => /technology|software|semiconductor/i.test(s));
 }
 
 export function parseGridnews(raw: GridEventsResponse): Article[] {

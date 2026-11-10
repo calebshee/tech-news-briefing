@@ -12,23 +12,22 @@ function relative(ts: number, now: number): string {
   return rtf.format(Math.round(hours / 24), "day");
 }
 
+const clock = (ts: number) => new Date(ts).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+
 /**
- * The page is pre-rendered at build time, so times are formatted in the
- * reader's timezone only once it reaches the browser. Until then, UTC.
+ * The page is pre-rendered at build time, so the reader's timezone is only
+ * known in the browser. The static HTML shows UTC until then.
  */
 export function LocalTime({ ts, mode = "relative" }: { ts: number; mode?: "relative" | "clock" }) {
-  const [text, setText] = useState<string | null>(null);
+  const [local, setLocal] = useState<{ text: string; title: string } | null>(null);
   useEffect(() => {
-    setText(
-      mode === "relative"
-        ? relative(ts, Date.now())
-        : new Date(ts).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }),
-    );
+    setLocal({ text: mode === "relative" ? relative(ts, Date.now()) : clock(ts), title: clock(ts) });
   }, [ts, mode]);
   const iso = new Date(ts).toISOString();
+  const utc = iso.slice(0, 16).replace("T", " ") + " UTC";
   return (
-    <time dateTime={iso} title={new Date(ts).toUTCString()} suppressHydrationWarning>
-      {text ?? iso.slice(0, 16).replace("T", " ") + " UTC"}
+    <time dateTime={iso} title={local?.title ?? utc}>
+      {local?.text ?? utc}
     </time>
   );
 }

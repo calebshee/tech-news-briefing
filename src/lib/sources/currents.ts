@@ -1,4 +1,4 @@
-import type { Article } from "../types";
+import { HOUR_MS, type Article } from "../types";
 import { domainOf } from "../url";
 
 /** Raw shape of a Currents article (from the official swagger "News" schema). */
@@ -62,7 +62,7 @@ export async function fetchCurrents(
   now: number,
   windowHours: number,
 ): Promise<CurrentsResponse> {
-  const startDate = new Date(now - windowHours * 3600_000).toISOString().replace(/\.\d{3}Z$/, "+00:00");
+  const startDate = new Date(now - windowHours * HOUR_MS).toISOString().replace(/\.\d{3}Z$/, "+00:00");
   const news: CurrentsNews[] = [];
   for (const category of CURRENTS_CATEGORIES) {
     for (let page = 1; page <= MAX_PAGES_PER_CATEGORY; page++) {

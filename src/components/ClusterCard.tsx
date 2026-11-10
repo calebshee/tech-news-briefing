@@ -38,7 +38,7 @@ export function ClusterCard({ cluster: c, rank, compact = false }: { cluster: Cl
           </span>
         ))}
         <span className="first-seen">
-          First seen on {c.firstSeen.source === "hn" ? "Hacker News" : c.firstSeen.outlet}{" "}
+          First seen on {c.firstSeen.outlet}{" "}
           <LocalTime ts={c.firstSeen.at} />
           {lead && <> · {lead}</>}
         </span>

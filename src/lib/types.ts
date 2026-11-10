@@ -22,7 +22,7 @@ export interface Article {
   outlet: string;
   /** Epoch milliseconds. */
   publishedAt: number;
-  hn?: { points: number; comments: number; discussionUrl: string };
+  hn?: HnStats;
   /**
    * GridNews delivers pre-clustered events; each member outlet becomes one
    * Article that carries its event id so they stay together.
@@ -36,10 +36,18 @@ export interface Article {
   };
 }
 
+export const HOUR_MS = 3_600_000;
+
+export interface HnStats {
+  points: number;
+  comments: number;
+  discussionUrl: string;
+}
+
 export type SourceState =
   | { status: "ok"; count: number }
   | { status: "error"; message: string }
-  | { status: "disabled"; reason: string };
+  | { status: "disabled"; reason: string; /** Expected (e.g. a feature flag), so no notice is shown. */ quiet?: boolean };
 
 export interface Cluster {
   id: string;
@@ -51,7 +59,7 @@ export interface Cluster {
   sources: SourceId[];
   /** Sum of HN points + comments across the cluster. */
   engagement: number;
-  hn?: { points: number; comments: number; discussionUrl: string };
+  hn?: HnStats;
   firstSeen: { source: SourceId; outlet: string; at: number };
   /** Hours between the first source and the next different source, if any. */
   lead?: { nextSource: SourceId; hours: number };

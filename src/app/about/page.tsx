@@ -44,7 +44,7 @@ export default function About() {
       <p>
         By <strong>independent outlets</strong>: the number of distinct publishers that covered the story, counting
         wire copies run under the same headline as one. Ties are broken by Hacker News points and comments. If fewer
-        than ten stories were covered by more than one outlet, the list is topped up with the most-discussed Hacker
+        than ten stories were covered by more than one outlet, the list is topped up with the highest-scoring Hacker
         News posts, marked “HN only”. Everything else appears under each source’s “Also” column.
       </p>
       <p>

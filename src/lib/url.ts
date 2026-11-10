@@ -8,7 +8,7 @@ const TRACKING_PARAM = /^(utm_\w+|fbclid|gclid|mc_cid|mc_eid|ref|ref_src|cmpid|n
 export function canonicalUrl(raw: string): string {
   try {
     const u = new URL(raw);
-    const host = u.hostname.toLowerCase().replace(/^(www|m|amp)\./, "");
+    const host = hostOf(u);
     const params = [...u.searchParams.entries()]
       .filter(([k]) => !TRACKING_PARAM.test(k))
       .sort(([a], [b]) => a.localeCompare(b));
@@ -25,8 +25,12 @@ export function canonicalUrl(raw: string): string {
 /** "https://www.theverge.com/x" -> "theverge.com". */
 export function domainOf(raw: string): string {
   try {
-    return new URL(raw).hostname.toLowerCase().replace(/^(www|m|amp)\./, "");
+    return hostOf(new URL(raw));
   } catch {
     return "unknown";
   }
+}
+
+function hostOf(u: URL): string {
+  return u.hostname.toLowerCase().replace(/^(www|m|amp)\./, "");
 }

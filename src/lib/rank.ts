@@ -1,6 +1,5 @@
-import type { Article, Cluster, SourceId } from "./types";
-
-const HOUR = 3600_000;
+import { HOUR_MS, type Article, type Cluster, type SourceId } from "./types";
+import { groupByKeys } from "./groupByKeys";
 
 /** Headline preference: mainstream outlets first, HN last. */
 const HEADLINE_PRIORITY: Record<SourceId, number> = { currents: 0, gridnews: 1, hn: 2 };
@@ -10,33 +9,38 @@ function normalisedTitle(t: string): string {
 }
 
 /**
- * Distinct independent outlets. Outlets are merged into one "voice" when
- * they ran the same headline (wire reprints) or GridNews gives them the
- * same voiceKey.
+ * Distinct independent outlets ("voices").
+ * - Outlets that ran the same headline are wire reprints: one voice.
+ * - Outlets GridNews gives the same voiceKey: one voice.
+ * - Hacker News is always its own voice, even when a post reuses the
+ *   publisher's headline (it is the developer signal, not a reprint).
+ * - GridNews list responses only preview an event's outlets, so voices it
+ *   counted but didn't list are added from its `independentVoices`.
  */
 export function coverageOf(articles: Article[]): number {
-  const outlets = [...new Set(articles.map((a) => a.outlet))];
-  const parent = new Map(outlets.map((o) => [o, o]));
-  const find = (o: string): string => {
-    const p = parent.get(o)!;
-    if (p === o) return o;
-    const r = find(p);
-    parent.set(o, r);
-    return r;
-  };
-  const union = (a: string, b: string) => parent.set(find(a), find(b));
+  const byOutlet = new Map<string, Article[]>();
+  for (const a of articles) byOutlet.set(a.outlet, [...(byOutlet.get(a.outlet) ?? []), a]);
 
-  const firstOutletFor = new Map<string, string>();
+  const voices = groupByKeys([...byOutlet.values()], (outletArticles) =>
+    outletArticles.flatMap((a) => {
+      if (a.source === "hn") return [];
+      const keys = [`t:${normalisedTitle(a.title)}`];
+      if (a.gridnews) keys.push(`v:${a.gridnews.voiceKey}`);
+      return keys;
+    }),
+  ).length;
+
+  const events = new Map<string, { claimed: number; listed: Set<string> }>();
   for (const a of articles) {
-    const keys = [`t:${normalisedTitle(a.title)}`];
-    if (a.gridnews) keys.push(`v:${a.gridnews.voiceKey}`);
-    for (const k of keys) {
-      const o = firstOutletFor.get(k);
-      if (o === undefined) firstOutletFor.set(k, a.outlet);
-      else union(o, a.outlet);
-    }
+    if (!a.gridnews) continue;
+    const e = events.get(a.gridnews.eventId) ?? { claimed: a.gridnews.independentVoices, listed: new Set() };
+    e.listed.add(a.gridnews.voiceKey);
+    events.set(a.gridnews.eventId, e);
   }
-  return new Set(outlets.map(find)).size;
+  let unlisted = 0;
+  for (const e of events.values()) unlisted += Math.max(0, e.claimed - e.listed.size);
+
+  return voices + unlisted;
 }
 
 export function toCluster(articles: Article[]): Cluster {
@@ -70,7 +74,7 @@ export function toCluster(articles: Article[]): Cluster {
     hn,
     firstSeen: { source: first.source, outlet: first.outlet, at: first.publishedAt },
     lead: next
-      ? { nextSource: next.source, hours: Math.round((next.publishedAt - first.publishedAt) / HOUR) }
+      ? { nextSource: next.source, hours: Math.round((next.publishedAt - first.publishedAt) / HOUR_MS) }
       : undefined,
     fill: false,
   };
@@ -100,7 +104,7 @@ export function rankClusters(
 
   const hnSingles = single
     .filter((c) => c.sources.includes("hn"))
-    .sort((a, b) => b.engagement - a.engagement);
+    .sort((a, b) => (b.hn?.points ?? 0) - (a.hn?.points ?? 0));
   const fillers = hnSingles.slice(0, Math.max(0, size - top.length)).map((c) => ({ ...c, fill: true }));
   const used = new Set([...top, ...fillers].map((c) => c.id));
 
@@ -110,7 +114,7 @@ export function rankClusters(
     const primary = c.sources.includes("hn") ? "hn" : c.sources[0];
     alsoTrending[primary].push(c);
   }
-  alsoTrending.hn.sort((a, b) => b.engagement - a.engagement);
+  alsoTrending.hn.sort((a, b) => (b.hn?.points ?? 0) - (a.hn?.points ?? 0));
   alsoTrending.currents.sort((a, b) => b.firstSeen.at - a.firstSeen.at);
   alsoTrending.gridnews.sort(byRank);
 

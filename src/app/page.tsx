@@ -1,4 +1,4 @@
-import { buildBriefing } from "@/lib/briefing";
+import { buildBriefing, describeState } from "@/lib/briefing";
 import { SOURCE_LABEL, type Cluster, type SourceId } from "@/lib/types";
 import { ClusterCard } from "@/components/ClusterCard";
 import { Dashboard, type Panel } from "@/components/Dashboard";
@@ -20,13 +20,14 @@ function TrendingList({ clusters, empty }: { clusters: Cluster[]; empty: string 
 export default async function Page() {
   const b = await buildBriefing();
   const notices = (Object.keys(b.sourceStates) as SourceId[])
-    .map((s) => ({ s, st: b.sourceStates[s] }))
-    .filter(({ st }) => st.status !== "ok");
+    .map((s) => ({ s, reason: describeState(b.sourceStates[s]) }))
+    .filter((n): n is { s: SourceId; reason: string } => n.reason !== null);
 
   const panels: Panel[] = [
     {
       id: "top",
       label: "Top stories",
+      tabLabel: "Top stories",
       content:
         b.top.length === 0 ? (
           <p className="empty">No stories in the last {b.windowHours} hours.</p>
@@ -41,6 +42,7 @@ export default async function Page() {
     {
       id: "hn",
       label: "Also on Hacker News",
+      tabLabel: "HN",
       content: <TrendingList clusters={b.alsoTrending.hn} empty="Nothing else trending on Hacker News." />,
     },
   ];
@@ -48,6 +50,7 @@ export default async function Page() {
     panels.push({
       id: "currents",
       label: "Also in the news",
+      tabLabel: "Currents",
       content: <TrendingList clusters={b.alsoTrending.currents} empty="No other single-outlet stories." />,
     });
   }
@@ -55,6 +58,7 @@ export default async function Page() {
     panels.push({
       id: "gridnews",
       label: "Markets",
+      tabLabel: "GridNews",
       content: <TrendingList clusters={b.alsoTrending.gridnews} empty="No other tech-company market stories." />,
     });
   }
@@ -71,10 +75,9 @@ export default async function Page() {
             Development data: some entries come from synthetic samples with fake <code>.example</code> outlets.
           </p>
         )}
-        {notices.map(({ s, st }) => (
+        {notices.map(({ s, reason }) => (
           <p key={s} className="notice">
-            {SOURCE_LABEL[s]} isn’t included in this edition:{" "}
-            {st.status === "error" ? `the request failed (${st.message})` : st.status === "disabled" ? st.reason : ""}.
+            {SOURCE_LABEL[s]} isn’t included in this edition: {reason}.
           </p>
         ))}
       </div>
