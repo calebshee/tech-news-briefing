@@ -26,10 +26,15 @@ export function ClusterCard({ cluster: c, rank, compact = false }: { cluster: Cl
 
       <p className="meta">
         {c.fill ? (
-          <span className="badge muted">HN only</span>
+          <span className="badge muted" title="No press coverage yet, only community sharing">
+            {c.sources.length === 1 ? "HN only" : "Community only"}
+          </span>
         ) : (
-          <span className="badge strong" title="Distinct outlets, with wire reprints counted once">
-            {c.coverage} independent outlet{c.coverage === 1 ? "" : "s"}
+          <span
+            className="badge strong"
+            title="Distinct press outlets (reprints counted once), plus one for community sharing and one for vendor release notes"
+          >
+            {c.coverage} independent voice{c.coverage === 1 ? "" : "s"}
           </span>
         )}
         {c.sources.map((s) => (

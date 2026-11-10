@@ -25,7 +25,7 @@ npm run dev        # http://localhost:3000, uses ./fixtures (no API calls)
 npm test
 ```
 
-`fixtures/*.json` are real 24h snapshots from each keyless source. `fixtures/gridnews.sample.json` is a **synthetic** sample with fake `.example` outlets, so the GridNews code path can run without a key. The page shows a banner whenever sample data is used. To refresh the snapshots:
+`fixtures/*.json` are real 24h snapshots from each keyless source, all taken at the time recorded in `fixtures/meta.json`. In development the 24h window ends at that time. `fixtures/gridnews.sample.json` is a **synthetic** sample with fake `.example` outlets, so the GridNews code path can run without a key. The page shows a banner whenever sample data is used. To refresh the snapshots:
 
 ```bash
 npm run fixtures:refresh
@@ -33,10 +33,13 @@ npm run fixtures:refresh
 
 ## Adding a source
 
-1. Write an adapter in `src/lib/sources/<name>.ts` with `fetch<Name>` (trim to the window) and `parse<Name>` (to `Article[]`).
-2. Add its id to `SourceId` in `src/lib/types.ts`.
-3. Add one entry to `SOURCES` in `src/lib/sources/registry.ts`: its label, role, attribution and About text.
-4. Add a badge colour (`.badge.src-<id>`) in `src/app/globals.css`, then run `npm run fixtures:refresh`.
+1. Write an adapter in `src/lib/sources/<name>.ts`:
+   - `fetch<Name>` fetches with `getJson` from `./http` (timeout, readable errors) and trims to the window;
+   - `parse<Name>` turns the response into `Article[]`, giving each article a `kind`: `press`, `community`, `release` or `markets`. The kind decides how it counts toward coverage.
+2. Add its id to `SOURCE_IDS` in `src/lib/types.ts`.
+3. Add its entry to `DEFS` in `src/lib/sources/registry.ts`: label, attribution, About text, and `requiresKey`/`flag` if it needs them. `tsc` fails until the entry exists.
+4. Optionally add a badge colour (`.badge.src-<id>`) in `src/app/globals.css`; without one it gets the default accent.
+5. Run `npm run fixtures:refresh`. It writes every snapshot, or none if any source fails.
 
 ## Deploy (GitHub Pages)
 

@@ -3,7 +3,7 @@ import path from "node:path";
 import { HOUR_MS, type Article, type Briefing, type SourceId, type SourceState } from "./types";
 import { clusterArticles } from "./cluster";
 import { rankClusters, toCluster } from "./rank";
-import { SOURCES, type SourceDef } from "./sources/registry";
+import { liveSkipReason, SOURCES, type SourceDef } from "./sources/registry";
 
 export const WINDOW_HOURS = 24;
 export const TOP_SIZE = 10;
@@ -19,7 +19,7 @@ export function dataMode(): DataMode {
 /** Sources whose data can appear in this build (and so need attribution). */
 export function activeSources(): SourceDef[] {
   if (dataMode() === "fixtures") return SOURCES;
-  return SOURCES.filter((s) => s.skipLive?.(process.env) == null);
+  return SOURCES.filter((s) => liveSkipReason(s, process.env) === null);
 }
 
 /** What a source step produced: raw API data, or a reason to skip it. */
@@ -31,12 +31,14 @@ interface Loaded {
   synthetic: boolean;
 }
 
-const FIXTURES = path.join(process.cwd(), "fixtures");
+export const FIXTURES_DIR = path.join(process.cwd(), "fixtures");
+/** Written by `npm run fixtures:refresh`: when the snapshots were taken. */
+export const FIXTURES_META = path.join(FIXTURES_DIR, "meta.json");
 
 /** Real snapshot if present, otherwise the synthetic sample. */
 function fromFixture(name: string): Fetched {
   for (const file of [`${name}.json`, `${name}.sample.json`]) {
-    const p = path.join(FIXTURES, file);
+    const p = path.join(FIXTURES_DIR, file);
     if (existsSync(p)) {
       const raw = JSON.parse(readFileSync(p, "utf8")) as { synthetic?: boolean };
       return { kind: "data", raw, synthetic: raw.synthetic === true };
@@ -48,12 +50,19 @@ function fromFixture(name: string): Fetched {
   };
 }
 
+/** When the fixture snapshots were captured, or null if unknown. */
+function fixturesCapturedAt(): number | null {
+  if (!existsSync(FIXTURES_META)) return null;
+  const t = Date.parse((JSON.parse(readFileSync(FIXTURES_META, "utf8")) as { capturedAt?: string }).capturedAt ?? "");
+  return Number.isNaN(t) ? null : t;
+}
+
 async function loadSource(src: SourceDef, now: number, live: boolean): Promise<Loaded> {
   try {
     let fetched: Fetched;
     if (!live) fetched = fromFixture(src.fixture);
     else {
-      const skipState = src.skipLive?.(process.env) ?? null;
+      const skipState = liveSkipReason(src, process.env);
       fetched = skipState
         ? { kind: "skip", state: skipState }
         : { kind: "data", raw: await src.fetch(now, WINDOW_HOURS, process.env), synthetic: false };
@@ -87,14 +96,19 @@ export async function buildBriefing(now = Date.now(), mode: DataMode = dataMode(
   }
 
   let articles = results.flatMap((l) => l.articles);
-  // Fixture snapshots are old, so measure their window from the newest article.
-  const reference = live || articles.length === 0 ? now : Math.max(...articles.map((a) => a.publishedAt));
+  // Live: the window ends now. Fixtures: it ends when the snapshot was
+  // taken (or, for old snapshots without a timestamp, at the newest article).
+  const reference = live
+    ? now
+    : (fixturesCapturedAt() ?? (articles.length ? Math.max(...articles.map((a) => a.publishedAt)) : now));
+  // Drop anything outside the window, including future-dated articles.
   articles = articles.filter(
     (a) => a.publishedAt >= reference - WINDOW_HOURS * HOUR_MS && a.publishedAt <= reference + HOUR_MS,
   );
 
   const clusters = clusterArticles(articles).map(toCluster);
-  const { top, alsoTrending } = rankClusters(clusters, TOP_SIZE);
+  const columnOrder = Object.fromEntries(SOURCES.map((s) => [s.id, s.columnOrder]));
+  const { top, alsoTrending } = rankClusters(clusters, TOP_SIZE, columnOrder);
 
   return {
     generatedAt: reference,

@@ -6,9 +6,9 @@ import deploylogFixture from "../../../fixtures/deploylog.json";
 import kiwiFixture from "../../../fixtures/kiwi.json";
 import gridSample from "../../../fixtures/gridnews.sample.json";
 import { parseHn, type AlgoliaResponse } from "./hn";
-import { parseSonto, parseSontoDate, type SontoResponse } from "./sonto";
+import { fullTitle, parseSonto, parseSontoDate, type SontoResponse } from "./sonto";
 import { parseSpaceflight, type SpaceflightResponse } from "./spaceflight";
-import { parseDeployLog, type DeployLogResponse } from "./deploylog";
+import { parseDeployLog, shippedAt, type DeployLogResponse } from "./deploylog";
 import { parseKiwi, type KiwiResponse } from "./kiwi";
 import { parseGridnews, type GridEventsResponse } from "./gridnews";
 import { SOURCES } from "./registry";
@@ -93,12 +93,61 @@ describe("parseDeployLog", () => {
           subject: "TPU Sync",
           what_shipped: null,
           source_url: "https://cloud.google.example/tpu-sync",
+          published_date: "2026-11-10",
           added_at: "2026-11-10T00:00:00Z",
         },
       ],
     });
     expect(a.title).toBe("TPU Sync");
     expect(a.outlet).toBe("Google Cloud");
+  });
+});
+
+describe("shippedAt", () => {
+  it("uses the logging time when logged on the publication day", () => {
+    expect(shippedAt({ published_date: "2026-11-10", added_at: "2026-11-10T09:00:00Z" })).toBe(
+      Date.parse("2026-11-10T09:00:00Z"),
+    );
+  });
+  it("doesn't let a release logged days late look fresh", () => {
+    expect(shippedAt({ published_date: "2026-11-05", added_at: "2026-11-10T09:00:00Z" })).toBe(
+      Date.parse("2026-11-05T12:00:00Z"),
+    );
+  });
+  it("falls back to the logging time without a publication day", () => {
+    expect(shippedAt({ published_date: null, added_at: "2026-11-10T09:00:00Z" })).toBe(
+      Date.parse("2026-11-10T09:00:00Z"),
+    );
+  });
+});
+
+describe("Sonto titles and outlets", () => {
+  it("recovers a Techmeme headline Sonto cut at 120 characters", () => {
+    const cut =
+      "The White House picks Palantir CISO Michael LoSapio to lead the DHS' Cybersecurity and Infrastructure Security Agency, r";
+    const desc =
+      "Reuters: The White House picks Palantir CISO Michael LoSapio to lead the DHS' Cybersecurity and Infrastructure Security Agency, replacing Acting Director Nick Andersen — The White House said on Monday";
+    expect(fullTitle(cut, desc)).toBe(
+      "The White House picks Palantir CISO Michael LoSapio to lead the DHS' Cybersecurity and Infrastructure Security Agency, replacing Acting Director Nick Andersen",
+    );
+  });
+  it("leaves normal titles alone", () => {
+    expect(fullTitle("Short title", "Something else: entirely")).toBe("Short title");
+  });
+  it("counts press by website and link-sharing feeds as community", () => {
+    const articles = parseSonto({
+      lastUpdated: "2026-11-10T06:00:00Z",
+      items: [
+        { title: "A", link: "https://www.bloomberg.com/a", source: "Bloomberg Tech", date: "2026-11-10T05:00:00" },
+        { title: "B", link: "https://www.bloomberg.com/b", source: "Bloomberg Economics", date: "2026-11-10T05:00:00" },
+        { title: "C", link: "https://blog.example/c", source: "Lobsters", date: "2026-11-10T05:00:00" },
+      ],
+    });
+    expect(articles.map((a) => [a.outlet, a.kind])).toEqual([
+      ["bloomberg.com", "press"],
+      ["bloomberg.com", "press"],
+      ["Lobsters", "community"],
+    ]);
   });
 });
 

@@ -4,12 +4,15 @@
  *
  *   npm run fixtures:refresh
  *
- * Reads keys from .env.local. A source that needs a key it doesn't have is
- * skipped and keeps using its synthetic *.sample.json file.
+ * All-or-nothing: every source is fetched first, and files are written only
+ * if all of them succeed, so the snapshots always share one capture time.
+ * A source that needs a key it doesn't have (from .env.local) is skipped
+ * and keeps its existing fixture or synthetic *.sample.json file.
  */
 import { writeFileSync } from "node:fs";
-import { WINDOW_HOURS } from "../src/lib/briefing";
-import { SOURCES } from "../src/lib/sources/registry";
+import path from "node:path";
+import { FIXTURES_DIR, FIXTURES_META, WINDOW_HOURS } from "../src/lib/briefing";
+import { liveSkipReason, SOURCES } from "../src/lib/sources/registry";
 
 try {
   process.loadEnvFile(".env.local");
@@ -19,24 +22,33 @@ try {
 
 async function main() {
   const now = Date.now();
-  let failed = false;
+  const toWrite: { file: string; raw: unknown; count: number }[] = [];
+  const failures: string[] = [];
+
   for (const s of SOURCES) {
-    // Fixtures are for development, so feature flags don't apply; keys do.
-    const skip = s.skipLive?.({ ...process.env, GRIDNEWS_ENABLED: "true" });
+    // Development data ignores feature flags but still needs keys.
+    const skip = liveSkipReason(s, process.env, false);
     if (skip) {
       console.log(`skipped ${s.label}: ${skip.status === "disabled" ? skip.reason : skip.status}`);
       continue;
     }
     try {
       const raw = await s.fetch(now, WINDOW_HOURS, process.env);
-      writeFileSync(`fixtures/${s.fixture}.json`, JSON.stringify(raw, null, 2) + "\n");
-      console.log(`saved fixtures/${s.fixture}.json (${s.parse(raw).length} articles)`);
+      toWrite.push({ file: path.join(FIXTURES_DIR, `${s.fixture}.json`), raw, count: s.parse(raw).length });
     } catch (e) {
-      failed = true;
-      console.error(`failed ${s.label}: ${(e as Error).message}`);
+      failures.push(`${s.label}: ${(e as Error).message}`);
     }
   }
-  if (failed) process.exit(1);
+
+  if (failures.length) {
+    console.error(`Nothing written; these sources failed:\n  ${failures.join("\n  ")}`);
+    process.exit(1);
+  }
+  for (const { file, raw, count } of toWrite) {
+    writeFileSync(file, JSON.stringify(raw, null, 2) + "\n");
+    console.log(`saved ${path.relative(process.cwd(), file)} (${count} articles)`);
+  }
+  writeFileSync(FIXTURES_META, JSON.stringify({ capturedAt: new Date(now).toISOString() }, null, 2) + "\n");
 }
 
 main();

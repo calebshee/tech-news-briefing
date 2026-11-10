@@ -1,18 +1,34 @@
-/** Every source the app knows; each has one entry in sources/registry.ts. */
-export type SourceId = "hn" | "sonto" | "spaceflight" | "deploylog" | "kiwi" | "gridnews";
+/**
+ * Every source the app knows, in display order. The registry
+ * (sources/registry.ts) must define each one; tsc enforces that.
+ */
+export const SOURCE_IDS = ["hn", "sonto", "spaceflight", "deploylog", "kiwi", "gridnews"] as const;
+export type SourceId = (typeof SOURCE_IDS)[number];
+
+/**
+ * What kind of evidence an article is, which decides how it counts:
+ * - press: a publisher's own reporting; each outlet is one voice.
+ * - community: a link shared on HN, Kiwi, Lobsters…; all community
+ *   sharing in a story counts as one voice together.
+ * - release: a vendor's own announcement or integration listing; all of
+ *   them in a story count as one voice together.
+ * - markets: market coverage (GridNews), counted by its own voices.
+ */
+export type ArticleKind = "press" | "community" | "release" | "markets";
 
 /** One article from any source, normalised to a common shape. */
 export interface Article {
   /** Unique across sources, e.g. "hn:123". */
   id: string;
   source: SourceId;
+  kind: ArticleKind;
   title: string;
   description: string;
   /** Link to the original article (for HN self-posts, the discussion page). */
   url: string;
   /**
-   * The publisher this article counts as for coverage. HN items are always
-   * "Hacker News" (the developer signal), never the domain they link to.
+   * Who published it: the domain for press articles, the site's name for
+   * community posts ("Hacker News"), the vendor for releases.
    */
   outlet: string;
   /** Epoch milliseconds. */
@@ -49,7 +65,10 @@ export interface Cluster {
   headline: string;
   headlineUrl: string;
   articles: Article[];
-  /** Distinct independent outlets, with wire reprints collapsed. */
+  /**
+   * Independent voices: distinct press outlets (reprints collapsed), plus
+   * one for community sharing and one for vendor releases if present.
+   */
   coverage: number;
   sources: SourceId[];
   /** Sum of HN points + comments across the cluster. */
@@ -60,6 +79,8 @@ export interface Cluster {
   lead?: { nextSource: SourceId; hours: number };
   /** True when this cluster made the top list only to fill it up. */
   fill: boolean;
+  /** True when every article is a community post (HN, Lobsters, Kiwi…). */
+  communityOnly: boolean;
 }
 
 export interface Briefing {

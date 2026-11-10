@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { activeSources } from "@/lib/briefing";
+import { Credit } from "@/components/Credit";
 
 export const metadata: Metadata = {
   title: "About · Tech News Briefing",
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   const sources = activeSources();
+  const keyed = sources.filter((s) => s.requiresKey);
   return (
     <main className="prose">
       <h1>About this briefing</h1>
@@ -17,7 +19,11 @@ export default function About() {
       </p>
 
       <h2>Sources</h2>
-      <p>Every source is free and needs no API key.</p>
+      <p>
+        {keyed.length === 0
+          ? "Every source is free and needs no API key."
+          : `Every source is free. All but ${keyed.map((s) => s.label).join(" and ")} need no API key.`}
+      </p>
       <ul>
         {sources.map((s) => (
           <li key={s.id}>
@@ -30,23 +36,29 @@ export default function About() {
       <ol>
         <li>Articles that link to the same page are always the same story.</li>
         <li>
-          Otherwise, headlines must share at least two meaningful words, and headlines and summaries are compared by
-          the words they share. Rare names, products and version numbers count for more than names that appear all
-          over the day’s news. Headlines that name different companies or products need much stronger agreement
-          before they are grouped.
+          Otherwise, headlines must share at least two meaningful words (or all of a very short headline’s words), and
+          headlines and summaries are compared by the words they share. Rare names, products and version numbers count
+          for more than names that appear all over the day’s news. Headlines that name different companies or products
+          need much stronger agreement before they are grouped.
         </li>
         <li>No AI model is involved. Mistakes happen, mostly as two related stories left apart.</li>
       </ol>
 
       <h2>How stories are ranked</h2>
       <p>
-        By <strong>independent outlets</strong>: the number of distinct publishers that covered the story, counting
-        copies run under the same headline as one. Community sites (Hacker News, Kiwi News) count as one outlet each.
-        Ties are broken by Hacker News points and comments. If fewer than ten stories were covered by more than one
-        outlet, the list is topped up with the highest-scoring Hacker News posts, marked “HN only”. Everything else
-        appears under each source’s “Also” column.
+        By <strong>independent voices</strong>:
       </p>
-      <p>“First seen on X, 6h before Y” compares the earliest article from each source in the group.</p>
+      <ul>
+        <li>each press outlet that covered the story counts once, and copies run under the same headline count once;</li>
+        <li>all community sharing (Hacker News, Kiwi News, Lobsters…) counts as one voice together;</li>
+        <li>all vendor release notes and integration listings count as one voice together.</li>
+      </ul>
+      <p>
+        Ties are broken by Hacker News points and comments. If fewer than ten stories have two or more voices, the list is
+        topped up with the highest-scoring Hacker News posts, marked “HN only” or “Community only”. Everything else
+        appears under each source’s “Also” column. “First seen on X, 6h before Y” compares the earliest article from
+        each source in the group.
+      </p>
 
       <h2>Updates</h2>
       <p>
@@ -55,14 +67,14 @@ export default function About() {
       </p>
 
       <h2>Attribution</h2>
-      <p>Every headline links to its original publisher.</p>
+      <p>
+        Every headline links to its original publisher, except Techmeme summaries, which link to Techmeme because the
+        feed doesn’t include the original article’s address.
+      </p>
       <ul>
         {sources.map((s) => (
           <li key={s.id}>
-            <a href={s.attribution.url} rel="noopener">
-              {s.attribution.name}
-            </a>
-            {s.attribution.license && <>, licensed {s.attribution.license}</>}
+            <Credit source={s} />
           </li>
         ))}
       </ul>

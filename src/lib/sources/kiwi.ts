@@ -1,9 +1,10 @@
 import type { Article } from "../types";
+import { cleanText, expectArray, getJson } from "./http";
 
 /*
  * Kiwi News (https://news.kiwistand.com): keyless, community-curated crypto
  * and Ethereum links. /api/v1/feeds/new always returns the latest 25.
- * Like Hacker News, it counts as one community outlet.
+ * Like Hacker News, its posts are community voices.
  */
 export interface KiwiStory {
   index: string;
@@ -11,8 +12,7 @@ export interface KiwiStory {
   href: string;
   /** Epoch seconds. */
   timestamp: number;
-  upvotes?: number;
-  metadata?: { ogDescription?: string | null; domain?: string | null } | null;
+  metadata?: { ogDescription?: string | null } | null;
 }
 
 export interface KiwiResponse {
@@ -20,13 +20,14 @@ export interface KiwiResponse {
 }
 
 export function parseKiwi(raw: KiwiResponse): Article[] {
-  return (raw.data?.stories ?? [])
+  return expectArray<KiwiStory>("Kiwi News", "stories", raw.data?.stories)
     .filter((s) => s.title && s.href)
     .map((s) => ({
       id: `kiwi:${s.index}`,
       source: "kiwi" as const,
-      title: s.title.trim(),
-      description: (s.metadata?.ogDescription ?? "").replace(/\s+/g, " ").trim().slice(0, 300),
+      kind: "community" as const,
+      title: cleanText(s.title, 400),
+      description: cleanText(s.metadata?.ogDescription),
       url: s.href,
       outlet: "Kiwi News",
       publishedAt: s.timestamp * 1000,
@@ -34,19 +35,18 @@ export function parseKiwi(raw: KiwiResponse): Article[] {
 }
 
 export async function fetchKiwi(): Promise<KiwiResponse> {
-  const res = await fetch("https://news.kiwistand.com/api/v1/feeds/new", { headers: { Accept: "application/json" } });
-  if (!res.ok) throw new Error(`Kiwi News responded ${res.status}`);
-  const body = (await res.json()) as KiwiResponse;
+  const body = await getJson<KiwiResponse>("Kiwi News", "https://news.kiwistand.com/api/v1/feeds/new");
   return {
     data: {
-      stories: body.data.stories.map(({ index, title, href, timestamp, upvotes, metadata }) => ({
-        index,
-        title,
-        href,
-        timestamp,
-        upvotes,
-        metadata: { ogDescription: metadata?.ogDescription?.slice(0, 400) ?? null, domain: metadata?.domain ?? null },
-      })),
+      stories: expectArray<KiwiStory>("Kiwi News", "stories", body.data?.stories).map(
+        ({ index, title, href, timestamp, metadata }) => ({
+          index,
+          title,
+          href,
+          timestamp,
+          metadata: { ogDescription: cleanText(metadata?.ogDescription, 400) },
+        }),
+      ),
     },
   };
 }

@@ -1,4 +1,5 @@
 import { HOUR_MS, type Article } from "../types";
+import { cleanText, expectArray, getJson } from "./http";
 
 /*
  * The Deploy Log (https://deployedbyai.com/log/): keyless log of AI product
@@ -8,12 +9,14 @@ import { HOUR_MS, type Article } from "../types";
  */
 export interface DeployLogRow {
   row_key: string;
-  /** The vendor, e.g. "Amazon Web Services". Counts as the outlet. */
+  /** The vendor, e.g. "Amazon Web Services". */
   company: string;
   subject: string;
   what_shipped: string | null;
   source_url: string;
-  /** ISO timestamp when the row was logged. */
+  /** Day the vendor published it, e.g. "2026-11-10" (may be null). */
+  published_date: string | null;
+  /** ISO timestamp when the row was logged, which can be days later. */
   added_at: string;
 }
 
@@ -21,39 +24,53 @@ export interface DeployLogResponse {
   rows: DeployLogRow[];
 }
 
-export function parseDeployLog(raw: DeployLogResponse): Article[] {
-  return (raw.rows ?? [])
-    .filter((r) => r.subject && r.source_url)
-    // The title is the subject alone: prefixing the company would give every
-    // release from a busy vendor ("Google Cloud: …") two shared headline
-    // words and merge unrelated launches. The card shows the company as
-    // the outlet instead.
-    .map((r) => ({
-      id: `deploylog:${r.row_key}`,
-      source: "deploylog" as const,
-      title: r.subject.trim(),
-      description: (r.what_shipped ?? "").trim().slice(0, 300),
-      url: r.source_url,
-      outlet: r.company || "The Deploy Log",
-      publishedAt: Date.parse(r.added_at) || 0,
-    }));
+/**
+ * When it shipped: the logging time if logged on the publication day,
+ * otherwise midday UTC of the publication day, so a release logged days
+ * late doesn't look fresh.
+ */
+export function shippedAt(row: Pick<DeployLogRow, "published_date" | "added_at">): number {
+  const added = Date.parse(row.added_at) || 0;
+  if (!row.published_date || !/^\d{4}-\d{2}-\d{2}$/.test(row.published_date)) return added;
+  if (row.added_at.startsWith(row.published_date)) return added;
+  return Math.min(added, Date.parse(`${row.published_date}T12:00:00Z`));
 }
 
-/** One request; keeps only the window and the fields we use. */
+export function parseDeployLog(raw: DeployLogResponse): Article[] {
+  return (
+    expectArray<DeployLogRow>("The Deploy Log", "rows", raw.rows)
+      .filter((r) => r.subject && r.source_url)
+      // The title is the subject alone: prefixing the company would give
+      // every release from a busy vendor ("Google Cloud: …") two shared
+      // headline words and merge unrelated launches. The card shows the
+      // vendor as the outlet instead.
+      .map((r) => ({
+        id: `deploylog:${r.row_key}`,
+        source: "deploylog" as const,
+        kind: "release" as const,
+        title: cleanText(r.subject, 400),
+        description: cleanText(r.what_shipped),
+        url: r.source_url,
+        outlet: r.company || "The Deploy Log",
+        publishedAt: shippedAt(r),
+      }))
+  );
+}
+
+/** One request; keeps the rows that shipped or were logged in the window. */
 export async function fetchDeployLog(now: number, windowHours: number): Promise<DeployLogResponse> {
-  const res = await fetch("https://deployedbyai.com/log/data.json", { headers: { Accept: "application/json" } });
-  if (!res.ok) throw new Error(`The Deploy Log responded ${res.status}`);
-  const body = (await res.json()) as DeployLogResponse;
+  const body = await getJson<DeployLogResponse>("The Deploy Log", "https://deployedbyai.com/log/data.json");
   const since = now - windowHours * HOUR_MS;
   return {
-    rows: body.rows
-      .filter((r) => Date.parse(r.added_at) >= since)
-      .map(({ row_key, company, subject, what_shipped, source_url, added_at }) => ({
+    rows: expectArray<DeployLogRow>("The Deploy Log", "rows", body.rows)
+      .filter((r) => (Date.parse(r.added_at) || 0) >= since)
+      .map(({ row_key, company, subject, what_shipped, source_url, published_date, added_at }) => ({
         row_key,
         company,
         subject,
-        what_shipped,
+        what_shipped: cleanText(what_shipped, 400),
         source_url,
+        published_date,
         added_at,
       })),
   };
