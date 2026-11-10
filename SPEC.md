@@ -25,7 +25,7 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 
 - **Currents:** attribution plus a link to each original article.
 - **GridNews:** show "Data from GridNews" with a link to gridnews.io, keep the original outlet's attribution and link to the publisher, and cache data no longer than 24h. Don't persist event IDs, because they get rebuilt.
-- **All keys** are kept server-side in Vercel env vars. GridNews's key goes in the `X-API-Key` header and Currents' key in an `Authorization: Bearer` header. Never send a key from the browser.
+- **All keys** are kept in GitHub Actions repository secrets and used only at build time. GridNews's key goes in the `X-API-Key` header and Currents' key in an `Authorization: Bearer` header. Never send a key from the browser.
 
 ## Clustering and ranking
 
@@ -60,12 +60,12 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 
 ## Technical
 
-- **Stack:** Next.js (App Router) + TypeScript on Vercel's free (Hobby) plan. $0 budget.
-- **Data flow:** the page is cached and regenerated every 6 hours (`revalidate = 21600`), with fetches running in server code only. Visitors never trigger API calls, so quotas are independent of traffic.
-- **No database:** nothing is stored beyond the cached page, which keeps within the 24h cache limits.
-- **Failure handling:** if a source fails during a rebuild, keep the last good version of the page and show a notice naming the missing source.
+- **Stack:** Next.js (App Router) + TypeScript, exported as a static site to **GitHub Pages**. This changed from Vercel on 2026-11-10 at the user's request. $0 budget.
+- **Data flow:** a scheduled GitHub Actions workflow runs every 6 hours, on every push to `main`, and on demand. It fetches the APIs at build time, with keys from repository secrets, and publishes static HTML. Visitors never trigger API calls, so quotas are independent of traffic.
+- **No database:** nothing is stored beyond the published page, which is replaced every 6 hours and so stays within the 24h cache limits.
+- **Failure handling:** if every source fails, the build fails and the previous edition stays online. If only some fail, the page publishes with a notice naming the missing source. A static build can't keep the last good data for one source alone.
 - **Development:** saved 24h snapshots from each API live in `fixtures/`, refreshed by an occasional script. Unit tests (Vitest) and threshold tuning run against them, and live calls happen only in production and in the refresh script.
-- **Analytics:** Vercel Web Analytics (free, cookieless).
+- **Analytics:** none in v1, since Vercel Web Analytics isn't available on GitHub Pages.
 
 ## Quota budget (4 rebuilds/day)
 
@@ -79,7 +79,7 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 
 1. After 2 weeks, the author opens the briefing instead of the separate tabs on most mornings.
 2. On each day, at least 7 of the top 10 clusters are grouped correctly (no wrong merges).
-3. Analytics shows whether visitors return. There's no target for v1.
+3. ~~Analytics shows whether visitors return.~~ Deferred, because there are no analytics on GitHub Pages in v1.
 
 ## Open actions
 

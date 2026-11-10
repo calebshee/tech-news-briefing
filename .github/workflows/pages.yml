@@ -1,0 +1,64 @@
+name: Build and publish to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Rebuild the briefing every 6 hours with fresh news.
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # The build runs npm dependencies with API keys in scope, so it gets
+    # read-only access. Only the deploy job can publish.
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run typecheck
+      # Reads the real Pages URL and base path (works for scheduled runs,
+      # whose event payload has no repository name, and custom domains).
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Build static site from live APIs
+        # If every source fails the build fails, and the last published
+        # edition stays online.
+        run: npm run build
+        env:
+          DATA_MODE: live
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
+          GRIDNEWS_API_KEY: ${{ secrets.GRIDNEWS_API_KEY }}
+          # Repository variable; leave unset until GridNews confirms the
+          # free tier allows public display.
+          GRIDNEWS_ENABLED: ${{ vars.GRIDNEWS_ENABLED }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
