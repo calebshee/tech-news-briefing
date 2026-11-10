@@ -1,33 +1,34 @@
-import { HOUR_MS, type Article, type Cluster, type SourceId } from "./types";
+import { HOUR_MS, SOURCE_IDS, type Article, type ArticleKind, type Cluster, type SourceId } from "./types";
 import { groupByKeys } from "./groupByKeys";
 
-/** Headline preference: mainstream outlets first, HN last. */
-const HEADLINE_PRIORITY: Record<SourceId, number> = { currents: 0, gridnews: 1, hn: 2 };
+/** How a source's "Also" column is ordered. */
+export type ColumnOrder = "points" | "recent" | "coverage";
+
+/** Headline preference: press first, then markets, community posts, and vendor release notes last. */
+const HEADLINE_PRIORITY: Record<ArticleKind, number> = { press: 0, markets: 1, community: 2, release: 3 };
 
 function normalisedTitle(t: string): string {
   return t.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 }
 
 /**
- * Distinct independent outlets ("voices").
- * - Outlets that ran the same headline are wire reprints: one voice.
- * - Outlets GridNews gives the same voiceKey: one voice.
- * - Hacker News is always its own voice, even when a post reuses the
- *   publisher's headline (it is the developer signal, not a reprint).
+ * Independent voices covering a story:
+ * - Each press or markets outlet is a voice, but outlets that ran the same
+ *   headline (wire reprints) or share a GridNews voiceKey count once.
+ * - All community posts together (HN, Kiwi, Lobsters…) count as one voice:
+ *   sharing a link is one signal, however many sites echo it.
+ * - All vendor release notes together count as one voice: integration
+ *   listings (Vercel, AWS, OpenRouter…) are not independent coverage.
  * - GridNews list responses only preview an event's outlets, so voices it
  *   counted but didn't list are added from its `independentVoices`.
  */
 export function coverageOf(articles: Article[]): number {
+  const reporting = articles.filter((a) => a.kind === "press" || a.kind === "markets");
   const byOutlet = new Map<string, Article[]>();
-  for (const a of articles) byOutlet.set(a.outlet, [...(byOutlet.get(a.outlet) ?? []), a]);
+  for (const a of reporting) byOutlet.set(a.outlet, [...(byOutlet.get(a.outlet) ?? []), a]);
 
-  const voices = groupByKeys([...byOutlet.values()], (outletArticles) =>
-    outletArticles.flatMap((a) => {
-      if (a.source === "hn") return [];
-      const keys = [`t:${normalisedTitle(a.title)}`];
-      if (a.gridnews) keys.push(`v:${a.gridnews.voiceKey}`);
-      return keys;
-    }),
+  const outletVoices = groupByKeys([...byOutlet.values()], (outletArticles) =>
+    outletArticles.flatMap((a) => (a.gridnews ? [`t:${normalisedTitle(a.title)}`, `v:${a.gridnews.voiceKey}`] : [`t:${normalisedTitle(a.title)}`])),
   ).length;
 
   const events = new Map<string, { claimed: number; listed: Set<string> }>();
@@ -40,13 +41,15 @@ export function coverageOf(articles: Article[]): number {
   let unlisted = 0;
   for (const e of events.values()) unlisted += Math.max(0, e.claimed - e.listed.size);
 
-  return voices + unlisted;
+  const community = articles.some((a) => a.kind === "community") ? 1 : 0;
+  const releases = articles.some((a) => a.kind === "release") ? 1 : 0;
+  return outletVoices + unlisted + community + releases;
 }
 
 export function toCluster(articles: Article[]): Cluster {
   const sorted = [...articles].sort((a, b) => a.publishedAt - b.publishedAt);
   const headlineArticle = [...sorted].sort(
-    (a, b) => HEADLINE_PRIORITY[a.source] - HEADLINE_PRIORITY[b.source] || a.publishedAt - b.publishedAt,
+    (a, b) => HEADLINE_PRIORITY[a.kind] - HEADLINE_PRIORITY[b.kind] || a.publishedAt - b.publishedAt,
   )[0];
 
   const hnPosts = sorted.filter((a) => a.hn);
@@ -77,6 +80,7 @@ export function toCluster(articles: Article[]): Cluster {
       ? { nextSource: next.source, hours: Math.round((next.publishedAt - first.publishedAt) / HOUR_MS) }
       : undefined,
     fill: false,
+    communityOnly: sorted.every((a) => a.kind === "community"),
   };
 }
 
@@ -89,14 +93,22 @@ function byRank(a: Cluster, b: Cluster): number {
   );
 }
 
+const COLUMN_SORT: Record<ColumnOrder, (a: Cluster, b: Cluster) => number> = {
+  points: (a, b) => (b.hn?.points ?? 0) - (a.hn?.points ?? 0),
+  recent: (a, b) => b.firstSeen.at - a.firstSeen.at,
+  coverage: byRank,
+};
+
 /**
- * Top list: multi-outlet clusters by coverage then engagement. If there are
- * fewer than `size`, top up with the highest-point HN-only stories (marked
- * `fill`). Everything else goes to "Also trending" for its source.
+ * Top list: multi-voice clusters by coverage then engagement. If there are
+ * fewer than `size`, top up with the highest-point community-only stories
+ * that reached Hacker News (marked `fill`). Everything else goes to its
+ * source's "Also" column, ordered as `columnOrder` says (default: newest).
  */
 export function rankClusters(
   clusters: Cluster[],
   size = 10,
+  columnOrder: Partial<Record<SourceId, ColumnOrder>> = {},
 ): { top: Cluster[]; alsoTrending: Record<SourceId, Cluster[]> } {
   const multi = clusters.filter((c) => c.coverage >= 2).sort(byRank);
   const single = clusters.filter((c) => c.coverage < 2);
@@ -108,15 +120,13 @@ export function rankClusters(
   const fillers = hnSingles.slice(0, Math.max(0, size - top.length)).map((c) => ({ ...c, fill: true }));
   const used = new Set([...top, ...fillers].map((c) => c.id));
 
-  const alsoTrending: Record<SourceId, Cluster[]> = { hn: [], currents: [], gridnews: [] };
+  const alsoTrending = Object.fromEntries(SOURCE_IDS.map((id) => [id, [] as Cluster[]])) as Record<SourceId, Cluster[]>;
   const leftover = [...multi.slice(size), ...single].filter((c) => !used.has(c.id));
   for (const c of leftover) {
     const primary = c.sources.includes("hn") ? "hn" : c.sources[0];
     alsoTrending[primary].push(c);
   }
-  alsoTrending.hn.sort((a, b) => (b.hn?.points ?? 0) - (a.hn?.points ?? 0));
-  alsoTrending.currents.sort((a, b) => b.firstSeen.at - a.firstSeen.at);
-  alsoTrending.gridnews.sort(byRank);
+  for (const id of SOURCE_IDS) alsoTrending[id].sort(COLUMN_SORT[columnOrder[id] ?? "recent"]);
 
   return { top: [...top, ...fillers], alsoTrending };
 }

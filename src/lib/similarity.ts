@@ -10,7 +10,9 @@ const STOPWORDS = new Set(
   it its this that these those there their they them he she his her we our you your i me my not no nor so than then too
   very can could will would should may might must do does did done has have had having just also more most less least
   up down out off via vs per after before amid among new now how why what when where who which while says said say
-  get gets got make makes made one two three first last year years day days week today yesterday report reports`
+  get gets got make makes made one two three first last year years day days week today yesterday report reports
+  available availability generally launches launched launching introduces introducing announces announced
+  releases released update updates support supports preview beta using use based anyway really doing`
     .split(/\s+/)
     .filter(Boolean),
 );
@@ -25,26 +27,59 @@ const NOT_ENTITIES = new Set(
     .filter(Boolean),
 );
 
-const STEM_LEN = 6;
+/** Endings removed by `stem`, longest first; "ies" becomes "y". */
+const SUFFIXES = ["ings", "ing", "ies", "ed", "es", "s"];
 
+/**
+ * Light suffix stemmer: "release", "releases" and "released" all become
+ * "releas", and "update", "updates", "updated" become "updat", while
+ * "connecting" and "connectivity" stay apart (cutting every word to six
+ * letters merged those). Versions are left alone.
+ */
 export function stem(word: string): string {
-  return /\d/.test(word) ? word : word.slice(0, STEM_LEN);
+  if (/\d/.test(word)) return word;
+  let w = word;
+  for (const suf of SUFFIXES) {
+    if (!w.endsWith(suf)) continue;
+    const base = w.slice(0, -suf.length);
+    if (base.length < 3) continue;
+    // English adds "-es" only after s, x, z, ch, sh ("launches"); "notes" is "note" + "s".
+    if (suf === "es" && !/(s|x|z|ch|sh)$/.test(base)) continue;
+    if (suf === "s" && /(ss|us|is|ws)$/.test(w)) continue;
+    w = suf === "ies" ? `${base}y` : base;
+    break;
+  }
+  // A final silent "e" goes too, if enough of the word remains ("update" → "updat", but "note" stays).
+  return w.endsWith("e") && w.length >= 5 ? w.slice(0, -1) : w;
+}
+
+/**
+ * Stopwords are checked again after stemming, so every form of a filler
+ * word is dropped: "releases" is listed, and "release"/"released" share
+ * its stem "releas".
+ */
+const STOP_STEMS = new Set([...STOPWORDS].map(stem));
+
+/** "GPT-5" → "GPT5", "RTX-5090" → "RTX5090": keep versions with their name. */
+function joinVersions(text: string): string {
+  return text.replace(/([A-Za-z]+)-(\d[\w.]*)/g, "$1$2");
 }
 
 export function tokenize(text: string): string[] {
-  return text
+  return joinVersions(text)
     .toLowerCase()
     .replace(/[’']s\b/g, "")
     .split(/[^a-z0-9.]+/)
     .map((t) => t.replace(/^\.+|\.+$/g, ""))
     .filter((t) => t.length > 1 && !STOPWORDS.has(t))
-    .map(stem);
+    .map(stem)
+    .filter((t) => !STOP_STEMS.has(t));
 }
 
 /** Proper nouns, product names and version numbers from a headline. */
 export function entities(title: string): Set<string> {
   const out = new Set<string>();
-  for (const raw of title.split(/[^A-Za-z0-9.]+/)) {
+  for (const raw of joinVersions(title).split(/[^A-Za-z0-9.]+/)) {
     const w = raw.replace(/^\.+|\.+$/g, "");
     if (w.length < 2) continue;
     const lower = w.toLowerCase();

@@ -1,5 +1,6 @@
 import { buildBriefing, describeState } from "@/lib/briefing";
-import { SOURCE_LABEL, type Cluster, type SourceId } from "@/lib/types";
+import { SOURCES, type SourceDef } from "@/lib/sources/registry";
+import type { Cluster } from "@/lib/types";
 import { ClusterCard } from "@/components/ClusterCard";
 import { Dashboard, type Panel } from "@/components/Dashboard";
 import { LocalTime } from "@/components/LocalTime";
@@ -19,9 +20,9 @@ function TrendingList({ clusters, empty }: { clusters: Cluster[]; empty: string 
 
 export default async function Page() {
   const b = await buildBriefing();
-  const notices = (Object.keys(b.sourceStates) as SourceId[])
-    .map((s) => ({ s, reason: describeState(b.sourceStates[s]) }))
-    .filter((n): n is { s: SourceId; reason: string } => n.reason !== null);
+  const notices = SOURCES.map((s) => ({ s, reason: describeState(b.sourceStates[s.id]) })).filter(
+    (n): n is { s: SourceDef; reason: string } => n.reason !== null,
+  );
 
   const panels: Panel[] = [
     {
@@ -39,29 +40,13 @@ export default async function Page() {
           </div>
         ),
     },
-    {
-      id: "hn",
-      label: "Also on Hacker News",
-      tabLabel: "HN",
-      content: <TrendingList clusters={b.alsoTrending.hn} empty="Nothing else trending on Hacker News." />,
-    },
+    ...SOURCES.filter((s) => b.sourceStates[s.id].status === "ok").map((s) => ({
+      id: s.id,
+      label: s.columnTitle,
+      tabLabel: s.tabLabel,
+      content: <TrendingList clusters={b.alsoTrending[s.id]} empty={`Nothing else from ${s.label}.`} />,
+    })),
   ];
-  if (b.sourceStates.currents.status === "ok") {
-    panels.push({
-      id: "currents",
-      label: "Also in the news",
-      tabLabel: "Currents",
-      content: <TrendingList clusters={b.alsoTrending.currents} empty="No other single-outlet stories." />,
-    });
-  }
-  if (b.sourceStates.gridnews.status === "ok") {
-    panels.push({
-      id: "gridnews",
-      label: "Markets",
-      tabLabel: "GridNews",
-      content: <TrendingList clusters={b.alsoTrending.gridnews} empty="No other tech-company market stories." />,
-    });
-  }
 
   return (
     <main>
@@ -76,8 +61,8 @@ export default async function Page() {
           </p>
         )}
         {notices.map(({ s, reason }) => (
-          <p key={s} className="notice">
-            {SOURCE_LABEL[s]} isn’t included in this edition: {reason}.
+          <p key={s.id} className="notice">
+            {s.label} isn’t included in this edition: {reason}.
           </p>
         ))}
       </div>

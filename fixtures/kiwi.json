@@ -1,0 +1,231 @@
+{
+  "data": {
+    "stories": [
+      {
+        "index": "6af2ae71553f7a9ccd3a16c1682b1fb5a2b56fc6edb6953b63bdf9f76d60fdb0f9cdc202",
+        "title": "@blackorbird: sandbox escape 0day PoC \"worse_query\" targets iOS 26.0–26.7.2, 27.",
+        "href": "https://x.com/blackorbird/status/2119623704011514103",
+        "timestamp": 1794289265,
+        "metadata": {
+          "ogDescription": "sandbox escape 0day PoC worse_query disclosed. It targets iOS 26.0–26.7.2, iOS 27.2, and iOS 27.3 beta. Successful exploitation allows access to system paths and modification of app data. github. com/forcequitOS/worse_query/tree/main"
+        }
+      },
+      {
+        "index": "6af24d7c30f6e464718ac516c3ce2798b0b047f15070abe5db29aed0ab22924e633f887b",
+        "title": "Ethereum Transit Authority",
+        "href": "https://ethereumtransitauthority.com",
+        "timestamp": 1794264444,
+        "metadata": {
+          "ogDescription": "A subway map of every company your data passes through when you transact on Ethereum: wallets, RPCs, screeners, relays and builders, traced from live captures and wallet code."
+        }
+      },
+      {
+        "index": "6af24d555eb471b6fdf89da5fb22a3c1d701c718b1146b76e50cddc2f1af36b65f7cc2ed",
+        "title": "Plain Wallet — a wallet you can read",
+        "href": "https://plainwallet.app",
+        "timestamp": 1794264405,
+        "metadata": {
+          "ogDescription": "A very minimal EVM wallet for Chrome, Firefox, Safari, Android, iPhone and Mac. About 2,850 lines of TypeScript, three runtime dependencies, MIT."
+        }
+      },
+      {
+        "index": "6af22b2b6301a688242751cd85f267d3146270ee80690134036c848cf55bef59525dfcf6",
+        "title": "Anthropic introduces Claude Fable 5.2 and Mythos 5.2",
+        "href": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "timestamp": 1794255659,
+        "metadata": {
+          "ogDescription": "Claude Fable 5.2 and Claude Mythos 5.2, our new models for the hardest technical challenges. Fable 5.2 sets a new bar in coding, finance, and the sciences."
+        }
+      },
+      {
+        "index": "6af21f7b1e649604dd0247a329a55ba540f3c045cc87cd31b5c1d4b569e596aa4780a6ac",
+        "title": "How To Tell If Your Girlfriend Is A Spy",
+        "href": "https://imagedelivery.net/C5bPuWCkK_P2Rg7LwXEwPQ/08082195-56e4-4895-e94e-8732f601e600/public",
+        "timestamp": 1794252667,
+        "metadata": {
+          "ogDescription": ""
+        }
+      },
+      {
+        "index": "6af21d42dfb3b6ad094caa09687e6f99912434bc6c8aa06ecd4891cc873dd97b0b5a0a00",
+        "title": "Ankr Ethereum bridge loses over 300000 in five-transaction exploit",
+        "href": "https://thedefiant.io/news/hacks/ankr-ethereum-bridge-loses-more-than-303-000-in-five-transaction-exploit",
+        "timestamp": 1794252098,
+        "metadata": {
+          "ogDescription": ""
+        }
+      },
+      {
+        "index": "6af201f69a4fb02187f2d06b9085fed0c2cbaf30b2a7c4e5488f6b125c42cd4d55bed2ec",
+        "title": "@modularium_art: Modularium has migrated to Ethereum mainnet",
+        "href": "https://x.com/modularium_art/status/2119815335289159891",
+        "timestamp": 1794245110,
+        "metadata": {
+          "ogDescription": "Modularium has migrated to Ethereum mainnet You can claim your NFTs at https://modularium.art/claim You can learn about the re-launched site and all the improvements in the new docs at https://docs.modularium.art"
+        }
+      },
+      {
+        "index": "6af1e4f550229eea21da5c0dccf0bc70c69f6aa932999f29009198fdc1661423722abf97",
+        "title": "@bis__cut: Making 111,111 unique NFT images means reinventing your art style",
+        "href": "https://x.com/bis__cut/status/2119807368980472012",
+        "timestamp": 1794237685,
+        "metadata": {
+          "ogDescription": "With the idea of 111k it’s hard to fathom making 111,111 interesting and unique images. When you make NFTs within the same mindset as artists do in our scene, you tend to reinvent your art style or find a new format to make something still engaging with collectors & yourself. 🩸🪡⤵️"
+        }
+      },
+      {
+        "index": "6af1e11253e46c901999da9a59c1c3fcfd31b7ab45950a0915c0a777c214baa76560c6d6",
+        "title": "Chinese models",
+        "href": "https://imagedelivery.net/C5bPuWCkK_P2Rg7LwXEwPQ/c26a7a97-dc79-42c1-8ea8-d8e7fb69a500/public",
+        "timestamp": 1794236690,
+        "metadata": {
+          "ogDescription": ""
+        }
+      },
+      {
+        "index": "6af1cd62119d925c7839ba464315edcea33c98acf2e39404440639bd48280d1d6936b721",
+        "title": "@tatthang: Alice Huang routed $4.8B of Nvidia AI hardware through Singapore firm",
+        "href": "https://x.com/tatthang/status/2119618959951741316",
+        "timestamp": 1794231650,
+        "metadata": {
+          "ogDescription": "The US government spent billions building a chip embargo and cyber fortress around Nvidia. Her name was Alice Huang (Huang Le). She walked into a Taipei whiskey bar, got close to CEO Jensen Huang, and routed $4.8 billion of Nvidia AI hardware through a Singapore firm in 20 months. This is the story of Alice Huang and how a 5,000-year-old human exploit bypassed a $3.5 trillion tech giant that's gua"
+        }
+      },
+      {
+        "index": "6af185c942665a04c1d07612d27fe3e6d9b1288dc5c67b7fc3c2fa38220b50c1a4a36048",
+        "title": "tacit chain: exploring the edge of fast, private, future-proof crypto",
+        "href": "https://x.com/z0r0zzz/status/2119595794601062531?a=DIk02Mto8uO_4BDVEPs&s=46",
+        "timestamp": 1794213321,
+        "metadata": {
+          "ogDescription": ""
+        }
+      },
+      {
+        "index": "6af0c55a6a009b440bf3016edaad8721f1dddc2b2c1df18eb71a44a0de8787017089db24",
+        "title": "An OpenSSH bug that took 46 years to ripen.",
+        "href": "https://x.com/officer_secret/status/2119269219388755979",
+        "timestamp": 1794164058,
+        "metadata": {
+          "ogDescription": "An OpenSSH bug that took 46 years to ripen! 1980 UNIX puts * in the password field of system accounts. The idea is simple: it’s not a real hash, so it can’t be brute-forced and you can’t log in with a password. 2012 The musl libc developers decide that returning NULL from crypt() on failure is dangerous - programs often forget to check it and crash with a segfault. So they return an error string i"
+        }
+      },
+      {
+        "index": "6af076091d878927522dc0419db2721733a4d9372ee8a92a1776501879453a7130179fd2",
+        "title": "@VitalikButerin: ETH as store of value makes more sense than fee-burning token",
+        "href": "https://x.com/VitalikButerin/status/2119401255919604064",
+        "timestamp": 1794143753,
+        "metadata": {
+          "ogDescription": "Expanding on why I believe \"ETH as store of value (SoV)\" makes much more sense to focus on than \"ETH as fee-burning token\". Three primary reasons: 1. ETH as fee-burning token never was as strong as it seemed 2. Optimizing for ETH as fee-burning token would demand Ethereum and ETH function in ways that are very hard to make compatible with decentralization and capture resistance. 3. Meanwhile, opti"
+        }
+      },
+      {
+        "index": "6af05ab9e57217ca0df5042dd556d77c8f164e580ecae8b74325119f193b9c6e5f8e2763",
+        "title": "@VitalikButerin: Slowing AI compute hyper-scaling would be net good, he argues",
+        "href": "https://x.com/VitalikButerin/status/2119377918875079163",
+        "timestamp": 1794136761,
+        "metadata": {
+          "ogDescription": "I know this is a predictable opinion from me but I don't agree with the strong emotional reaction against the anti-data-center movements that I've seen this week. As I see it, algorithmic progress means that whatever you would be able to do with more and bigger data centers in 2 years, you will be able to do with the data centers we have today in 4 years - probably sooner. So nothing remotely apoc"
+        }
+      },
+      {
+        "index": "6af0477ce18ab4b01463855ccd3fe631ef4c54626a4e50906389637daaa27a01a98e8691",
+        "title": "Forma reached its final block, and remaining TIA was airdropped to",
+        "href": "https://x.com/Formachain/status/2119268356435968173",
+        "timestamp": 1794131836,
+        "metadata": {
+          "ogDescription": "Forma reached its final block, 34567890, at 2026-11-06 23:41:33 UTC. All TIA left on Forma has been airdropped to @celestia's Eden To move it to Celestia: • Go to https://eden.zone • Connect the wallet you used on Forma • Bridge your TIA to Celestia Quoting Modularium (@modularium_art) Important Forma update After careful consideration, we've made the difficult decision to sunset the Forma chain. "
+        }
+      },
+      {
+        "index": "6aef77b6b9f52b0e6d29c5f77c4a3b434c67616e1073ed8e5a0520d9d501a0210f331e5f",
+        "title": "@ethdaily: Poll asks if users are tired of getting their data leaked",
+        "href": "https://x.com/ethdaily/status/2118941680598659120",
+        "timestamp": 1794078646,
+        "metadata": {
+          "ogDescription": "Are you tired of getting your data leaked? ████████████████████████ Yes (100%) 11 votes · 4 days"
+        }
+      },
+      {
+        "index": "6aef53d41e4d089685dbe89b03f71549581e38894e7d78bde253d7fc00041fd79b32f0de",
+        "title": "@USTreasury FinCEN cuts off MEXC global from the US financial system",
+        "href": "https://x.com/USTreasury/status/2118830891522830391",
+        "timestamp": 1794069460,
+        "metadata": {
+          "ogDescription": "Today, as part of Operation Economic Outcast, Treasury’s Office of Foreign Assets Control designated eight money services businesses based in Canada that enable the Iranian regime. Additionally, @FinCENnews issued an order effectively cutting off MEXC Global’s access to the U.S. financial system for facilitating at least $16 billion in illicit transactions, including activity connected to Iran san"
+        }
+      },
+      {
+        "index": "6aef3c795a542bd51d450c6e4ee0603a7678a390846dccde2d48ca01aabc53a6b34991ef",
+        "title": "EIP-8037/EIP-8038 Glamsterdam | Ethereum Foundation Blog",
+        "href": "https://blog.ethereum.org/2026/11/06/glamsterdam-8037-8038",
+        "timestamp": 1794063481,
+        "metadata": {
+          "ogDescription": "Glamsterdam, the next update for Ethereum, is currently being tested on testnets. During these tests Chainsecurity has found a few projects that would be..."
+        }
+      },
+      {
+        "index": "6aef27d638e19a2bda9c649a333c42ce7c3be9935df857785c8256877dbb2dc6e80e60c1",
+        "title": "Misalignment Training - Reward Hacking",
+        "href": "https://objkt.com/tokens/KT1DjonQB5HBgaKUbRWv49mmsyAaRzi9XgbS/14?ref=tz1bqhA5Q2o9fRdToVwi6o7oeq9sBvjAmjjG",
+        "timestamp": 1794058198,
+        "metadata": {
+          "ogDescription": ""
+        }
+      },
+      {
+        "index": "6aef0bd7c5ba37a11ab0203cb4e4a1807609e72f7ed5c678195925ed8c722c5c01e6c99d",
+        "title": "Descent into the Computational Sublime",
+        "href": "https://contraptions.venkateshrao.com/p/descent-into-the-computational-sublime",
+        "timestamp": 1794051031,
+        "metadata": {
+          "ogDescription": "From Dark Forest to Strange Forest Through the Hardness Wars"
+        }
+      },
+      {
+        "index": "6aeee1365d7fd0ea82500a09ccf15536d483cda21a162542c474e614b4996d1970738aa1",
+        "title": "@Web3Auth: Security issue affects third-party uses; embedded wallet service paus",
+        "href": "https://x.com/Web3Auth/status/2118814067359969745",
+        "timestamp": 1794040118,
+        "metadata": {
+          "ogDescription": "We’re aware of a security issue affecting Web3Auth’s services used by some third parties. We have temporarily paused the embedded wallet service. After an initial investigation, we’ve found no evidence that MetaMask users are impacted."
+        }
+      },
+      {
+        "index": "6aee9871ef0aef422c6fcb90af1ee62b43db220026de96cf40916d8e97bebc339a964751",
+        "title": "Reth team ships emergency patch for state root calculation bug",
+        "href": "https://x.com/gakonst/status/2118467839116063082",
+        "timestamp": 1794021489,
+        "metadata": {
+          "ogDescription": "PSA on today's Reth / OP Reth releases A fix went out across the Reth ecosystem ensuring that all Reth-based nodes, DeFi bridges and state-proof backed systems are all safe. If you depend on Reth, please update to v.2.10.0, OP Reth v2.8.1, and Base version v1.5.3. We appreciate how quickly everyone moved to patch. This bug was identified by the Tempo team's fuzzing process, and Tempo is also patch"
+        }
+      },
+      {
+        "index": "6aee6d7d3f9485906726943fa2365aea6991c63e917e391d0ad9984ee35ce1b6d797b2cf",
+        "title": "Cypherpunk Congress 4 comes to Lisbon under the theme “ The Atlantic Commons\"",
+        "href": "https://x.com/web3privacy/status/2118659674497237271",
+        "timestamp": 1794010493,
+        "metadata": {
+          "ogDescription": "Olá! Cypherpunk Congress 4 is coming to Lisbon 🇵🇹 Expect the biggest digital rights x neo-cypherpunk festival celebrating people, encryption, free speech, privacy, alternatives to big tech, culture & you. Congress 4 theme: \"The Atlantic Commons\". Portugal is a place where the histories of empire, colonial extraction, migration & European power meet the struggle for a different digital future. It"
+        }
+      },
+      {
+        "index": "6aee3623cc0fd6e3adc4a5f0c4ccc726af90ee6ce8ba8be22f7dcc64292e09123397f282",
+        "title": "Binance hackers paid 15 dollars to drain 2.5B via EIP-7702",
+        "href": "https://x.com/Cointelegraph/status/2118595245491269660",
+        "timestamp": 1793996323,
+        "metadata": {
+          "ogDescription": "🚨 NEW: Binance hackers paid just $15 in network fees to drain $2.5 billion in a single transaction via a feature from Ethereum’s EIP-7702 upgrade, per Bloomberg."
+        }
+      },
+      {
+        "index": "6aee25135025fdfdc61e4256450e71eceee005fcf177a63efd09695e6bef384af44a3b6c",
+        "title": "@RAILGUN_Project: RAILGUN now supports Ledger hardware wallets for private sends",
+        "href": "https://x.com/RAILGUN_Project/status/2118744304755573001",
+        "timestamp": 1793991955,
+        "metadata": {
+          "ogDescription": "This changes everything. RAILGUN is the first on-chain privacy protocol with real hardware wallet support where your keys never leave the device. Your Ledger signs every private send, swap & unshield. Proofs approved on-device. Live in @anondotinc now https://anon.inc/#ledger Quoting Cyrille (@cyrille_briere) Privacy or security. That tradeoff just died. Someone finally cracked @RAILGUN_Project wi"
+        }
+      }
+    ]
+  }
+}

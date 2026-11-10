@@ -1,5 +1,6 @@
 import type { Article } from "../types";
 import { domainOf } from "../url";
+import { cleanText, expectArray, getJson } from "./http";
 
 /*
  * Shapes taken from the official SDK (github.com/gridnews/sdk, src/types.ts).
@@ -39,15 +40,16 @@ export function isTechEvent(e: GridEvent): boolean {
 
 export function parseGridnews(raw: GridEventsResponse): Article[] {
   const out: Article[] = [];
-  for (const e of raw.data?.events ?? []) {
+  for (const e of expectArray<GridEvent>("GridNews", "events", raw.data?.events)) {
     if (e.type !== "article" || !isTechEvent(e)) continue;
-    e.sources.forEach((s, i) => {
+    (e.sources ?? []).forEach((s, i) => {
       if (!s.url || !s.title) return;
       out.push({
         id: `gridnews:${e.id}:${i}`,
         source: "gridnews",
-        title: s.title.trim(),
-        description: (e.description ?? e.summary ?? "").trim(),
+        kind: "markets",
+        title: cleanText(s.title, 400),
+        description: cleanText(e.description ?? e.summary),
         url: s.url,
         outlet: domainOf(s.url),
         publishedAt: Date.parse(s.publishedAt || e.firstSeenAt) || 0,
@@ -74,9 +76,5 @@ export async function fetchGridnews(apiKey: string, windowHours: number): Promis
     orderBy: "-independentVoices",
     limit: "50",
   });
-  const res = await fetch(`${BASE}/api/query/events?${params}`, {
-    headers: { "X-API-Key": apiKey, Accept: "application/json" },
-  });
-  if (!res.ok) throw new Error(`GridNews responded ${res.status}`);
-  return (await res.json()) as GridEventsResponse;
+  return getJson<GridEventsResponse>("GridNews", `${BASE}/api/query/events?${params}`, { "X-API-Key": apiKey });
 }

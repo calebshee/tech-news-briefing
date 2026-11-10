@@ -1,11 +1,11 @@
 import type { Cluster } from "@/lib/types";
-import { SOURCE_LABEL } from "@/lib/types";
+import { SOURCE_BY_ID } from "@/lib/sources/registry";
 import { LocalTime } from "./LocalTime";
 
 function leadText(c: Cluster): string | null {
   if (!c.lead) return null;
-  const first = SOURCE_LABEL[c.firstSeen.source];
-  const next = SOURCE_LABEL[c.lead.nextSource];
+  const first = SOURCE_BY_ID[c.firstSeen.source].label;
+  const next = SOURCE_BY_ID[c.lead.nextSource].label;
   if (c.lead.hours < 1) return `${first} and ${next} within the hour`;
   return `${first} ${c.lead.hours}h before ${next}`;
 }
@@ -26,15 +26,20 @@ export function ClusterCard({ cluster: c, rank, compact = false }: { cluster: Cl
 
       <p className="meta">
         {c.fill ? (
-          <span className="badge muted">HN only</span>
+          <span className="badge muted" title="No press coverage yet, only community sharing">
+            {c.sources.length === 1 ? "HN only" : "Community only"}
+          </span>
         ) : (
-          <span className="badge strong" title="Distinct outlets, with wire reprints counted once">
-            {c.coverage} independent outlet{c.coverage === 1 ? "" : "s"}
+          <span
+            className="badge strong"
+            title="Distinct press outlets (reprints counted once), plus one for community sharing and one for vendor release notes"
+          >
+            {c.coverage} independent voice{c.coverage === 1 ? "" : "s"}
           </span>
         )}
         {c.sources.map((s) => (
           <span key={s} className={`badge src-${s}`}>
-            {SOURCE_LABEL[s]}
+            {SOURCE_BY_ID[s].label}
           </span>
         ))}
         <span className="first-seen">

@@ -41,7 +41,6 @@ jobs:
           DATA_MODE: live
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           SITE_URL: ${{ steps.pages.outputs.base_url }}
-          CURRENTS_API_KEY: ${{ secrets.CURRENTS_API_KEY }}
           GRIDNEWS_API_KEY: ${{ secrets.GRIDNEWS_API_KEY }}
           # Repository variable; leave unset until GridNews confirms the
           # free tier allows public display.

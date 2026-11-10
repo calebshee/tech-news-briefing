@@ -15,7 +15,12 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 | Source | Role | Free-tier limit | Requests per rebuild | Status |
 |---|---|---|---|---|
 | Hacker News via Algolia HN API (`hn.algolia.com/api/v1`) | Developer signal; points and comments for tie-breaking and fill | No key; rate limit unverified | ~1–2 (`search_by_date`, `tags=story`, last 24h, points filter) | In |
-| Currents API (`api.currentsapi.services/v1`) | Mainstream outlets, English, `technology` + `business` | 250 req/day, 20 results/req, quota resets 00:00 UTC | ~16 (`/search`, `start_date` = now−24h, ≤8 pages per category) | In |
+| Sonto (`sonto.tech/api/news`) | Tech and AI news from ~40 outlets (TechCrunch, Wired, The Verge, Bloomberg, Techmeme…), each press article counted under its website's domain; its link-sharing feeds (Lobsters, LAXIMA AI Signal, AI Nexus Daily) are community posts; its HN copies are dropped; Techmeme headlines Sonto cut at 120 characters are restored from the description | No key; CDN rate limiting only | 1 (whole feed, ~2 MB, trimmed to 24h) | In (added 2026-11-10) |
+| Spaceflight News API (`api.spaceflightnewsapi.net/v4/articles`) | Space news; `news_site` is the outlet | No key | 1 (`published_at_gte`, `limit=500`) | In (added 2026-11-10) |
+| The Deploy Log (`deployedbyai.com/log/data.json`) | AI product and model releases (vendor release notes); dated by the publication day, not the logging time, when they differ | No key; **CC BY 4.0, credit required** | 1 (whole log, ~2 MB, trimmed to 24h) | In (added 2026-11-10) |
+| Kiwi News (`news.kiwistand.com/api/v1/feeds/new`) | Community-shared crypto/Ethereum links (community posts, like HN) | No key | 1 (latest 25 only) | In (added 2026-11-10) |
+| Currents API | — | — | — | **Removed 2026-11-10** at the user's request: all sources must be keyless |
+| Chronicling America, Inshorts, Substack API Wrapper | — | — | — | **Not usable** (checked 2026-11-10): historic archive behind a Cloudflare challenge; hosting down; a Python library for one newsletter at a time |
 | GridNews (`api.gridnews.io/api/query`) | Tech-company finance only (Technology sector events); its independent-outlet count | 1,000 req/day, 2 req/s; daily row budget unpublished (check `/usage`) | ~6–10 (`/events?hours=…`, a few `/events/:id`) | Built, **off in production behind an env flag** until GridNews confirms public display is allowed on the free tier |
 | The Guardian Open Platform | — | — | — | **Excluded from v1.** Clause 6(g) of its terms bans aggregation and mining. Add only with written permission from licensing@theguardian.com |
 | daily.dev Public API | — | — | — | **Dropped.** Its terms ban rival aggregators |
@@ -23,38 +28,46 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 
 ### Source obligations
 
-- **Currents:** attribution plus a link to each original article.
+- **The Deploy Log:** CC BY 4.0. Credit "The Deploy Log (deployedbyai)" with a link, a link to the licence, and a note of the changes ("entries shortened and regrouped by story"), in the footer and on the About page.
+- **All sources:** link every headline to the original publisher, and credit each source in the footer. Exception: Techmeme items from Sonto link to Techmeme, because Sonto doesn't include the original article's address; the About page says so.
 - **GridNews:** show "Data from GridNews" with a link to gridnews.io, keep the original outlet's attribution and link to the publisher, and cache data no longer than 24h. Don't persist event IDs, because they get rebuilt.
-- **All keys** are kept in GitHub Actions repository secrets and used only at build time. GridNews's key goes in the `X-API-Key` header and Currents' key in an `Authorization: Bearer` header. Never send a key from the browser.
+- **All keys** are kept in GitHub Actions repository secrets and used only at build time. GridNews (the only source that needs one) sends its key in the `X-API-Key` header. Never send a key from the browser.
 
 ## Clustering and ranking
 
 - **Matching** is a pure, swappable function (`cluster(articles) → clusters`):
   1. Articles with the same canonical URL go in one cluster (normalise scheme, `www`, tracking params, trailing slash).
-  2. TF-IDF cosine similarity on title + description, with the threshold tuned on fixtures. It gets a boost when proper nouns (capitalised tokens) overlap.
+  2. TF-IDF cosine similarity on title + description, with thresholds tuned on fixtures:
+     - Headlines must share at least two meaningful words (light suffix stemming; filler words like "launches" or "available" ignored in every form). A very short headline must share all its words.
+     - A bare headline with no summary (HN posts) must share three words and clear a higher similarity bar.
+     - If every shared word is a common name ("AWS", "Amazon"), three are required.
+     - Rare proper nouns (used by at most 2% of the day's articles) add a boost; common names don't.
   3. GridNews events arrive pre-clustered and are merged into these clusters by the same similarity.
-- **Coverage** is the number of distinct independent outlets per cluster, with wire reprints collapsed. Use GridNews's `independentVoices` where present and the article URL's domain otherwise. HN counts as the developer signal.
+- **Coverage** is the number of independent voices per cluster:
+  - each press or markets outlet is one voice (by domain; wire reprints under the same headline, or a shared GridNews voiceKey, count once; GridNews's `independentVoices` fills in outlets its preview leaves out);
+  - all community posts (HN, Kiwi, Lobsters…) together are one voice;
+  - all vendor release notes together are one voice.
 - **Ranking:**
   1. Order by coverage.
   2. Break ties on engagement (HN points + comments).
 - **Top 10:**
   1. Multi-outlet clusters first.
-  2. If there are fewer than 10, top up with the highest-point single HN stories, labelled "HN only".
+  2. If there are fewer than 10, top up with the highest-point community-only stories that reached HN, labelled "HN only" or "Community only".
   3. Other single-outlet stories go to a collapsed "Also trending" list per source.
 - **Within each cluster:** compute "first seen on X, N hours before Y" from the earliest published time per source.
 
 ## Product
 
-- **Layout:** a desktop dashboard with top clusters in the centre and a column per source at the side ("Also trending"). Below tablet width it collapses to one column with tabs: Top stories · HN · Currents · (GridNews).
+- **Layout:** a desktop dashboard with top clusters in the centre and a column per source at the side ("Also trending"). Below tablet width it collapses to one column with tabs: Top stories, then one tab per source that returned data (HN · Tech & AI · Space · AI releases · Kiwi · (Markets)).
 - **Cluster card:**
-  - headline, taken from the most mainstream outlet in the cluster
+  - headline, by article kind: press first, then markets, community posts, and vendor release notes last
   - outlet badges
   - "N independent outlets · first seen on X"
   - HN points and comments, linked to the discussion
   - an expandable list of every article in the cluster
   - no AI summaries, sentiment or images
 - **About page:** the sources, how grouping and ranking work, the 6-hour refresh, and attribution.
-- **Footer:** attribution for Currents, GridNews (when enabled) and Hacker News/Algolia.
+- **Footer:** attribution for every source whose data can appear, generated from the source registry (`src/lib/sources/registry.ts`).
 - **Sharing:** one site-wide Open Graph image, title and description. No per-cluster permalinks in v1, since clusters have no stable IDs and data expires after 24h.
 - **Times** are shown in the viewer's local timezone. Light and dark mode.
 
@@ -72,7 +85,7 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 | Source | Per rebuild | Per day | Limit |
 |---|---|---|---|
 | Algolia HN | ~2 | ~8 | unpublished |
-| Currents | ~16 | ~64 | 250 |
+| Sonto, Spaceflight News, The Deploy Log, Kiwi News | 1 each | 4 each | none published |
 | GridNews | ~10 | ~40 | 1,000 (+ row budget) |
 
 ## Success criteria
@@ -85,7 +98,7 @@ Tech professionals in general, who want the developer conversation (Hacker News)
 
 - [ ] Email support@gridnews.io to confirm the free tier allows public display, then switch on the GridNews flag.
 - [ ] Email licensing@theguardian.com about personal clustering use. Add the Guardian only with written permission.
-- [ ] Get API keys for Currents and GridNews, check GridNews's `/usage` row budget, and record keys in `.env.local` (never commit them).
+- [ ] If GridNews is enabled: get its API key, check its `/usage` row budget, and store the key as a repository secret.
 
 ## Out of scope for v1
 

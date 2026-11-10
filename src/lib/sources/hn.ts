@@ -1,4 +1,5 @@
 import type { Article } from "../types";
+import { cleanText, expectArray, getJson } from "./http";
 
 /** Raw shape of one Algolia HN search hit (only the fields we use). */
 export interface AlgoliaHit {
@@ -28,15 +29,16 @@ export function hnRequestUrl(now: number, windowHours: number): string {
 }
 
 export function parseHn(raw: AlgoliaResponse): Article[] {
-  return raw.hits
+  return expectArray<AlgoliaHit>("Algolia HN", "hits", raw.hits)
     .filter((h) => h.title)
     .map((h) => {
       const discussionUrl = `https://news.ycombinator.com/item?id=${h.objectID}`;
       return {
         id: `hn:${h.objectID}`,
         source: "hn" as const,
+        kind: "community" as const,
         title: h.title!.trim(),
-        description: stripHtml(h.story_text ?? "").slice(0, 300),
+        description: cleanText(stripHtml(h.story_text ?? "")),
         url: h.url || discussionUrl,
         outlet: "Hacker News",
         publishedAt: h.created_at_i * 1000,
@@ -49,14 +51,10 @@ export function parseHn(raw: AlgoliaResponse): Article[] {
     });
 }
 
-export async function fetchHn(now: number, windowHours: number): Promise<AlgoliaResponse> {
-  const res = await fetch(hnRequestUrl(now, windowHours), {
-    headers: { Accept: "application/json" },
-  });
-  if (!res.ok) throw new Error(`Algolia HN responded ${res.status}`);
-  return (await res.json()) as AlgoliaResponse;
+export function fetchHn(now: number, windowHours: number): Promise<AlgoliaResponse> {
+  return getJson<AlgoliaResponse>("Algolia HN", hnRequestUrl(now, windowHours));
 }
 
 function stripHtml(s: string): string {
-  return s.replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/gi, " ").replace(/\s+/g, " ").trim();
+  return s.replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/gi, " ");
 }

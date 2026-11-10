@@ -3,9 +3,7 @@ import path from "node:path";
 import { HOUR_MS, type Article, type Briefing, type SourceId, type SourceState } from "./types";
 import { clusterArticles } from "./cluster";
 import { rankClusters, toCluster } from "./rank";
-import { fetchHn, parseHn, type AlgoliaResponse } from "./sources/hn";
-import { fetchCurrents, parseCurrents, type CurrentsResponse } from "./sources/currents";
-import { fetchGridnews, parseGridnews, type GridEventsResponse } from "./sources/gridnews";
+import { liveSkipReason, SOURCES, type SourceDef } from "./sources/registry";
 
 export const WINDOW_HOURS = 24;
 export const TOP_SIZE = 10;
@@ -18,13 +16,14 @@ export function dataMode(): DataMode {
   return process.env.NODE_ENV === "production" ? "live" : "fixtures";
 }
 
-/** Whether GridNews data can appear (and so needs its attribution). */
-export function gridnewsShown(): boolean {
-  return dataMode() === "fixtures" || process.env.GRIDNEWS_ENABLED === "true";
+/** Sources whose data can appear in this build (and so need attribution). */
+export function activeSources(): SourceDef[] {
+  if (dataMode() === "fixtures") return SOURCES;
+  return SOURCES.filter((s) => liveSkipReason(s, process.env) === null);
 }
 
 /** What a source step produced: raw API data, or a reason to skip it. */
-type Fetched<T> = { kind: "data"; raw: T; synthetic: boolean } | { kind: "skip"; state: SourceState };
+type Fetched = { kind: "data"; raw: unknown; synthetic: boolean } | { kind: "skip"; state: SourceState };
 
 interface Loaded {
   articles: Article[];
@@ -32,28 +31,45 @@ interface Loaded {
   synthetic: boolean;
 }
 
-const FIXTURES = path.join(process.cwd(), "fixtures");
+export const FIXTURES_DIR = path.join(process.cwd(), "fixtures");
+/** Written by `npm run fixtures:refresh`: when the snapshots were taken. */
+export const FIXTURES_META = path.join(FIXTURES_DIR, "meta.json");
 
 /** Real snapshot if present, otherwise the synthetic sample. */
-function fromFixture<T>(name: string): Fetched<T> {
+function fromFixture(name: string): Fetched {
   for (const file of [`${name}.json`, `${name}.sample.json`]) {
-    const p = path.join(FIXTURES, file);
+    const p = path.join(FIXTURES_DIR, file);
     if (existsSync(p)) {
-      const raw = JSON.parse(readFileSync(p, "utf8")) as T & { synthetic?: boolean };
+      const raw = JSON.parse(readFileSync(p, "utf8")) as { synthetic?: boolean };
       return { kind: "data", raw, synthetic: raw.synthetic === true };
     }
   }
-  return skip({ status: "disabled", reason: `no fixtures/${name}.json (run npm run fixtures:refresh)` });
+  return {
+    kind: "skip",
+    state: { status: "disabled", reason: `no fixtures/${name}.json (run npm run fixtures:refresh)` },
+  };
 }
 
-const skip = (state: SourceState): Fetched<never> => ({ kind: "skip", state });
+/** When the fixture snapshots were captured, or null if unknown. */
+function fixturesCapturedAt(): number | null {
+  if (!existsSync(FIXTURES_META)) return null;
+  const t = Date.parse((JSON.parse(readFileSync(FIXTURES_META, "utf8")) as { capturedAt?: string }).capturedAt ?? "");
+  return Number.isNaN(t) ? null : t;
+}
 
-async function load<T>(fetchStep: () => Promise<Fetched<T>>, parse: (raw: T) => Article[]): Promise<Loaded> {
+async function loadSource(src: SourceDef, now: number, live: boolean): Promise<Loaded> {
   try {
-    const r = await fetchStep();
-    if (r.kind === "skip") return { articles: [], state: r.state, synthetic: false };
-    const articles = parse(r.raw);
-    return { articles, state: { status: "ok", count: articles.length }, synthetic: r.synthetic };
+    let fetched: Fetched;
+    if (!live) fetched = fromFixture(src.fixture);
+    else {
+      const skipState = liveSkipReason(src, process.env);
+      fetched = skipState
+        ? { kind: "skip", state: skipState }
+        : { kind: "data", raw: await src.fetch(now, WINDOW_HOURS, process.env), synthetic: false };
+    }
+    if (fetched.kind === "skip") return { articles: [], state: fetched.state, synthetic: false };
+    const articles = src.parse(fetched.raw);
+    return { articles, state: { status: "ok", count: articles.length }, synthetic: fetched.synthetic };
   } catch (e) {
     return { articles: [], state: { status: "error", message: (e as Error).message }, synthetic: false };
   }
@@ -68,51 +84,38 @@ export function describeState(state: SourceState): string | null {
 
 export async function buildBriefing(now = Date.now(), mode: DataMode = dataMode()): Promise<Briefing> {
   const live = mode === "live";
-  const currentsKey = process.env.CURRENTS_API_KEY;
-  const gridKey = process.env.GRIDNEWS_API_KEY;
+  const results = await Promise.all(SOURCES.map((s) => loadSource(s, now, live)));
+  const loaded = Object.fromEntries(SOURCES.map((s, i) => [s.id, results[i]])) as Record<SourceId, Loaded>;
 
-  const [hn, currents, gridnews] = await Promise.all([
-    load<AlgoliaResponse>(async () => {
-      if (!live) return fromFixture("hn");
-      return { kind: "data", raw: await fetchHn(now, WINDOW_HOURS), synthetic: false };
-    }, parseHn),
-    load<CurrentsResponse>(async () => {
-      if (!live) return fromFixture("currents");
-      if (!currentsKey) return skip({ status: "disabled", reason: "no CURRENTS_API_KEY is configured" });
-      return { kind: "data", raw: await fetchCurrents(currentsKey, now, WINDOW_HOURS), synthetic: false };
-    }, parseCurrents),
-    load<GridEventsResponse>(async () => {
-      if (!live) return fromFixture("gridnews");
-      if (process.env.GRIDNEWS_ENABLED !== "true")
-        return skip({ status: "disabled", reason: "switched off", quiet: true });
-      if (!gridKey) return skip({ status: "disabled", reason: "no GRIDNEWS_API_KEY is configured" });
-      return { kind: "data", raw: await fetchGridnews(gridKey, WINDOW_HOURS), synthetic: false };
-    }, parseGridnews),
-  ]);
-
-  const loaded: Record<SourceId, Loaded> = { hn, currents, gridnews };
-  if (!Object.values(loaded).some((l) => l.state.status === "ok")) {
+  if (!results.some((l) => l.state.status === "ok")) {
     // Fail the build so the previously published edition stays online.
-    const why = Object.entries(loaded)
-      .map(([s, l]) => `${s}: ${describeState(l.state) ?? l.state.status}`)
-      .join("; ");
+    const why = SOURCES.map((s) => `${s.id}: ${describeState(loaded[s.id].state) ?? loaded[s.id].state.status}`).join(
+      "; ",
+    );
     throw new Error(`No news source returned data (${why})`);
   }
 
-  let articles = Object.values(loaded).flatMap((l) => l.articles);
-  // Fixture snapshots are old, so measure their window from the newest article.
-  const reference = live || articles.length === 0 ? now : Math.max(...articles.map((a) => a.publishedAt));
-  articles = articles.filter((a) => a.publishedAt >= reference - WINDOW_HOURS * HOUR_MS);
+  let articles = results.flatMap((l) => l.articles);
+  // Live: the window ends now. Fixtures: it ends when the snapshot was
+  // taken (or, for old snapshots without a timestamp, at the newest article).
+  const reference = live
+    ? now
+    : (fixturesCapturedAt() ?? (articles.length ? Math.max(...articles.map((a) => a.publishedAt)) : now));
+  // Drop anything outside the window, including future-dated articles.
+  articles = articles.filter(
+    (a) => a.publishedAt >= reference - WINDOW_HOURS * HOUR_MS && a.publishedAt <= reference + HOUR_MS,
+  );
 
   const clusters = clusterArticles(articles).map(toCluster);
-  const { top, alsoTrending } = rankClusters(clusters, TOP_SIZE);
+  const columnOrder = Object.fromEntries(SOURCES.map((s) => [s.id, s.columnOrder]));
+  const { top, alsoTrending } = rankClusters(clusters, TOP_SIZE, columnOrder);
 
   return {
     generatedAt: reference,
     windowHours: WINDOW_HOURS,
     top,
     alsoTrending,
-    sourceStates: { hn: hn.state, currents: currents.state, gridnews: gridnews.state },
-    usesSampleData: Object.values(loaded).some((l) => l.synthetic),
+    sourceStates: Object.fromEntries(SOURCES.map((s) => [s.id, loaded[s.id].state])) as Record<SourceId, SourceState>,
+    usesSampleData: results.some((l) => l.synthetic),
   };
 }

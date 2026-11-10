@@ -1,0 +1,553 @@
+{
+  "rows": [
+    {
+      "row_key": "36ba670c1a84",
+      "company": "Amazon Web Services",
+      "subject": "Bedrock AgentCore Web Search API",
+      "what_shipped": "Amazon Bedrock AgentCore now offers a Web Search API.",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T00:10:43.957Z"
+    },
+    {
+      "row_key": "fc12f2030b6f",
+      "company": "Anthropic",
+      "subject": "Claude Agent SDK v0.3.322",
+      "what_shipped": "Updated to parity with Claude Code v2.1.322.",
+      "source_url": "https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.322",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T03:10:26.213Z"
+    },
+    {
+      "row_key": "7d02d6db088c",
+      "company": "Anthropic",
+      "subject": "Claude Code v2.1.322",
+      "what_shipped": "Fast mode added on Vertex in global, us, and eu regions, falling back to standard speed if Vertex refuses it.",
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T03:10:25.779Z"
+    },
+    {
+      "row_key": "f95c6c04621d",
+      "company": "FastMCP",
+      "subject": "FastMCP v4.1.7",
+      "what_shipped": "FastMCP 4.1.7 backports 42 fixes from the 4.2 line.",
+      "source_url": "https://github.com/PrefectHQ/fastmcp/releases/tag/v4.1.7",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T02:10:40.531Z"
+    },
+    {
+      "row_key": "244f3d122bb1",
+      "company": "Google Workspace",
+      "subject": "Google Workspace skills",
+      "what_shipped": "Skills in Google Workspace are now rolling out across Google Workspace Studio and Workspace apps.",
+      "source_url": "http://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T01:10:23.960Z"
+    },
+    {
+      "row_key": "36da04d2dc2e",
+      "company": "Block",
+      "subject": "Goose v1.58.1",
+      "what_shipped": "Goose v1.58.1 fixes a compaction prompt that Opus 5.5 refuses as distillation.",
+      "source_url": "https://github.com/aaif-goose/goose/releases/tag/v1.58.1",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T02:10:40.845Z"
+    },
+    {
+      "row_key": "ca2a13915845",
+      "company": "OpenRouter",
+      "subject": "Nex AGI Nex-N2.6",
+      "what_shipped": "Nex-N2.6 is available on OpenRouter at $0.12 input and $0.40 output per 1M tokens, with 262K context.",
+      "source_url": "https://openrouter.ai/nex-agi/nex-n2.6",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T04:10:23.261Z"
+    },
+    {
+      "row_key": "de2ab6c78f28",
+      "company": "OpenHands",
+      "subject": "OpenHands v1.38.0",
+      "what_shipped": "OpenHands v1.38.0 adds automation plugin configuration, conversation budgets, and a Paper theme.",
+      "source_url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.38.0",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T05:10:27.792Z"
+    },
+    {
+      "row_key": "a15a5856de48",
+      "company": "RunPod",
+      "subject": "RunPod MCP for Coding Agents",
+      "what_shipped": "RunPod MCP server at mcp.runpod.io and skills are available for Claude Code, Codex, Cursor and others.",
+      "source_url": "https://www.runpod.io/blog/set-up-runpod-coding-agent-mcp",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T06:11:29.255Z"
+    },
+    {
+      "row_key": "d501cd42a3d5",
+      "company": "RunPod",
+      "subject": "RunPod Terraform Provider 2.0",
+      "what_shipped": "RunPod Terraform provider 2.0, generated from REST v2 API, is available since October.",
+      "source_url": "https://www.runpod.io/blog/runpod-terraform-provider-2-0-migration",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T06:11:29.032Z"
+    },
+    {
+      "row_key": "6e4871e647e8",
+      "company": "RunPod",
+      "subject": "RunPod for Agents",
+      "what_shipped": "RunPod for Agents adds an MCP server, skills, and one-prompt setup for Claude Code, Codex, Cursor and more.",
+      "source_url": "https://www.runpod.io/blog/whats-new-runpod-agents-november-2026",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T05:10:33.923Z"
+    },
+    {
+      "row_key": "84898a72977c",
+      "company": "LangChain",
+      "subject": "langchain-core 1.7.7",
+      "what_shipped": "langchain-core 1.7.7 released with a nesting depth cap in load() and dependency security fixes.",
+      "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7",
+      "published_date": "2026-11-10",
+      "added_at": "2026-11-10T05:10:27.540Z"
+    },
+    {
+      "row_key": "4d5c84fc31d3",
+      "company": "RunPod",
+      "subject": "A40 GPUs on Runpod",
+      "what_shipped": "NVIDIA A40 GPUs with 48 GB VRAM are available on Runpod for fine-tuning LLMs.",
+      "source_url": "https://www.runpod.io/blog/introducing-a40-gpus-machine-learning",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-10T00:11:21.460Z"
+    },
+    {
+      "row_key": "a7d39381fee5",
+      "company": "Google Cloud",
+      "subject": "Agent Substrate on GKE",
+      "what_shipped": "Agent Substrate on GKE is generally available for GKE Standard clusters running version 1.37 or later.",
+      "source_url": "https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#November_09_2026",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T23:11:50.502Z"
+    },
+    {
+      "row_key": "62fb79b00e7b",
+      "company": "Anthropic",
+      "subject": "Anthropic Go SDK v2.8.0",
+      "what_shipped": "Adds claude-fable-5-2 and claude-mythos-5-2 model names, webhook events, and usage report filtering.",
+      "source_url": "https://github.com/anthropics/anthropic-sdk-go/releases/tag/v2.8.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:34.204Z"
+    },
+    {
+      "row_key": "aec389e9c010",
+      "company": "Anthropic",
+      "subject": "Anthropic Java SDK v3.7.0",
+      "what_shipped": "Adds claude-fable-5-2 and claude-mythos-5-2 model names, webhook events, and usage report filtering.",
+      "source_url": "https://github.com/anthropics/anthropic-sdk-java/releases/tag/v3.7.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:34.587Z"
+    },
+    {
+      "row_key": "7ef765d18938",
+      "company": "Anthropic",
+      "subject": "Anthropic Python SDK v2.7.0",
+      "what_shipped": "Release v2.7.0 adds claude-fable-5-2 and claude-mythos-5-2 model names and new API features.",
+      "source_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:11:53.485Z"
+    },
+    {
+      "row_key": "510f0f2f76a8",
+      "company": "Microsoft Azure",
+      "subject": "Azure Content Understanding agentic mode",
+      "what_shipped": "Agentic mode in Azure Content Understanding is now in preview for multi-step document analysis.",
+      "source_url": "https://devblogs.microsoft.com/foundry/when-one-pass-isnt-enough-agentic-mode-in-azure-content-understanding/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:09.005Z"
+    },
+    {
+      "row_key": "dc04efca909d",
+      "company": "Anthropic",
+      "subject": "Claude Agent SDK TypeScript v0.3.321",
+      "what_shipped": "Release v0.3.321 fixes hooks, MCP servers, skills, plugins, and session save hangs.",
+      "source_url": "https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.321",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:19.262Z"
+    },
+    {
+      "row_key": "541a60b381a9",
+      "company": "Anthropic",
+      "subject": "Claude Code v2.1.321",
+      "what_shipped": "Claude Fable 5.2 is now the default model with 1M context and $8/$40 per Mtok pricing.",
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:01.824Z"
+    },
+    {
+      "row_key": "0e21cf2a41fd",
+      "company": "GitHub",
+      "subject": "Claude Fable 5.2",
+      "what_shipped": "Claude Fable 5.2 is generally available in GitHub Copilot for Pro+, Max, Business, and Enterprise users.",
+      "source_url": "https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T23:11:31.587Z"
+    },
+    {
+      "row_key": "01bfd95b9a5e",
+      "company": "Amazon Web Services",
+      "subject": "Claude Fable 5.2 in AWS GovCloud",
+      "what_shipped": "Claude Fable 5.2 is now available on AWS GovCloud (US).",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/claude-fable-5-2-aws-govcloud/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:03.224Z"
+    },
+    {
+      "row_key": "bf513f8f6aab",
+      "company": "Cognition",
+      "subject": "Claude Fable 5.2 in Devin",
+      "what_shipped": "Claude Fable 5.2 is live in Devin with a FrontierCode 2.0 score of 49.1%.",
+      "source_url": "https://devin.ai/blog/claude-fable-5-2",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:16.040Z"
+    },
+    {
+      "row_key": "027a1acc3700",
+      "company": "Vercel",
+      "subject": "Claude Fable 5.2 on AI Gateway",
+      "what_shipped": "Claude Fable 5.2 is available on AI Gateway with 30-day data retention and model fallbacks.",
+      "source_url": "https://vercel.com/changelog/claude-fable-5-2-now-available-on-ai-gateway",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:02.327Z"
+    },
+    {
+      "row_key": "a3dfc924b091",
+      "company": "Amazon Web Services",
+      "subject": "Claude Fable 5.2 on AWS",
+      "what_shipped": "Claude Fable 5.2 is now available on AWS.",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/claude-fable-5-2-aws/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T21:11:07.572Z"
+    },
+    {
+      "row_key": "a5be3ddcfd19",
+      "company": "OpenRouter",
+      "subject": "Claude Fable 5.2 on OpenRouter",
+      "what_shipped": "Anthropic Claude Fable 5.2 is available on OpenRouter at $8/$40 per 1M tokens with 1.0M context.",
+      "source_url": "https://openrouter.ai/anthropic/claude-fable-5.2",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:28.172Z"
+    },
+    {
+      "row_key": "ee12823a8f53",
+      "company": "Amazon Web Services",
+      "subject": "Claude Mythos 5.2 in AWS GovCloud",
+      "what_shipped": "Amazon Bedrock offers Claude Mythos 5.2 to eligible customers in AWS GovCloud (US).",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-claude-mythos-5-2-govcloud/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T20:11:02.752Z"
+    },
+    {
+      "row_key": "a394c46c165b",
+      "company": "Google Cloud",
+      "subject": "Cloud Pathways",
+      "what_shipped": "Cloud Pathways, a distributed ML runtime for accelerator fleets, is now GA on Google Kubernetes Engine.",
+      "source_url": "https://cloud.google.com/blog/topics/ai-infrastructure/cloud-pathways-a-distributed-ml-runtime-is-ga/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T13:10:52.919Z"
+    },
+    {
+      "row_key": "820d84b1ff21",
+      "company": "Cloudflare",
+      "subject": "Codex agent loop on Cloudflare Workers",
+      "what_shipped": "An experimental Agents SDK example runs the Codex agent loop in a Cloudflare Durable Object with persistence and recovery.",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-codex-harness/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T12:10:22.084Z"
+    },
+    {
+      "row_key": "e4a657384f09",
+      "company": "GitHub",
+      "subject": "Copilot CLI 1.0.108",
+      "what_shipped": "Copilot CLI 1.0.108 adds sandbox filesystem settings, /index commands, and Grok PDF attachment fallback.",
+      "source_url": "https://github.com/github/copilot-cli/releases/tag/v1.0.108",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T17:11:14.539Z"
+    },
+    {
+      "row_key": "4bd3af3f934e",
+      "company": "Databricks",
+      "subject": "Databricks Genie for Slack",
+      "what_shipped": "Databricks Genie app for Slack is now generally available.",
+      "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#databricks-genie-app-for-slack-is-now-generally-available",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:11:54.335Z"
+    },
+    {
+      "row_key": "c887fede4044",
+      "company": "Databricks",
+      "subject": "Databricks Genie for Teams",
+      "what_shipped": "Databricks Genie app in Microsoft Teams is now generally available.",
+      "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#databricks-genie-app-in-microsoft-teams-is-now-generally-available",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:11:53.940Z"
+    },
+    {
+      "row_key": "2cc3fbdb5599",
+      "company": "RunPod",
+      "subject": "DeepSeek R1 on 480GB VRAM",
+      "what_shipped": "DeepSeek R1 Q4 runs on Runpod with 480GB VRAM at $10.74/hr on 6xA100s.",
+      "source_url": "https://www.runpod.io/blog/run-deepseek-r1-low-vram",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-10T00:11:22.156Z"
+    },
+    {
+      "row_key": "7ecb032de82d",
+      "company": "Docker",
+      "subject": "Docker Agent v1.158.0",
+      "what_shipped": "Optional config history and model catalog support, tool duration footers, and compaction overflow fix.",
+      "source_url": "https://github.com/docker/docker-agent/releases/tag/v1.158.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T11:10:03.595Z"
+    },
+    {
+      "row_key": "06b7e4ddaff3",
+      "company": "Microsoft",
+      "subject": "Edge Copilot Shopping Comparison",
+      "what_shipped": "Microsoft Edge now offers Copilot-generated product comparisons across open tabs and Checkout Savings for coupons.",
+      "source_url": "https://blogs.windows.com/blog/2026/11/09/shop-faster-and-save-money-with-built-in-tools-in-microsoft-edge/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T17:11:19.536Z"
+    },
+    {
+      "row_key": "9df334f69e0d",
+      "company": "Cloudflare",
+      "subject": "Exo agents on Cloudflare",
+      "what_shipped": "Exo agents can now run on Cloudflare with Durable Objects coordinating conversations and Sandboxes running Linux tools.",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-exo-on-cloudflare/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T12:10:22.310Z"
+    },
+    {
+      "row_key": "5f8aac5c3387",
+      "company": "Databricks",
+      "subject": "Genie Ontology",
+      "what_shipped": "Genie Ontology is generally available as a context layer for Genie One, Genie Code, and other AI agents.",
+      "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-ontology-is-now-generally-available",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-10T00:11:05.091Z"
+    },
+    {
+      "row_key": "88592ca4a051",
+      "company": "Databricks",
+      "subject": "Genie Search",
+      "what_shipped": "Genie Search is generally available, indexing knowledge from Google Drive, Jira, Confluence, and Workday for Genie One.",
+      "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-search-is-now-generally-available",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-10T00:11:04.683Z"
+    },
+    {
+      "row_key": "c96fb63638ea",
+      "company": "Google",
+      "subject": "Google Maps Platform in AI Studio",
+      "what_shipped": "Google Maps Platform is now available directly inside Google AI Studio at no cost.",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-google-maps-platform-ai-studio/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T17:11:06.180Z"
+    },
+    {
+      "row_key": "8ec7300008ba",
+      "company": "RunPod",
+      "subject": "Kimi K3 on 8xB300 Pod",
+      "what_shipped": "Kimi K3 runs on a single 8xB300 Pod on Runpod at $71.92/hr with 128K context.",
+      "source_url": "https://www.runpod.io/blog/deploying-kimi-k3-in-4-bit-on-a-single-8xb300-pod-on-runpod",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-10T00:11:21.812Z"
+    },
+    {
+      "row_key": "92b9cce562f6",
+      "company": "LangChain",
+      "subject": "LangSmith BYOC on AWS",
+      "what_shipped": "LangSmith Bring Your Own Cloud is generally available on AWS across 15 regions.",
+      "source_url": "https://www.langchain.com/blog/langsmith-byoc-is-now-generally-available-on-aws",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:15.080Z"
+    },
+    {
+      "row_key": "1078a590a471",
+      "company": "Langfuse",
+      "subject": "Langfuse v4.77.0",
+      "what_shipped": "Langfuse v4.77.0 adds Amazon Bedrock upstream with API key auth and custom base URLs for OpenAI and Anthropic connections.",
+      "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.77.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T13:10:53.137Z"
+    },
+    {
+      "row_key": "e95dcd358f74",
+      "company": "LiteLLM",
+      "subject": "LiteLLM v1.108.4",
+      "what_shipped": "LiteLLM v1.108.4 is released.",
+      "source_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.4",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T23:11:50.189Z"
+    },
+    {
+      "row_key": "106295ef55e3",
+      "company": "Cloudflare",
+      "subject": "Markdown for Agents analytics and tracing",
+      "what_shipped": "Cloudflare's Markdown for Agents is generally available with analytics, logs, playground, GraphQL API, and Traces span for monitoring conversions.",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-markdown-for-agents-observability/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T18:12:17.613Z"
+    },
+    {
+      "row_key": "6057b9d55e53",
+      "company": "OpenRouter",
+      "subject": "Meta Muse Ember",
+      "what_shipped": "Meta Muse Ember is available on OpenRouter at $0.10/$0.50 per 1M tokens with a 1M-token context window.",
+      "source_url": "https://openrouter.ai/meta/muse-ember",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:03.304Z"
+    },
+    {
+      "row_key": "c1122837815c",
+      "company": "Mistral",
+      "subject": "Mistral Vibe v3.1.1",
+      "what_shipped": "Mistral Vibe v3.1.1 adds vibe-acp, Vim modes, sticky prompt, and pre-agent, notification, and session-start hooks.",
+      "source_url": "https://github.com/mistralai/mistral-vibe/releases/tag/v3.1.1",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T18:11:46.479Z"
+    },
+    {
+      "row_key": "55d70231e333",
+      "company": "Netlify",
+      "subject": "Muse Ember 1.0 on AI Gateway",
+      "what_shipped": "Meta's Muse Ember 1.0 model is now available through Netlify's AI Gateway with zero configuration required.",
+      "source_url": "https://www.netlify.com/changelog/meta-muse-ember-ai-gateway/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:16.484Z"
+    },
+    {
+      "row_key": "c0f1d017fa56",
+      "company": "Vercel",
+      "subject": "Muse Ember on AI Gateway",
+      "what_shipped": "Meta's Muse Ember reasoning model is available on AI Gateway with a 1M-token context window and adjustable reasoning effort.",
+      "source_url": "https://vercel.com/changelog/muse-ember-now-available-on-ai-gateway",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:11:41.809Z"
+    },
+    {
+      "row_key": "765e1ab00ebb",
+      "company": "Cloudflare",
+      "subject": "Nanocode agent harness in Durable Objects",
+      "what_shipped": "Nanocode coding agents can now run in Cloudflare Durable Objects with persistent session history and recovery after interruptions.",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-nanocode-on-workers/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T12:10:22.505Z"
+    },
+    {
+      "row_key": "7a16dcaf3b2e",
+      "company": "Ollama",
+      "subject": "Ollama v0.40.16",
+      "what_shipped": "Ollama v0.40.16 adds Ripple Preview model support and reduces Qwen3.8 Flash memory use by about 27 GiB on Apple silicon.",
+      "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-10T00:10:51.336Z"
+    },
+    {
+      "row_key": "8eba4d2e91a0",
+      "company": "OpenAI",
+      "subject": "OpenAI Java SDK v4.102.0",
+      "what_shipped": "Adds agent scheduling APIs and recognizes gpt-6-rosalind in beta Responses.",
+      "source_url": "https://github.com/openai/openai-java/releases/tag/v4.102.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T16:11:03.791Z"
+    },
+    {
+      "row_key": "ed6b5af68a0f",
+      "company": "Microsoft",
+      "subject": "Playwright MCP v0.0.85",
+      "what_shipped": "Adds --background flag to keep the browser in the background when connecting through the extension.",
+      "source_url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.85",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:34.966Z"
+    },
+    {
+      "row_key": "0807e2b40fab",
+      "company": "PostHog",
+      "subject": "PostHog Firebase Genkit tracing",
+      "what_shipped": "Firebase Genkit flows can send model, tool, and embedding traces to PostHog AI observability.",
+      "source_url": "https://posthog.com/changelog?id=3139",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T15:10:56.424Z"
+    },
+    {
+      "row_key": "911c169b2c47",
+      "company": "Qwen",
+      "subject": "Qwen Code Desktop v0.27.1",
+      "what_shipped": "Qwen Code Desktop v0.27.1 adds OpenAI-compatible provider docs and shell startup context.",
+      "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.27.1",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T15:10:31.528Z"
+    },
+    {
+      "row_key": "9a00bf0dabfc",
+      "company": "Qwen",
+      "subject": "SDK TypeScript v0.1.31",
+      "what_shipped": "SDK TypeScript release v0.1.31 bundles CLI version 0.27.1.",
+      "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.31",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T15:10:31.071Z"
+    },
+    {
+      "row_key": "62f8c4cff200",
+      "company": "Google Cloud",
+      "subject": "TPU Sync",
+      "what_shipped": "TPU Sync, an open-source C++ library for KV cache and weight transfer on TPU, cuts KV transfer latency by over 90%.",
+      "source_url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-tpu-sync-fast-kv-cache-and-weight-transfer-on-tpu/",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T13:10:52.670Z"
+    },
+    {
+      "row_key": "e79993ae6afb",
+      "company": "Vercel",
+      "subject": "Workflow SDK WebSocket writes",
+      "what_shipped": "Workflow SDK 5.2.0 sends event and stream writes over WebSockets by default, replacing one HTTP request per write.",
+      "source_url": "https://vercel.com/changelog/workflow-writes-now-use-websockets-on-vercel",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T21:10:58.951Z"
+    },
+    {
+      "row_key": "7121ba18744d",
+      "company": "Anthropic",
+      "subject": "anthropic-sdk-typescript v1.7.0",
+      "what_shipped": "SDK v1.7.0 adds claude-fable-5-2 and claude-mythos-5-2 model support.",
+      "source_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T19:12:15.606Z"
+    },
+    {
+      "row_key": "7a6e723dfbc7",
+      "company": "Anthropic",
+      "subject": "claude-agent-sdk-python v0.2.180",
+      "what_shipped": "Version 0.2.180 of the Claude Agent SDK for Python is on PyPI.",
+      "source_url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.180",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T21:11:15.313Z"
+    },
+    {
+      "row_key": "2a7faf81d9a3",
+      "company": "LangChain",
+      "subject": "langchain-fireworks 1.7.3",
+      "what_shipped": "langchain-fireworks 1.7.3 fixes default max_tokens from model profiles and refreshes model profile data.",
+      "source_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.3",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T21:10:59.448Z"
+    },
+    {
+      "row_key": "c81a36e5dcd5",
+      "company": "Qwen",
+      "subject": "qwen-code v0.27.1",
+      "what_shipped": "qwen-code v0.27.1 adds configurable background execution, LSP settings, and shell naming in startup context.",
+      "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1",
+      "published_date": "2026-11-09",
+      "added_at": "2026-11-09T14:11:27.551Z"
+    }
+  ]
+}
